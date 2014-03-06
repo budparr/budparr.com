@@ -1,0 +1,44 @@
+baseurl: http://budparr.github.io/
+sitename: 'budparr'
+description: 'Designer, Developer'
+# do not include  https://github.com/...
+repo: 'budparr/budparr.github.io'
+branch: master
+
+#Jekyll Options
+# if using more than one Jekyll instance on your local machine
+# port: 
+# paginate tells Jekyll how many posts per page
+# paginate: 1
+# Permalinks
+permalink:  pretty
+# Dependencies
+markdown: redcarpet
+redcarpet:
+  extensions: ['autolink', 'smart']
+pygments: true
+#Pages - store all pages in the _pages directory
+include: ['_pages']
+relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory. Also will change exclude directory
+exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'CNAME', 'rakefile']
+
+
+
+# dev options (true/false)
+# if site is in production, 'production: true'
+production: false
+use_pure_css: false
+use_jquery: false
+include_font_awesome: false
+include_addthis_sharing:
+
+# options (data)
+google_analytics_id:  
+disqus_id:
+addthis_id: ra-52e194380e6e5e78
+# CONTACT FORM http://getsimpleform.com/
+simple_form_api_token: 
+
+# options (social)
+# facebook_id: pages/The-Lost-Chalice/36279809755
+twitter_id: budparr

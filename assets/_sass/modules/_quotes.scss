@@ -1,0 +1,45 @@
+blockquote {
+  //@extend .as-heading__normal;
+  padding: 2em;
+  color: lighten($base-color, 18%);
+}
+
+////  QUOTES
+
+// .quote, .quotes p {  
+//   font-size: @font-size-base * 1.6;
+//   line-height: 1.5;
+//   font-family: @font-family-serif;
+// }
+// .sidebar-quote, .sidebar-quote p {
+//   font-size: @font-size-base * 1.2;
+//   margin-bottom: 4px;
+// }
+// .quotes p.post-meta, .post-meta p{
+//   color: #999;
+//   font-size: 70%;
+//   margin: 0;
+//   font-family: @font-family-sans-serif;
+//   margin-bottom: 4em; 
+// }
+
+// .quotes .post-meta p{
+//   color: #999;
+//   font-size: 90%;
+//   margin: 0;
+//   font-family: @font-family-sans-serif;
+//   margin-bottom: 4em; 
+// }
+
+// .sidebar-quote p.post-meta {
+//   font-size: 68%;
+//   color: lighten( @gray-dark,8% )
+// }
+// //.quotes p.post-meta:before, .quotes .post-meta p:before {
+// //  content:"— ";
+//}
+
+blockquote.review p {display:inline;} 
+//This is not optimal, inline could cause problems, but need this to make mdash stay on line with the source.
+blockquote.review .quote p:before {content:'“';}
+blockquote.review .quote p:after {content:'”';}

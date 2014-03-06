@@ -1,0 +1,21 @@
+<div class="sticky">
+	<aside class="seriesNote">
+		<ul class="side-nav">
+		{% for post in site.pages reversed %}
+			{% if post.category == page.category %}
+				<li>
+				{% if page.url == post.url %}
+					<span class="active">{{post.title}}</span>
+				{% else %}
+					<a href="{{ site.baseurl}}{{post.url}}">{{post.title}}</a>
+				{% endif %}
+				</li>
+			{% endif %}
+		{% endfor %}
+	</ul>
+</aside>
+</div>
+{% comment %}
+Pulls in related pages by category
+<!-- TODO: SORT THESE MANUALLY -->
+{% endcomment %}

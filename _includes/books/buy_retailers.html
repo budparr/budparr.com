@@ -1,0 +1,67 @@
+
+{% if page.isbn %}
+<div id="buy-buttons" class="list-block">
+
+
+<ul class="buy-retailers shadow-light">
+
+  <li>
+    <a href="http://www.amazon.com/dp/{{ page.isbn }}" title="Amazon" target="_blank" >
+      <img src="/assets/img/booksellers/500px-Amazon_com_logo_svg.png" alt="Amazon.com" style="height: 22px;" />
+    </a>
+  </li>
+  <li>
+    <a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ page.isbn }}" target="_blank" >
+      <img src="/assets/img/booksellers/bookselling_bn_139x22.png" alt="" style="height: 18px;" />
+    </a>
+  </li>
+  <li>
+    <a href="http://www.indiebound.org/product/info.jsp?isbn={{ page.isbn }}" target="_blank" >
+      <img src="/assets/img/booksellers/indiebound.png" alt="" style="height: 42px;" />
+      <br />
+      <small>
+        Your Local Bookstore
+      </small>
+    </a>
+  </li>  
+
+
+<li>
+    <a href="http://www.powells.com/biblio?isbn={{ isbn }}" target="_blank" >
+      <img src="/assets/img/booksellers/logo-powells.jpg" alt="" style="height: 36px;" />
+    </a>
+  </li>  
+
+
+
+</ul>
+
+{% endif %}
+
+
+
+
+<ul class="buy-retailers shadow-light">
+
+  <li>
+    <a href="http://www.amazon.com/dp/{{ isbn }}" target="_blank" >
+      <img src="/assets/img/booksellers/Amazon_Kindle_Logo.png" alt="" style="height: 22px;" />
+    </a>
+  </li>
+
+
+  <li>
+    <a href="http://itunes.apple.com/us/book/isbn{{ isbn }}" target="_blank" >
+      <img src="/assets/img/booksellers/IBooks.png" alt="" style="height: 22px;" />
+    </a>
+  </li>
+
+
+  <li>
+    <a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ isbn }}" target="_blank" >
+      <img src="/assets/img/booksellers/nook_logo_branding.jpg" alt="" style="height: 22px;" />
+    </a>
+  </li>
+</ul>
+
+</div>

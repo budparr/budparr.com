@@ -1,0 +1,18 @@
+
+{{site.sitename}}
+<nav class="top-bar" data-topbar data-options="is_hover: false">
+  <div class="title-area">
+      
+    <div class="name show-for-large-upTK">
+
+      <h1 class="subheading site-heading" style="display:inline;">
+              {{ sitename | replace: 'x','<sup>x</sup>'}}{% for topics in site.data.topics  %}{% if page.url contains topics.slug  %}{% if topics.source %}<span class="show-for-medium-up"> - {{topics.source}}  </span>
+            
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+      </h1>
+    </div>
+      <span class="toggle-topbar menu-iconTK"><a href="#" id="menuLink"><span>menu</span></a></span>
+  </div>
+</nav>

@@ -1,0 +1,84 @@
+<script type="text/javascript">
+  function toggleShowHide()
+   { //TODO: THIS ID SHOULD BE UNIQUE
+      var theDiv = document.getElementById('buy-buttons');
+        if(theDiv.style.display == 'none') {
+            theDiv.style.display = "block";
+        }
+        else{
+              theDiv.style.display = "none";
+        }
+   }
+</script>
+
+{% if page.isbn %}
+  
+
+<button class="pure-button button button-rounded button-flat-primary btn" onclick="toggleShowHide()">Buy <em>{{page.title}}</em></button>
+  <div id="buy-buttons" class="list-block hidden" style="display:none;">
+    <ul class="buy-retailers small">
+      <div id='isbn10_{{ page.isbn }}'></div><!--  pulls in 10 digit ASIN for amazon from script -->
+  <li>
+    <a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ page.isbn }}" target="_blank" >
+      Barnes &amp; Noble
+    </a>
+  </li>
+  <li>
+    <a href="http://www.powells.com/biblio?isbn={{ page.isbn }}" target="_blank" >
+      Powells
+    </a>
+  </li>  
+  <li>
+    <a href="http://www.indiebound.org/product/info.jsp?isbn={{ page.isbn }}" target="_blank" >
+        Your Local Bookstore
+    </a>
+  </li>  
+</ul>
+{% endif %}
+{% if page.isbn_digital or page.asin_kindle %}
+<ul class="buy-retailers small">
+  <li><small>Digital Editions</small></li>
+{% if page.asin_kindle %}
+  <li>
+    <a href="http://www.amazon.com/dp/{{ page.asin_kindle }}" target="_blank" >
+      Amazon Kindle
+    </a>
+  </li>
+{% endif %}
+{% if page.isbn_digital %}
+  <li>
+    <a href="http://itunes.apple.com/us/book/isbn{{ page.isbn_digital }}" target="_blank" >
+      Apple iBooks
+    </a>
+  </li>
+  <li>
+    <a href="http://search.barnesandnoble.com/booksearch/isbnInquiry.asp?EAN={{ page.isbn_digital }}" target="_blank" >
+      Barnes &amp; Noble Nook
+    </a>
+  </li>
+</ul>
+{% endif %}
+{% endif %}
+</div>
+    <script type="text/javascript">
+      function ISBN13toISBN10(isbn13) {
+
+        var start = isbn13.substring(3, 12);
+        var sum = 0;
+        var mul = 10;
+        var i;
+     
+        for(i = 0; i < 9; i++) {
+            sum = sum + (mul * parseInt(start[i]));
+            mul -= 1;
+        }     
+    var checkDig = 11 - (sum % 11);
+    if (checkDig == 10) {
+        checkDig = "X";
+    } else if (checkDig == 11) {
+        checkDig = "0";
+    }
+    return start + checkDig;
+}
+document.getElementById("isbn10_{{ page.isbn }}").innerHTML='<li><a href="http://www.amazon.com/dp/' + ISBN13toISBN10('{{ page.isbn }}') +'" title="Amazon" target="_blank" >Amazon.com</a></li>';
+</script>

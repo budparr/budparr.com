@@ -1,0 +1,123 @@
+// ::Imports pre-render. Must be after reset
+// ------------------------------------------------------------
+@import "libs/required"; //COMPASS
+@import "libs/reset";
+@import "libs/settings";
+@import "libs/mixins";
+@import "libs/placeholders";
+
+// Use SASS globbing to import all _.scss files in the module folder.
+// These should be independent modules that follow the BEM/SMACSS way
+@import "modules/*"; 
+
+
+
+/* ::Base styles */
+/* ------------------------------------------------------------ */
+
+html {
+	font-size: 100%;
+	@include respond-to-max(768px, $IE9: false) { // Stop at precise width, as we're talking about devices
+		-webkit-text-size-adjust: 100%;	// Stops text scaling in iOS.
+	}
+}
+
+body {
+	@extend .font-body;
+	background: $body-color;
+	color: $base-color;
+}
+
+a {
+	color: $action;
+	text-decoration: none;
+	@include link-active-styles { 	// Mixin for interactions (hover,focus,active)
+		color: $action-respond;
+	}
+	&:not(>img) {
+		@include force-wrap;
+	}
+}
+
+/* ::BPNY styles */
+/* ------------------------------------------------------------ */
+
+.sidebar-left {
+	 background-color:$sidebar-color-background;
+	 background: $sidebar-color-background url(/assets/img/Euphronios_krater-478x972.jpg) no-repeat 50% top;
+  
+}
+
+.edit-article, .edit-article a {
+	color: #CCC;
+}
+footer {
+	z-index:1000;
+	background-color:$sidebar-right-color-background;
+		
+		@include respond-to($sidebar-right-breakpoint, $IE9: false) {
+			//background-color:$body-color;
+			position:fixed;
+			bottom:0;
+			right:1;
+		}
+
+		text-align:center;
+		padding:1em;
+		@extend small;
+}
+
+footer ul li {
+	display:inline-block;
+	margin-right:2em;
+}
+
+ul.posts li {
+	margin-bottom:1em;
+}
+
+img {
+	@include single-box-shadow;
+}
+
+body.book hr {
+	width:50%;
+	
+}
+
+.sidebar-left h1{
+	font-size:43px;
+	margin-bottom:1rem;
+	a {
+		color: lighten($sidebar-color, 26%);
+	}
+}
+
+.searchbox {margin:2em 0;}
+
+
+
+/* ::Import styles */
+/* ------------------------------------------------------------ */
+@import "add-ons/buttons";
+//@import "add-ons/font-awesome/scss/font-awesome";
+@import "add-ons/fontello"; //MAY DELETE THIS IN FAVOR OF FONT AWESOME
+@import "singularitygs";
+@import "libs/typography"; 					// Base level typography
+//@import "libs/forms";						// Forms
+@import "add-ons/module-typeset"; 			// Specific typesetting
+//@import "add-ons/grid"; 					// Grid system
+
+
+$grids: 3;
+$grids: add-grid(6 at 500px);
+$grids: add-grid(12 at 700px);
+$grids: add-grid(2 8 2 at 900px);
+$grids: add-grid(1 3 5 7 9 at 1100px);
+
+$gutters: 1/3;
+$gutters: add-gutter(.25 at 900px);
+
+.content-page {
+	@include grid-span(3);
+}

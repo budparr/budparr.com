@@ -1,0 +1,6 @@
+		<h1 class="entry-title"> 
+		<a href="{{ page.url }}">{{ page.title }}</a>
+		{% if page.subtitle %}<small>{{page.subtitle}}</small>{% endif %}
+	</h1>
+{{ page.content }}
+<a href="{{site.baseurl}}{{ page.url }}#reviews" class="button tiny radius" style="float:left;margin-right:3em;">Read Reviews</a>

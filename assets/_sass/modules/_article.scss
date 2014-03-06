@@ -1,0 +1,91 @@
+article.hentry {
+    
+    padding: 1rem;
+    margin:auto;
+    max-width: $d-vp;
+    //min-height: $c-vp;
+    overflow: hidden;
+    header {
+      margin-bottom: .5em;
+    }
+
+    img {
+    	max-width: 100%;
+    }
+    
+    @include respond-to($c-vp, $IE9: false) { 
+    	padding: 4rem;
+    }
+
+    h1 {
+    @extend .as-heading__headline;
+    @extend .as-heading__headline--typeset;
+}
+
+h2 {
+    @extend .as-heading__largest;
+    @extend .as-heading__large--typeset;
+}    
+
+h3 {
+    @extend .as-heading__large;
+    @extend .as-heading__large--typeset;
+}    
+
+h4 {
+    @extend .as-heading__normal;
+    @extend .as-heading__normal--typeset;
+}    
+
+.list h5 {
+    @extend .as-heading__small;
+}
+
+article h5 {
+    @extend .as-heading__small;
+    @extend .as-heading__small--typeset;
+}    
+
+}
+
+
+small {
+ //@extend .as-heading__smallest;
+ @include adjust-font-size-to($kappa);   
+ @extend .font-var;
+}
+
+
+p {
+  @extend .as-para--typeset; //add-ons _module-typeset 
+}
+
+blockquote {
+	@extend .is-typeset;
+}
+
+.content img:first-child {
+
+  @include respond-to($b-vp, $IE9: false) {
+  float: left;
+  margin: .5rem 1.4rem 0 0; 
+
+  }
+  
+}
+
+
+
+hr {
+  //margin-top:    @line-height-computed;
+  //margin-bottom: @line-height-computed;
+  margin:1em auto;
+  border: 0;
+  border-top: 1px solid #EEEEEE;
+}
+
+.screen-reader-text { /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}

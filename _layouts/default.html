@@ -1,0 +1,13 @@
+{% include global/head.html %}
+	<body class="{{page.category | replace: ' ','-' | downcase}}{{page.categories | first}}">
+  	<div class="wrapper">
+    	{% include nav/nav-side.html %}
+    	<section class="content">  
+      	{{content}}
+    	</section>
+      {% include nav/nav-side-right.html %}
+			
+  	<div>
+		{% include global/scripts.html %}
+  </body>
+</html>

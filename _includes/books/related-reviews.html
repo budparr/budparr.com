@@ -1,0 +1,11 @@
+
+  {% for review in site.data.reviews %}  
+    {% if page.name == review.book %}
+	    {% if  review.featured != true %}
+        {% include books/format-reviews.html %}
+    	{% endif %}
+    {% endif %}
+  {% endfor %}
+
+
+

@@ -1,0 +1,25 @@
+@if $footer-sticky != false {
+$footer-height: 1.5em;
+
+* {
+margin: 0;
+}
+html, body {
+height: 100%;
+}
+.wrapper, #layout {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+margin: 0 auto -$footer-height;
+}
+footer#content-info, .push {
+height: $footer-height;
+}
+footer#content-info{padding:1em 0;}
+
+//footer#content-info{background-color:@footerBackgroundColor;}
+
+//	Requires "<div class="push"></div>" inside the .wrapper class, but outside and above the footer#content-info
+
+}

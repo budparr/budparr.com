@@ -1,0 +1,23 @@
+// ------------------------------------------------------------
+// Global typography
+// ------------------------------------------------------------
+
+
+// ------------------------------------------------------------
+// Fonts
+// ------------------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700);
+.font-var 					{  font-family: 'Open Sans', "Helvetica Neueue", Helvetica, Verdana, Arial, sans-serif, sans-serif; }
+.font-body  					{  font-family: Lora, Georgia, "Droid Serif" serif; }
+
+
+// ------------------------------------------------------------
+// Core typography
+// ------------------------------------------------------------
+
+p, span, cite, ol, ul, pre, label, input, textarea 	{ @include adjust-font-size-to($para); }
+ul 													{ @include nobullet; } 						
+ol 													{ @include nobullet; }	
+li 													{ line-height: inherit; }					
+strong, b 											{ font-weight: 700; }
+em, i, q 											{ font-style: italic; }

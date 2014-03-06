@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'It Takes a Big Telescope'
 categories: ['Book Futurism']
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Wise Men Have Fished Here: Homage to the Gotham Book Mart'
 categories: ['literature', 'culture']
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Soundtrack to Pynchon’s “Against the Day”: Glass’s Plutonian Ode with Allen'
 categories: ['literature', 'culture']
 ---

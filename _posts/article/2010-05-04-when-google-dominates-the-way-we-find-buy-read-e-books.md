@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'When Google Dominates the Way We (Find, Buy) Read E-books'
 tags: ['amazon', 'book-culture', 'Death of Print?', 'e-books', 'future-of-reading', 'google', 'ipad']
 categories: ['Book Futurism', 'culture']

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Me, The Summer Vacation Reading Issue
 categories:
   - Reading

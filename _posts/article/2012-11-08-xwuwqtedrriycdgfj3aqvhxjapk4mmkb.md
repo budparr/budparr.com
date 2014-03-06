@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'xwuWQTeDRriYcdgfJ3AqVhXjapk4MmKB'
 categories: ['Internet']
 tags: ['Security']

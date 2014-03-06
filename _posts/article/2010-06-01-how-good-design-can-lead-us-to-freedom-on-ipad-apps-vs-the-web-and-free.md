@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'How Good Design Can Lead us to Freedom: On iPad Apps vs the Web, and Free'
 tags: ['Death of Print?', 'design', 'future-of-reading', 'ipad', 'web-design']
 categories: ['Book Futurism']

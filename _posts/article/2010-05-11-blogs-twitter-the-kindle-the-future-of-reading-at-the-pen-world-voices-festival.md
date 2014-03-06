@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Blogs, Twitter, the Kindle: The Future of Reading at The PEN World Voices Festival'
 tags: ['blogs', 'future-of-reading', 'ipad', 'kindle']
 categories: ['Book Futurism', 'culture']

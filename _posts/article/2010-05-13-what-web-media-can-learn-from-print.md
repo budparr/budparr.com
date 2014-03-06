@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'What Web Media Can Learn from Print'
 tags: ['Death of Print?', 'future-of-reading', 'ipad', 'user-experience', 'web-design']
 categories: ['Book Futurism', 'culture']

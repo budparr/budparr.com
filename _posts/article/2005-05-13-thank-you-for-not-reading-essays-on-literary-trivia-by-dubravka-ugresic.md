@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Thank You for Not Reading: Essays on Literary Trivia, by Dubravka Ugresic'
 categories: ['literature']
 ---

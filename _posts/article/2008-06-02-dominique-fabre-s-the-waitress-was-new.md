@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Dominique Fabre’s The Waitress Was New'
 categories: ['literature']
 ---

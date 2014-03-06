@@ -1,6 +1,6 @@
 ---
-layout: post
-title: '"Take the scenic route to knowledge" - On Brewer's Dictionary of Phrase & Fable'
+layout: page
+title: "'Take the scenic route to knowledge' - On Brewer's Dictionary of Phrase & Fable"
 tags: ['books-as-object', 'dictionaries']
 categories: ['literature', 'culture']
 ---

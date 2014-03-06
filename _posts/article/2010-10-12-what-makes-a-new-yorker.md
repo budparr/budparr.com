@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'What Makes a New Yorker?'
 tags: ['new-york-city']
 categories: ['personal']

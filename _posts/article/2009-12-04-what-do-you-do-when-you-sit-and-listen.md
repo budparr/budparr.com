@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'What Do You Do When You Sit and Listen?'
 categories: ['culture']
 tags: ['video']

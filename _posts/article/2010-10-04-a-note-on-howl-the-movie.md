@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'A Note on Howl, the Movie'
 tags: ['allen-ginsberg', 'banned-books', 'howl', 'james-franco', 'video']
 categories: ['Culture at Large']

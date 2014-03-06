@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'History Lessons'
 categories: ['Culture at Large']
 ---

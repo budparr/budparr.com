@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: '#FridayReads - Incantation by Laughter and The Thing Around Your Neck'
 categories: ['literature']
 ---

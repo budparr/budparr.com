@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Obama, Dylan'
 tags: ['bob-dylan', 'obama']
 categories: ['Culture at Large']

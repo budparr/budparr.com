@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Wholly Communion, 1965'
 categories: ['culture']
 tags: ['video']

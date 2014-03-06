@@ -1,47 +1,14 @@
 <aside class="sidebar-right">
-	{% if page.url contains '/journalism/' %}
-		<section class="entry">
-			<p><small>Filters: </small></p>
-			{% for link in site.data.writingCats %}
-				<button class="button button-default tiny" id="filter-{{link.catName}}">
-					{{link.name}}
-				</button><br /><br />
-			{% endfor %}
-			<small id="filter-none">
-					<a href="javascript:;">clear filters</a>
-				</small>
-		</section>
-	{% elsif page.isbn %}
+		
+	
 		<section>
-			{% include books/buy_links.html %}
-			<hr />
-			{% include books/meta.html %}
-		</section>
-	{% else %}
-		<section>
-		<ul class="posts">
-			<li><strong>Recent Writings</strong></li>
-			{% for writing in site.data.writing limit:5 %}
-				<li>{{ writing.title }}<br />							
-					<small class="publication">
-					{{ writing.date | date: "%b %d, %Y" }}
-						{% if writing.link_to_original %}
-							<a href="{{writing.link_to_original}}">
-								<em>
-									{{ writing.publication | sort}}
-									</em>
-								</a>
-							<a href="{{writing.link_to_original}}" class="ss-redirect"></a>
-						{% else %}
-							<em>
-								{{ writing.publication | sort}}
-							</em>
-						{% endif %}
-					</small>
-				</li>
-			{% endfor %}
-		</ul>
+			{% include widgets/postCategoryList.html %}
+
+{% include widgets/postTagList.html %}
+
+
+{% include widgets/categoryList.html %}
+
 	</section>
-{% endif %}
 {% include global/footer.html %}
 </aside>			

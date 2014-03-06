@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Your Face Tomorrow: Dance and Dream, by Javier Marias'
 categories: ['Book Review']
 ---

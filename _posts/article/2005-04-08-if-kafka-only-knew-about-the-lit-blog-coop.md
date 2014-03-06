@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'If Kafka Only Knew About The Lit-blog Coop'
 categories: ['culture']
 ---

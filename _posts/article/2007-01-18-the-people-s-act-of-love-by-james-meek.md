@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'The People’s Act of Love, by James Meek'
 categories: ['Book Review']
 ---

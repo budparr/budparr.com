@@ -1,6 +1,6 @@
 ---
-layout: post
-title: 'Make it New, or At Least Know that You're Not: The Problem with MFAs'
+layout: page
+title: "Make it New, or At Least Know that You're Not: The Problem with MFAs"
 categories: ['culture']
 ---
 <div>

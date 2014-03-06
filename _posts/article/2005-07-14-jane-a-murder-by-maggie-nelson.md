@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Jane {a murder}, by Maggie Nelson'
 categories: ['literature']
 ---

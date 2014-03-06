@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: '"The Black Minutes" at the PEN World Voices Festival'
 categories: ['literature', 'culture']
 ---

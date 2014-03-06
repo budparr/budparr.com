@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Mixing Future and Past Dated Entries in Wordpress, with Date-based Filters'
 tags: ['Wordpress']
 categories: ['Development']

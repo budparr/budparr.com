@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'This is How Stories are Told Today'
 categories: ['Culture']
 tags: ['video']

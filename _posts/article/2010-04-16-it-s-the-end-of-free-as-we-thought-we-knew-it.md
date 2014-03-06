@@ -1,6 +1,6 @@
 ---
-layout: post
-title: 'It's the End of Free As We Thought We Knew It'
+layout: page
+title: "It's the End of Free As We Thought We Knew It"
 tags: ['37-signals', 'content', 'free', 'user-experience']
 categories: ['Book Futurism', 'culture']
 ---

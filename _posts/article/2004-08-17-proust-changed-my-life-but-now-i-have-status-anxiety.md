@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Proust Changed My Life, But Now I have Status Anxiety'
 categories: ['literature']
 ---

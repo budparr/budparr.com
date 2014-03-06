@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Treesaver is Fabulous'
 categories: ['Design']
 ---

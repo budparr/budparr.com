@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Making Ebooks is as Easy as Blogging: My Instapaper(book) on Paul Muldoon'
 categories: ['Book Futurism']
 ---

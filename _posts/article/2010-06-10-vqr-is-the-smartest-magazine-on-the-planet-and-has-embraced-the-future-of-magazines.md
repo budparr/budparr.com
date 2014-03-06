@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'VQR is the Smartest Magazine on the Planet and Has Embraced the Future of Magazines'
 categories: ['culture']
 ---

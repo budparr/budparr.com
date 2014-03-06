@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Where We Find Music, 0.1'
 tags: ['fellini', 'roger-ebert']
 categories: ['Culture at Large']

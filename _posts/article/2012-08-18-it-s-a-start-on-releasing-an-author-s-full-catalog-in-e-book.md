@@ -1,6 +1,6 @@
 ---
-layout: post
-title: 'It's a Start. On Releasing an Author's Full Catalog in E-book.'
+layout: page
+title: "It's a Start. On Releasing an Author's Full Catalog in E-book."
 categories: ['Book Futurism']
 tags: ['video']
 ---

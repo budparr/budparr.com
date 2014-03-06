@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Cooperation without Coordination'
 categories: ['Book Futurism']
 tags: ['video']

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'A Tale of Two Lit-site Redesigns: The Paris Review and NY Review of Books'
 categories: ['Design']
 ---

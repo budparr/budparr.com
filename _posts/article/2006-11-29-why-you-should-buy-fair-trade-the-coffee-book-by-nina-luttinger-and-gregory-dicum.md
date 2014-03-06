@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Why You Should Buy Fair Trade: The Coffee Book, by Nina Luttinger and Gregory Dicum'
 categories: ['literature']
 ---

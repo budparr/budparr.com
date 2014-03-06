@@ -1,10 +1,3 @@
 -
- name: News
- slug: news
-
--
- name: Journalism
- slug: journalism
--
- name: "<em>The Lost Chalice</em>"
- slug: book/the-lost-chalice
+ name: About
+ slug: about

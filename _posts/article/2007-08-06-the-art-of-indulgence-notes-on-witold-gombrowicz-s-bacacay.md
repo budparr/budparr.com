@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'The Art of Indulgence: Notes on Witold Gombrowicz’s Bacacay'
 categories: ['literature']
 ---

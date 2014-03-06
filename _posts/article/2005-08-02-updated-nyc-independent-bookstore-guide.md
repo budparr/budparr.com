@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Updated NYC Independent Bookstore Guide'
 categories: ['literature', 'culture']
 ---

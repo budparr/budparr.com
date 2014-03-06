@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Update on New York City Independent Bookstores'
 categories: ['literature', 'culture']
 ---

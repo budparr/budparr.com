@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'We’re All a Little Mad: Final Thoughts on Don Quixote'
 categories: ['literature']
 ---

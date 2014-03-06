@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'How do you feel about publication in electronic form?'
 categories: ['Book Futurism']
 ---

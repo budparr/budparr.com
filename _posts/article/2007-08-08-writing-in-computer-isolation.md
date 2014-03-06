@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Writing in (computer) Isolation'
 tags: ['apple-macbook', 'isolation', 'technology-influences', 'user-experience', 'writing']
 categories: ['Book Futurism']

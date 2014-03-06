@@ -1,6 +1,6 @@
 ---
-layout: post
-title: 'A Jazz Lexicon - "A unique and rebellious way of speaking..."'
+layout: page
+title: "A Jazz Lexicon - 'A unique and rebellious way of speaking...'"
 tags: ['books', 'jazz', 'language']
 categories: ['literature', 'culture']
 ---

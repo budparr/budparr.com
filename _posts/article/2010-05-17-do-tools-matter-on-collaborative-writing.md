@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Do Tools Matter? On Collaborative Writing'
 tags: ['bookoven', 'etherpad', 'everyday-genius', 'matt-bell', 'meetingwords', 'penguin-uk', 'projects', 'writing']
 categories: ['Book Futurism']

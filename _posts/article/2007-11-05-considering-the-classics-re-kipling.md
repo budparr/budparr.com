@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Considering the Classics: re Kipling'
 categories: ['culture']
 ---

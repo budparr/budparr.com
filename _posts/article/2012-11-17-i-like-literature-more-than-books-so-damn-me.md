@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'I Like Literature more than Books, so Damn Me'
 categories: ['Ebooks']
 ---

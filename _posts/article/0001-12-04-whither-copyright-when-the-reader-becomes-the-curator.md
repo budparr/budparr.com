@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Whither Copyright when the Reader Becomes the Curator?'
 categories: ['culture']
 ---

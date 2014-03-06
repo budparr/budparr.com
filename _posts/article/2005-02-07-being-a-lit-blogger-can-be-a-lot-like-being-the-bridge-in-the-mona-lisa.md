@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Being a lit-blogger can be a lot like being the bridge in the Mona Lisa'
 categories: ['culture']
 ---

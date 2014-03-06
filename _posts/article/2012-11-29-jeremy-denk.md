@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Jeremy Denk'
 categories: ['Music']
 tags: ['video']

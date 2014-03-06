@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Quartz and the New The New Republic'
 tags: ['Tablets', 'Magazines', 'Typography']
 categories: ['Design']

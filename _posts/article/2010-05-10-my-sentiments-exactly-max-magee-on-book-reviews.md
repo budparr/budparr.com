@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'My sentiments exactly: Max Magee on Book Reviews'
 tags: ['book-culture', 'content', 'reviewing']
 categories: ['Book Futurism', 'culture']

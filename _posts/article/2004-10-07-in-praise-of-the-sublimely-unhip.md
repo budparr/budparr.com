@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'In Praise of the Sublimely Unhip'
 categories: ['literature', 'culture']
 ---

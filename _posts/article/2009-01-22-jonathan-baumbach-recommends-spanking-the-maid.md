@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Jonathan Baumbach Recommends “Spanking the Maid”'
 categories: ['culture']
 ---

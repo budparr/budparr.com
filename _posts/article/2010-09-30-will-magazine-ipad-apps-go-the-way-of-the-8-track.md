@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Will Magazine iPad Apps Go the Way of the 8-track?'
 tags: ['gourmet-magazine', 'ipad', 'maclife', 'national-geographic-magazine', 'reading', 'tablet-computers', 'the-new-yorker', 'zinio']
 categories: ['Book Futurism', 'Design']

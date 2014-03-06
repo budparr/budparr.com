@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'My Life in CIA, by Harry Mathews'
 categories: ['Book Review']
 ---

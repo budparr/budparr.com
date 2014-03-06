@@ -1,6 +1,6 @@
 ---
-layout: post
-title: 'Can We Trust (Poetry) Ebooks? - The Case of Allen Ginsberg's Collected Poems'
+layout: page
+title: "Can We Trust (Poetry) Ebooks? - The Case of Allen Ginsberg's Collected Poems"
 tags: ['allen-ginsberg', 'amazon-kindle', 'apple-ibooks', 'bn-nook', 'design', 'e-book-production', 'e-books', 'epub', 'ipad', 'jorie-graham', 'kobo']
 categories: ['Book Futurism']
 ---

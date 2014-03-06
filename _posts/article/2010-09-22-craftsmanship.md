@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Craftsmanship'
 tags: ['losses', 'technology', 'video']
 categories: ['Culture at Large']

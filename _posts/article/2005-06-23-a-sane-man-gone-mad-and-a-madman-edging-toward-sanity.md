@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: '“A Sane Man Gone Mad and a Madman Edging Toward Sanity”'
 categories: ['literature', 'culture']
 ---

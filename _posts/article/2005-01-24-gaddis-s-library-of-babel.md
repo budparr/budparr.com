@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Gaddis’s Library of Babel'
 categories: ['literature', 'culture']
 ---

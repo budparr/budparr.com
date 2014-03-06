@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'iPad Kitsch'
 tags: ['design', 'ipad', 'kitsch']
 categories: ['Book Futurism', 'culture']

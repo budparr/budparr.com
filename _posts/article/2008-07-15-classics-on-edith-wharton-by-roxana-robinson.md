@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Classics: On Edith Wharton by Roxana Robinson'
 categories: ['culture']
 ---

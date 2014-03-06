@@ -9,19 +9,16 @@ $sidebar-right-width: 20% !default;
 $sidebar-left-breakpoint: $d-vp !default;
 $sidebar-right-breakpoint: $e-vp !default;
 
-$sidebar-color-background: #333 !default;
+$sidebar-color-background: #ccc !default;
 $sidebar-color: #CCC !default;
 
-$sidebar-right-color-background: #f6f6f6 !default;
+$sidebar-right-color-background: #fff !default;
 $sidebar-right-color: #555 !default;
 
 
 // =============== LEFT SIDEBAR ===============
 
 @if $include-sidebar-left != false {
-    
-    
-
     .content {
         min-width: 0;
         margin-left: 0;  
@@ -126,7 +123,8 @@ $sidebar-right-color: #555 !default;
 
         text-align: center;
         padding: 2rem 2rem;
-        background-color: $sidebar-color-background;  
+        background-color: $sidebar-color-background; 
+        text-align: center !important; 
         color: $sidebar-color;
 
               /* Sidebar nav */
@@ -142,7 +140,7 @@ $sidebar-right-color: #555 !default;
               .sidebar-nav-item:hover,
               .sidebar-nav-item:focus {
                 text-decoration: underline;
-                background-color: #000;//darken($sidebar-color-background, 25%);
+                //background-color: #000;//darken($sidebar-color-background, 25%);
               }
               .sidebar-nav-item.active a {
                 //font-weight: bold;

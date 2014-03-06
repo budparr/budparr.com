@@ -1,6 +1,6 @@
 ---
-layout: post
-title: 'The Poet's Voice'
+layout: page
+title: "The Poet's Voice"
 categories: ['culture']
 ---
 

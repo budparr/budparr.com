@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: 'Most Things Underground Tend to Surface'
 categories: ['literature', 'culture']
 ---

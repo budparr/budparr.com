@@ -14,7 +14,7 @@ article.hentry {
     }
     
     @include respond-to($c-vp, $IE9: false) { 
-    	padding: 2rem 16rem 2rem 6rem;
+    	padding: 2rem 6rem;
     }
 
     h1 {

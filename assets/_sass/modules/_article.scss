@@ -21,8 +21,8 @@ article.hentry {
     @extend .as-heading__headline;
     @extend .as-heading__headline--typeset;
     color: #666;
-    @extend .font-var;
-    font-weight: 300;
+    @extend .font-display;
+    
 }
 
 h2 {
@@ -46,7 +46,9 @@ article h5 {
 
 }
 
-
+aside {
+ @extend .font-var; 
+}
 small {
  //@extend .as-heading__smallest;
  @include adjust-font-size-to($kappa);   
@@ -56,7 +58,7 @@ small {
 
 p {
   @extend .as-para--typeset; //add-ons _module-typeset 
-  text-align: justify;
+  //text-align: justify;
 }
 
 blockquote {

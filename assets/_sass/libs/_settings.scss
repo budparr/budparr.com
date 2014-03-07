@@ -45,18 +45,20 @@ $al-green 							: #95b2b2;
 $beige-ruth 						: #f5f0e0;
 $agent-orange 						: #c64f24;
 $betty-blue 						: #a8d9f4;
+$berry-shake: #9c4a56;
+$kind-of-blue: #2e6f8e;
 
 
 // Assign colours to variable roles
 // Be descriptive without being specific. 
 // This allows for consistency project to project, and easy changing
 
-$body-color 						: #e4e4e4;//$macy-grey;//#fff;
+$body-color 						:#f4f4f4;// #e4e4e4;//$macy-grey;//#fff;
 $base-color							: #5e5e5e;//$macy-grey;//$jack-black;
 $heading-color						: $jack-black;
 $hightlight-color 					: $betty-blue;
 
-$action								: $agent-orange;
+$action								: $berry-shake;
 $action-respond						: $al-green;
 
 
@@ -115,12 +117,12 @@ $include-sidebar-left: true;
 $include-sharing-grayscale: true;
 $footer-sticky:false;
 // =============== COLORS ===============
-$sidebar-width: 27%;
+$sidebar-width: 15%;
 
-$sidebar-color-background: #9c4a56;//#f6f6f6;//#1f1f1f;
+$sidebar-color-background: #191919;//#9c4a56;//#f6f6f6;//#1f1f1f;
 $sidebar-color: #8a8a8a;
 
-$sidebar-right-width: 27% !default;
-$sidebar-right-color-background:darken($body-color, 5%);// #2d393e;//#f6f6f6;//#f5f5f5;
+$sidebar-right-width: 25% !default;
+$sidebar-right-color-background:darken($body-color, 1%);// #2d393e;//#f6f6f6;//#f5f5f5;
 $sidebar-right-color: #444;
 

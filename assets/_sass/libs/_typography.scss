@@ -7,7 +7,7 @@
 // Fonts
 // ------------------------------------------------------------
 //@import url(http://fonts.googleapis.com/css?family=Lora:400,700|);
-//@import url(http://fonts.googleapis.com/css?family=Lato:300,300italic|Lora:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,300italic);
 //@import url(http://fonts.googleapis.com/css?family=Lato:300,300italic|Lora:400,400italic|PT+Serif:400,400italic);
 
 
@@ -21,8 +21,8 @@ font-family: 'Mercury SSm A', 'Mercury SSm B'; font-weight: 700; font-style: nor
 
 
 .font-var 					{  
-font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B'; font-weight: 500; font-style: normal;
-	//font-family: Lora, 'Open Sans', "Helvetica Neueue", Helvetica, Verdana, Arial, sans-serif, sans-serif; 
+//font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B'; font-weight: 500; font-style: normal;
+	font-family: Lato, 'Open Sans', "Helvetica Neueue", Helvetica, Verdana, Arial, sans-serif, sans-serif; 
 //font-family: 'PT Serif', Georgia, "Droid Serif" serif; 
 //font-family: 'Mercury SSm A', 'Mercury SSm B'; font-weight: 700; font-style: normal;
 
@@ -47,4 +47,3 @@ ol 													{ @include nobullet; }
 li 													{ line-height: inherit; }					
 strong, b 											{ font-weight: 700; }
 em, i, q 											{ font-style: italic; }
-p {text-indent: 1rem;}

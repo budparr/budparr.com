@@ -14,7 +14,7 @@ article.hentry {
     }
     
     @include respond-to($c-vp, $IE9: false) { 
-    	padding: 2rem 12.2rem;
+    	padding: 2rem 16rem 2rem 6rem;
     }
 
     h1 {
@@ -56,6 +56,7 @@ small {
 
 p {
   @extend .as-para--typeset; //add-ons _module-typeset 
+  text-align: justify;
 }
 
 blockquote {

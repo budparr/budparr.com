@@ -89,7 +89,7 @@ body.book hr {
 }
 
 .searchbox {margin:2em 0;}
-
+@include respond-to-min-max($sidebar-left-breakpoint, $sidebar-right-breakpoint, $IE9: false) {
 .sidebar-left h1 {
 	-moz-transform: rotate(-90deg);
 -webkit-transform: rotate(-90deg);
@@ -98,6 +98,7 @@ body.book hr {
 transform: rotate(-90deg);
 margin-top: 2em;
 margin-bottom: 2em;
+}
 }
 
 .sidebar-left h1 a {

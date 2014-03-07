@@ -137,6 +137,15 @@
     	<section class="content">  
       	<article class="hentry">
   <header>
+    
+      <div style="text-align:right;margin-bottom:1em;">
+        <small class="button">
+          <a href="#series">
+            See other articles in this series
+          </a>
+        </small>
+      </div>
+    
     <h1 class="entry-title">
       Being a lit-blogger can be a lot like being the bridge in the Mona Lisa
     </h1>
@@ -273,7 +282,9 @@ http://prose.io/#budparr/vernonsilver/new/gh-pages/_posts
 		
 	
 		<section>
-			<aside>
+			
+
+<aside id="series">
 
 
 
@@ -1041,6 +1052,22 @@ http://prose.io/#budparr/vernonsilver/new/gh-pages/_posts
 		
 
 
+<script type="text/javascript">
+//control widows, ala www.css-tricks.com/preventing-widows-in-post-titles/
+$("h1, h2, h3, h4, h5, h6").each(function() {  
+  var wordArray = $(this).text().split(" ");
+  if (wordArray.length > 1) {
+    wordArray[wordArray.length-2] += "&nbsp;" + wordArray[wordArray.length-1];
+    wordArray.pop();
+    $(this).html(wordArray.join(" "));
+  }
+});
 
+
+
+
+
+
+</script>
   </body>
 </html>

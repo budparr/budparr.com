@@ -1,5 +1,14 @@
 <article class="hentry">
   <header>
+    {% if page.tags %}
+      <div style="text-align:right;margin-bottom:1em;">
+        <small class="button">
+          <a href="#series">
+            See other articles in this series
+          </a>
+        </small>
+      </div>
+    {% endif %}
     <h1 class="entry-title">
       {{page.title}}
     </h1>

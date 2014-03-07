@@ -21,7 +21,7 @@ article.hentry {
     @extend .as-heading__headline;
     @extend .as-heading__headline--typeset;
     color: $kind-of-blue;
-    //@extend .font-display;
+    @extend .font-display;
     
 }
 
@@ -44,12 +44,33 @@ article h5 {
     @extend .as-heading__small--typeset;
 }    
 
+
+p:first-child, 
+h1 + p, 
+h2 + p, 
+h3 + p, 
+h4 + p, 
+h5 + p, 
+h6 + p, 
+hr + p
+{
+  text-indent: 0;
+ }
+
+
 }
 
 aside.sidebar-right {
  @extend .font-var; 
  font-size: $iota;
+
 }
+
+// .tagsNote {
+// background-color: rgba(45,126,165,0.8);
+//  color: #FFF;
+//  padding: 1em;
+// }
 small {
  //@extend .as-heading__smallest;
  @include adjust-font-size-to($kappa);   
@@ -58,11 +79,15 @@ small {
 
 
 p {
-  @extend .as-para--typeset; //add-ons _module-typeset 
+  //@extend .as-para--typeset; //add-ons _module-typeset 
   //text-align: justify;
 }
-//p {text-indent: 1rem;}
+p {
+text-indent: 1.5rem;
+ }
 
+
+ 
 blockquote {
 	@extend .is-typeset;
 }

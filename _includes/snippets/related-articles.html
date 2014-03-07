@@ -1,4 +1,6 @@
-<aside>
+
+{% if page.tags %}
+<aside id="series">
 {% assign count = '0' %}
 {% assign idx = '0' %}
 {% for post in site.posts reversed %}
@@ -30,5 +32,5 @@
 		</ul>
 	</div>
 </aside>
-
+{% endif %}
 

@@ -103,12 +103,10 @@ margin-bottom: 2em;
 
 .sidebar-left h1 a {
 	color: $kind-of-blue;
-	-moz-transform: rotate(-90deg);
--webkit-transform: rotate(-90deg);
--o-transform: rotate(-90deg);
--ms-transform: rotate(-90deg);
-transform: rotate(-90deg);
+
 }
+
+
 
 /* ::Import styles */
 /* ------------------------------------------------------------ */
@@ -120,6 +118,9 @@ transform: rotate(-90deg);
 //@import "libs/forms";						// Forms
 @import "add-ons/module-typeset"; 			// Specific typesetting
 //@import "add-ons/grid"; 					// Grid system
+h2, h3, h4, h5 {
+  margin-top: 2em;
+}
 
 
 $grids: 3;

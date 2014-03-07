@@ -90,8 +90,23 @@ body.book hr {
 
 .searchbox {margin:2em 0;}
 
+.sidebar-left h1 {
+	-moz-transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+transform: rotate(-90deg);
+margin-top: 2em;
+margin-bottom: 2em;
+}
+
 .sidebar-left h1 a {
 	color: $kind-of-blue;
+	-moz-transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+transform: rotate(-90deg);
 }
 
 /* ::Import styles */

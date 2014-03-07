@@ -11,7 +11,8 @@
 {% endfor %}
 
 	<div class="tagsNote">
-		<p>This article is <strong>Part {{ idx }}</strong> in a <strong>{{ count }}-Part</strong> Series: "{{page.tags}}"</p>
+		<h4>{{page.tags}}</h4>
+		<p>This article is Part {{ idx }} in a {{ count }}-Part Series</p>
 		<ul>
 		{% assign count = '0' %}
 		{% for post in site.posts reversed %}
@@ -19,7 +20,7 @@
 			{% capture count %}{{ count | plus: '1' }}{% endcapture %}
 			<li>Part {{ count }} - 
 			{% if page.url == post.url %}
-				This Article
+				{{post.title}}
 			{% else %}
 				<a href="{{post.url}}">{{post.title}}</a>
 			{% endif %}

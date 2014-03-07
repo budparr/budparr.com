@@ -1,0 +1,671 @@
+  <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+          
+        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+      
+
+      <meta name="HandheldFriendly" content="True">
+      <meta name="MobileOptimized" content="320">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+              <!-- TODO: make correct URL for rss -->
+      <link rel="alternate" type="application/rss+xml" href="/rss" title="RSS Feed">
+      
+      <title> Mixing Future and Past Dated Entries in Wordpress, with Date-based Filters -  budparr</title>
+      
+        <link rel="canonical" href="/article/2013/03/10/mixing-future-and-past-dated-entries-in-wordpress-with-date-based-filters/" />    
+      
+      
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+          <!-- Stylesheets -->
+
+      
+        <link href='/assets/css/screen.css?14022509211 ' rel='stylesheet' type="text/css" />
+      
+
+      
+
+      
+      
+            <!-- TODO: add og, twitter card -->
+    
+
+    <meta name="description" content="">
+
+
+  
+  <meta content="article" property="article:section">
+  
+
+
+  
+  <meta content="Static Site Generators" property="article:tag">
+  
+
+
+<!-- Here’s the final snippet of code with the appropriate meta data: -->
+
+<meta content="" property="og:site_name">
+
+  <meta content="Mixing Future and Past Dated Entries in Wordpress, with Date-based Filters" property="og:title">
+
+
+  <meta content="article" property="og:type">
+
+
+  <meta content="Designer, Developer" property="og:description">
+
+
+  <meta content="/article/2013/03/10/mixing-future-and-past-dated-entries-in-wordpress-with-date-based-filters/" property="og:url">
+
+
+  <meta content="2013-03-10T00:00:00-05:00" property="article:published_time">
+  <meta content="/about/" property="article:author">
+
+
+  <meta content="/assets/img/logo-high-resolution.png" property="og:image">
+
+
+  
+  <meta content="article" property="article:section">
+  
+
+
+  
+  <meta content="Static Site Generators" property="article:tag">
+  
+
+
+
+      <!--[if lt IE 9]>
+        <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('article');
+          document.createElement('aside');
+          document.createElement('footer');
+        </script>
+        <script src="/assets/js/html5shiv.js"></script>
+        <script src="/assets/js/respond.js"></script>
+      <![endif]-->
+
+      <!--[if lte IE 7]>
+        <link rel="stylesheet" media="all" href="http://universal-ie6-css.googlecode.com/files/ie6.0.3.css">
+      <![endif]-->
+
+    
+
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7044452/646584/css/fonts.css" />
+    
+  </head>
+
+	<body class="article">
+  	<div class="wrapper">
+    	<aside class="sidebar-left">
+		<h1>
+			<a href="/">
+      	budparr    	
+    	</a>
+    </h1>
+    Designer, Developer
+  <hr />  
+		  <ul class="nav">
+  <a href="/"><li class="sidebar-nav-item">Home</li></a>
+
+	<a href="/about/">
+		<li id="about" class="sidebar-nav-item">
+			About
+		</li>
+	</a>	
+
+</ul>
+  <hr />
+
+
+
+  <a href="https://twitter.com/budparr">
+    <span class="screen-reader-text">Twitter</span>
+    <i class="fa fa-twitter-square fa-lg icon-twitter-squared"></i>
+  </a>
+
+
+</aside>
+    	<section class="content">  
+      	<article class="hentry">
+  <header>
+    <h1 class="entry-title">
+      Mixing Future and Past Dated Entries in Wordpress, with Date-based Filters
+    </h1>
+    
+    
+      <time class='date' datetime="2013-03-10">
+        <small>
+          Sunday Mar 10, 2013
+        </small>
+      </time>
+    
+  </header>
+
+  <div class="entry-content prose">
+
+    
+    <p>We build web properties for publishers who are often promoting books that are not yet published. In Wordpress we treat the publish date of an entry as the publish date of the book. This presents a few problems in Wordpress showing yet-to-be-published entries, but we’ve been able to solve them with filters. Action hooks and filters are the most powerful feature of Wordpress, in my view. Used concisely and judiciously, they give you great control over how your content is displayed.</p>
+
+<p>For a recent project for <a title="The Website of Bellevue Literary Press" href="http://blpress.org">Bellevue Literary Press</a> we wanted to display the client’s books mixed in various ways based on the following rules:</p>
+<ol>
+	<li>We have room for 9 books total in 3 locations. </li>
+	<li>Location #1 shows 1 book: the most recently published.</li>
+	<li>Location #2 shows 2 books, recently published, not including the book displayed in location #1 (solved with a simple "'offset' =&gt; 1")</li>
+	<li>Location #3 show up to 6 books, if there are any, that will be published in the next 7 months.</li>
+	<li>Location #3 - If there are fewer than 6 books that meet the criteria in previous rule, then, and only then, we want to show the most recently published books that were not included in locations #1 or 2</li>
+</ol>
+<p><img class="aligncenter size-full wp-image-4051" alt="Bellevue-Literary-Press-_-Bellevue-Literary-Press" src="http://budparr.com/assets/img/uploads/2013/03/Bellevue-Literary-Press-_-Bellevue-Literary-Press.jpg" width="700" height="758" /></p>
+
+<p>The first two locations are handled simply with an offset rule, so we’ll skip to location 3.</p>
+
+<p><strong>First, create a function to define our date filter*:</strong></p>
+<pre><code>
+function filter_where( $where = '' ) {
+// posts from X to Y days 
+   $where .= " AND post_date &gt;= '" . date('Y-m-d', strtotime('0 days')) . "'" . "
+               AND post_date &lt;= '" . date('Y-m-d', strtotime('210 days')) . "'";
+     return $where;
+}
+</code></pre>
+<p>The structure of this function gives me a bit of flexibility because when I wrote the code for this section I didn’t know what the specific time constraints would be. You can google for other ways to set your date parameters.</p>
+
+<p><strong>Apply the function in a filter just before our query:</strong></p>
+
+<p>source: <a href="http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_where">Filter Reference/posts_where</a></p>
+<pre><code>add_filter( 'posts_where', 'filter_where' );
+
+$books_forthcoming_args = array(
+       'post_type' =&gt; 'product',
+       'posts_per_page' =&gt; 6,
+       'orderby' =&gt; 'date',
+       'order' =&gt; 'asc',
+       'meta_key' =&gt; '_thumbnail_id',
+        'post_status' =&gt; 'future'
+               ) ;
+ $books_forthcoming = new WP_Query( $books_forthcoming_args );
+</code></pre>
+<p><em>aside: note that I wanted to only show books that had a thumbnail image, so added “‘meta_key’ =&gt; ‘_thumbnail_id’,” to my parameters.</em></p>
+
+<p><strong>Do a little math:</strong></p>
+<pre><code>$forthcoming_count = $books_forthcoming-&gt;post_count;
+$books_remaining = 6 - $forthcoming_count;
+</code></pre>
+<p>The first line gives me a count of the results in the $books_list query.</p>
+
+<p>The second line gives me my count of the total number of books I want to show, less the number of books I am showing with this query.</p>
+
+<p><strong>I needed to manipulate my header based on results, so add this sort of rule to header:</strong></p>
+<pre><code>&lt;h3&gt;Recent&lt;?php if ( $forthcoming_count &gt; 0 ){ echo ' &amp; Forthcoming'; } ?&gt; Titles&lt;/h3&gt;
+</code></pre>
+<p><strong style="line-height: 1.714285714; font-size: 1rem;">Display posts in the usual fashion, then remove filter</strong></p>
+<pre><code>remove_filter( 'posts_where', 'filter_where' );  
+</code></pre>
+<p> </p>
+
+<p><strong>Set up the second query using our $books_remaining variable to determine the number of books to show.</strong></p>
+<pre><code>     $books_recent_args = array(
+     'posts_per_page' =&gt; $books_remaining,
+     'offset' =&gt; 3,
+     'orderby' =&gt; 'date',
+     'order' =&gt; 'desc',
+     'post_status' =&gt; 'publish'
+     );
+</code></pre>
+<p>“‘posts_per_page’ =&gt; $books_remaining,” uses my earlier math to show the total number of slots available less the number of books shown in the first query.</p>
+
+<p>“‘offset’ =&gt; 3,” - accounting for the books I showed in locations #1 and 2.</p>
+
+<p>“‘post_status’ =&gt; array( ‘publish’ )” - only currently published books, please.</p>
+
+<p><strong>Display Posts as usual.</strong></p>
+
+<p>If you have any thoughts or comments on this, by all means, drop a note.</p>
+
+    
+  </div>
+  <div class="sharing">
+   
+<!-- AddThis Button BEGIN not using addthis_32x32_style -->
+<div class="addthis_toolbox addthis_default_style addthis_default_style" addthis:url="/article/2013/03/10/mixing-future-and-past-dated-entries-in-wordpress-with-date-based-filters/" addthis:title="Mixing Future and Past Dated Entries in Wordpress, with Date-based Filters">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_compact"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52e194380e6e5e78"></script>
+<!-- AddThis Button END -->
+
+
+    
+
+
+
+
+  </div>  
+
+
+      <div class="edit-article" style="text-align:right;clear:both;margin-top:2em;">
+
+
+
+
+
+	<small>
+		<a href="http://prose.io/#budparr/budparr.github.io/edit/master/article/_posts/2013-03-10-mixing-future-and-past-dated-entries-in-wordpress-with-date-based-filters.md" target="_blank">
+			<span class="screen-reader-text">Edit This Page</span>
+			<i class="fa fa-pencil-square-o icon-edit"></i>
+		</a>
+	</small>
+
+
+
+
+
+</div>
+<!-- 
+
+<a href="https://twitter.com/budparr">
+    <span class="screen-reader-text">Twitter</span>
+    <i class="fa fa-twitter-square fa-lg icon-twitter-squared"></i>
+  </a>
+
+
+
+https://github.com/budparr/vernonsilver
+http://prose.io/#budparr/vernonsilver 
+
+
+http://prose.io/#budparr/vernonsilver/edit/gh-pages/_posts/2010-12-31-lost-chalice.md
+http://prose.io/#budparr/vernonsilver/edit/gh-pages/_posts/2010-12-31-lost-chalice.md
+
+
+
+<small>
+		<a class="" href="http://prose.io/#budparr/budparr.github.io/new/master/article/_posts/2013-03-10-mixing-future-and-past-dated-entries-in-wordpress-with-date-based-filters.md">
+			edit this page
+		</a>
+	</small>
+
+http://prose.io/#budparr/vernonsilver/new/gh-pages/_posts
+-->
+  
+</article>
+
+
+    	</section>
+      <aside class="sidebar-right">
+		
+	
+		<section>
+			<aside>
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+			
+		
+	
+
+	
+
+	
+		
+		
+	
+
+
+	<div class="tagsNote">
+		<p>This article is <strong>Part 1</strong> in a <strong>2-Part</strong> Series: "Static Site Generators"</p>
+		<ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			<li>Part 1 - 
+			
+				This Article
+			
+			</li>
+		
+		
+		
+		
+		
+			
+			<li>Part 2 - 
+			
+				<a href="/article/2014/03/06/static-site-generators-introduction/">Seeking Performance from your website? Skip the database</a>
+			
+			</li>
+		
+		
+		</ul>
+	</div>
+</aside>
+
+
+
+
+
+	</section>
+
+<div class="push bg"></div>
+<footer id="content-info">
+  <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul class="no-bullet">
+      <li class="source-org vcarfd copyright">
+        <a href="">&copy; 2014 <span class="org fn">budparr</span></a>
+      </li> 
+      <li><a href="http://sonnetmedia.net">site by sonnet media</a></li>   
+    </ul>
+  </div>
+</footer>
+
+
+</aside>			
+			
+  	<div>
+		
+
+
+
+  </body>
+</html>

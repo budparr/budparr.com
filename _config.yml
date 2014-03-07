@@ -13,9 +13,9 @@ branch: master
 # Permalinks
 permalink:  pretty
 # Dependencies
-markdown: redcarpet
-redcarpet:
-  extensions: ['autolink', 'smart']
+markdown: kramdown
+#redcarpet:
+# extensions: ['autolink', 'smart']
 pygments: true
 #Pages - store all pages in the _pages directory
 include: ['_pages']

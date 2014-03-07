@@ -9,7 +9,7 @@ $sidebar-right-width: 20% !default;
 $sidebar-left-breakpoint: $d-vp !default;
 $sidebar-right-breakpoint: $e-vp !default;
 
-$sidebar-color-background: #ccc !default;
+$sidebar-color-background: #333 !default;
 $sidebar-color: #CCC !default;
 
 $sidebar-right-color-background: #fff !default;
@@ -47,7 +47,7 @@ $sidebar-right-color: #555 !default;
           position: fixed;
           top: 0;
           left: 0;
-          overflow-y: scroll;
+          overflow: visible;
           -webkit-overflow-scrolling: touch;
         }
     }

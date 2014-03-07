@@ -14,10 +14,13 @@ $include-sidebar-left: true;
 $include-sharing-grayscale: true;
 $footer-sticky:false;
 // =============== COLORS ===============
+//$sidebar-width: 10%;
 
-$sidebar-color-background: #333;//#1f1f1f;
+$sidebar-color-background: #f6f6f6;//#1f1f1f;
 $sidebar-color: #8a8a8a;
-$sidebar-right-color-background: #fcfcfc;//#f5f5f5;
+
+//$sidebar-right-width: 10% !default;
+$sidebar-right-color-background: #f6f6f6;//#f5f5f5;
 $sidebar-right-color: #444;
 
 
@@ -50,7 +53,7 @@ $start-columns 						: $b-vp;
 
 // Define your main colour palette using whatever naming system you like
 $jack-black							: #333;
-$macy-grey							: #777;	
+$macy-grey							: #555;	
 $ron-burgundy 						: #e0006e;
 $al-green 							: #95b2b2;
 $beige-ruth 						: #f5f0e0;
@@ -62,8 +65,8 @@ $betty-blue 						: #a8d9f4;
 // Be descriptive without being specific. 
 // This allows for consistency project to project, and easy changing
 
-$body-color 						: #fff;
-$base-color							: $jack-black;
+$body-color 						: $macy-grey;//#fff;
+$base-color							: #f6f6f6;//$macy-grey;//$jack-black;
 $heading-color						: $jack-black;
 $hightlight-color 					: $betty-blue;
 

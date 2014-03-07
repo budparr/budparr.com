@@ -1,6 +1,6 @@
 article.hentry {
     
-    padding: 1rem;
+    padding: 1.5rem;
     margin:auto;
     max-width: $d-vp;
     //min-height: $c-vp;
@@ -14,12 +14,15 @@ article.hentry {
     }
     
     @include respond-to($c-vp, $IE9: false) { 
-    	padding: 4rem;
+    	padding: 2rem 12.2rem;
     }
 
     h1 {
     @extend .as-heading__headline;
     @extend .as-heading__headline--typeset;
+    color: #666;
+    @extend .font-var;
+    font-weight: 300;
 }
 
 h2 {
@@ -27,12 +30,7 @@ h2 {
     @extend .as-heading__large--typeset;
 }    
 
-h3 {
-    @extend .as-heading__large;
-    @extend .as-heading__large--typeset;
-}    
-
-h4 {
+h3, h4 {
     @extend .as-heading__normal;
     @extend .as-heading__normal--typeset;
 }    
@@ -88,4 +86,21 @@ hr {
   position: absolute;
   top: -9999px;
   left: -9999px;
+}
+
+sup, sub {
+  @include adjust-font-size-to($kappa);   
+   vertical-align: baseline;
+   position: relative;
+   top: -0.4em;
+}
+sub { top: 0.4em; }
+
+.footnotes li {
+@extend small;
+
+}
+
+.sharing {
+  margin-top: 4em;
 }

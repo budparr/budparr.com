@@ -1,31 +1,10 @@
 {% if site.use_jquery == true %}
 	<!-- scripts -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="{{site.baseurl}}/assets/js/jquery.min.js" }}"><\/script>')</script>
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{site.baseurl}}/assets/js/jquery.min.js" }}"><\/script>')</script>
 {% endif %}
 {%  if page.url contains '/journalism/' %}
-{% include scripts/list.js %}
+	{% include scripts/list.js %}
 {% endif %}
+{% include scripts/widow-control.js %}
 
-<script type="text/javascript">
-//control widows, ala www.css-tricks.com/preventing-widows-in-post-titles/
-$("h1, h2, h3, h4, h5, h6").each(function() {  
-  var wordArray = $(this).text().split(" ");
-  if (wordArray.length > 1) {
-    wordArray[wordArray.length-2] += "&nbsp;" + wordArray[wordArray.length-1];
-    wordArray.pop();
-    $(this).html(wordArray.join(" "));
-  }
-});
-
-
-{% comment %}
-// $(“h1”).each(function() {
-// var self = $(this);
-// self.html( self.text().replace(/\s(\S+)$/,” $1″); );
-// });
-{% endcomment %}
-
-
-
-</script>

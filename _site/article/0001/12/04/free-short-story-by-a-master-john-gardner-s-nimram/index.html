@@ -134,21 +134,20 @@
 
 
 </aside>
+<!-- /aside left -->    
     	<section class="content">  
       	<article class="hentry">
   <header>
     
       <div style="text-align:right;margin-bottom:1em;">
-        <small class="button">
+        <small class="button button-hidden">
           <a href="#series">
             See other articles in this series
           </a>
         </small>
       </div>
     
-    <h1 class="entry-title">
-      Free Short Story by a Master, John Gardner's Nimram
-    </h1>
+    <h1 class="entry-title">Free Short Story by a Master, John Gardner's Nimram</h1>
     
     
       <time class='date' datetime="0001-12-04">
@@ -186,13 +185,7 @@
 
 
   </div>  
-
-
       <div class="edit-article" style="text-align:right;clear:both;margin-top:2em;">
-
-
-
-
 
 	<small>
 		<a href="http://prose.io/#budparr/budparr.github.io/edit/master/article/_posts/0001-12-04-free-short-story-by-a-master-john-gardner-s-nimram.md" target="_blank">
@@ -204,44 +197,12 @@
 
 
 
-
 </div>
-<!-- 
-
-<a href="https://twitter.com/budparr">
-    <span class="screen-reader-text">Twitter</span>
-    <i class="fa fa-twitter-square fa-lg icon-twitter-squared"></i>
-  </a>
-
-
-
-https://github.com/budparr/vernonsilver
-http://prose.io/#budparr/vernonsilver 
-
-
-http://prose.io/#budparr/vernonsilver/edit/gh-pages/_posts/2010-12-31-lost-chalice.md
-http://prose.io/#budparr/vernonsilver/edit/gh-pages/_posts/2010-12-31-lost-chalice.md
-
-
-
-<small>
-		<a class="" href="http://prose.io/#budparr/budparr.github.io/new/master/article/_posts/0001-12-04-free-short-story-by-a-master-john-gardner-s-nimram.md">
-			edit this page
-		</a>
-	</small>
-
-http://prose.io/#budparr/vernonsilver/new/gh-pages/_posts
--->
-  
 </article>
-
-
     	</section>
       <aside class="sidebar-right">
+	<section>
 		
-	
-		<section>
-			
 
 <aside id="series">
 
@@ -988,8 +949,6 @@ http://prose.io/#budparr/vernonsilver/new/gh-pages/_posts
 
 
 
-
-
 	</section>
 
 <div class="push bg"></div>
@@ -1004,29 +963,31 @@ http://prose.io/#budparr/vernonsilver/new/gh-pages/_posts
   </div>
 </footer>
 
-
-</aside>			
+<!-- /footer -->
+</aside>
+<!-- /aside -->		
 			
-  	<div>
+  	</div>
 		
+	<!-- scripts -->
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js" }}"><\/script>')</script>
 
 
-<script type="text/javascript">
-//control widows, ala www.css-tricks.com/preventing-widows-in-post-titles/
-$("h1, h2, h3, h4, h5, h6").each(function() {  
-  var wordArray = $(this).text().split(" ");
-  if (wordArray.length > 1) {
-    wordArray[wordArray.length-2] += "&nbsp;" + wordArray[wordArray.length-1];
-    wordArray.pop();
-    $(this).html(wordArray.join(" "));
-  }
+<script>
+$('h1').each(function() {
+    var wordArray = $(this).html().split(' ');
+    if (wordArray.length > 1) {
+        wordArray[wordArray.length-2] += '&nbsp;' + wordArray[wordArray.length-1];
+
+        var lastWord = wordArray.pop();
+        lastWord = lastWord.replace(/.*((?:<\/\w+>)*)$/, '$1');
+        $(this).html(wordArray.join(' ') + lastWord);
+    }
 });
 
-
-
-
-
-
 </script>
+
+
   </body>
 </html>

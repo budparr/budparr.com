@@ -28,7 +28,7 @@ exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'CNAME', 'rakefile']
 # if site is in production, 'production: true'
 production: false
 use_pure_css: false
-use_jquery: false
+use_jquery: true
 include_font_awesome: false
 include_addthis_sharing:
 

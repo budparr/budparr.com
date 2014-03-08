@@ -2,16 +2,14 @@
   <header>
     {% if page.tags %}
       <div style="text-align:right;margin-bottom:1em;">
-        <small class="button">
+        <small class="button button-hidden">
           <a href="#series">
             See other articles in this series
           </a>
         </small>
       </div>
     {% endif %}
-    <h1 class="entry-title">
-      {{page.title}}
-    </h1>
+    <h1 class="entry-title">{{page.title}}</h1>
     {% if page.subtitle %}
     <h2>
       {{page.subtitle}}
@@ -37,9 +35,5 @@
   <div class="sharing">
    {% include articles/sharing.html %}
   </div>  
-
-
       {% include global/edit.html %}
-  
 </article>
-

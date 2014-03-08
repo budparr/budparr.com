@@ -1,6 +1,6 @@
 ---
 title: Seeking Performance from your website? Skip the database
-subtitle: Introduction
+subtitle: Introduction to Static Site Generators
 layout: page
 tags: [Static Site Generators]
 ---

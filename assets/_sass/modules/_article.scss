@@ -31,6 +31,7 @@ h2 {
 }    
 
 h3, h4 {
+    color: darken($heading-color, 5%);
     @extend .as-heading__normal;
     @extend .as-heading__normal--typeset;
 }    

@@ -1,5 +1,5 @@
 <script>
-$('h1').each(function() {
+$('article h1').each(function() {
     var wordArray = $(this).html().split(' ');
     if (wordArray.length > 1) {
         wordArray[wordArray.length-2] += '&nbsp;' + wordArray[wordArray.length-1];

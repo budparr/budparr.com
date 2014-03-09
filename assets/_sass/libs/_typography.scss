@@ -47,3 +47,12 @@ ol 													{ @include nobullet; }
 li 													{ line-height: inherit; }					
 strong, b 											{ font-weight: 700; }
 em, i, q 											{ font-style: italic; }
+
+// Adjust type size for iPads where para text is too small
+@include respond-to-max(1025px, $IE9: false) { // Stop at precise width, as we're talking about devices
+p{ text-transform:none;
+	 @include adjust-font-size-to(21px);
+}
+
+	}
+

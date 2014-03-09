@@ -183,7 +183,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #eee;
 }
 
 pre code {
@@ -200,6 +200,41 @@ pre code {
 
 .highlight pre {
   margin-bottom: 0;
+}
+
+/* Better styles for embedding GitHub Gists */
+.gist .gist-file {
+  border: 1px solid #f1f1f1 !important;
+}
+
+.gist .gist-file .gist-data {
+  background-color: #f7f7f7 !important;
+  padding: 1em !important;
+}
+
+.gist {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.gist pre {
+  font-family: Menlo,Monaco,'Bitstream Vera Sans Mono','Courier New',monospace !important;
+}
+
+.gist-meta {
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 13px !important;
+}
+
+.gist-meta a {
+  color: #26a !important;
+  text-decoration: none;
+}
+
+.gist-meta a:hover {
+  color: #0e4071 !important;
 }
 
 .content {

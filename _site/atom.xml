@@ -4,13 +4,108 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-09T12:30:54-04:00</updated>
+ <updated>2014-03-09T16:10:13-04:00</updated>
  <id></id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>The Basics of Markdown Tutorial</title>
+   <link href="/article/2014/03/09/markdown-tutorial/"/>
+   <updated>2014-03-09T00:00:00-05:00</updated>
+   <id>/article/2014/03/09/markdown-tutorial</id>
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://gist.github.com/budparr/9257428&quot;&gt;&lt;em&gt;This is also available as a Gist on Github&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-markdown&quot;&gt;What is Markdown?&lt;/h3&gt;
+&lt;p&gt;Markdown is a great way to edit text so that your desired formatting is always intact no matter what editor you’re using. It’s increasingly used on the web as a way to ensure that a writer’s intended formatting never gets lost.&lt;/p&gt;
+
+&lt;p&gt;You can edit Markdown files in any text editor, though there are are some, like &lt;a href=&quot;http://www.iawriter.com/mac/&quot;&gt;iA Writer for Macs&lt;/a&gt;, that are specially built to make this easy way of writing even easier. &lt;/p&gt;
+
+&lt;h3 id=&quot;how-do-i-write-in-markdown&quot;&gt;How do I write in Markdown?&lt;/h3&gt;
+
+&lt;p&gt;Markdown is extremely simple. In fact, it’s mostly plain text, so writing a paragraph would be the same as with any text editor (there’s a line between each paragraph).&lt;/p&gt;
+
+&lt;p&gt;If you want to put in a line break&lt;br /&gt;
+you merely put two spaces after a line&lt;br /&gt;
+and it shows up like this.&lt;/p&gt;
+
+&lt;h4 id=&quot;emphasis&quot;&gt;Emphasis&lt;/h4&gt;
+
+&lt;p&gt;If you want to make a word &lt;strong&gt;bold&lt;/strong&gt;, you merely put two asterisks around it:  &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;like **this**&lt;/code&gt; is  like &lt;strong&gt;this&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;To emphasize a word with &lt;em&gt;italics&lt;/em&gt; you put one asterisk around it:  &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;like *this*&lt;/code&gt; is  like &lt;em&gt;this&lt;/em&gt; &lt;/p&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;use an _underscore_&lt;/code&gt; to get the same results. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;You can even use these same characters to emphasize complete sentences&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;links&quot;&gt;Links&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.com/search?q=markdown&quot;&gt;Links are simple&lt;/a&gt;. Just put the text to be linked in [] brackets, and the link in () parenthesis.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;[Links are simple](https://www.google.com/search?q=markdown)&lt;/code&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h4&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;When typing an extended quote, just put the “greater than” sign before the paragraph.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;pre&gt;&lt;code&gt;
+&amp;gt; &quot;I have dipped into books of aesthetics, but I had an uncomfortable feeling that I was reading the works of astronomers who had never looked at the stars. They were writing about poetry as if poetry were a task, and not what it really is, a passion, and a joy.&quot;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“I have dipped into books of aesthetics, but I had an uncomfortable feeling that I was reading the works of astronomers who had never looked at the stars. They were writing about poetry as if poetry were a task, and not what it really is, a passion, and a joy.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h4 id=&quot;lists&quot;&gt;Lists&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Using Lists is Easy&lt;/li&gt;
+  &lt;li&gt;Just use a dash with a space before each line&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;- Using Lists is Easy 
+- Just use a dash with a space before each line
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;headings&quot;&gt;Headings&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;
+# The largest heading  
+## The second largest heading  
+…
+###### The 6th largest heading
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&quot;images&quot;&gt;Images&lt;/h4&gt;
+
+&lt;p&gt;Images are just like links, but they have an exclamation point in front of them (and of course the link should be to where the image is!). The text between the brackets becomes the title, but it’s not required.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://c1.staticflickr.com/3/2835/12680465824_c959772b64_t.jpg&quot; alt=&quot;Images are easy&quot; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+![Images are easy](http://link-to-image.jpg)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;If you’re editing content in a Jekyll-based site, you can use the &lt;a href=&quot;http://prose.io/&quot;&gt;prose editor&lt;/a&gt;, if your site is configured for it. If you want more advanced formatting, check out the original &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown site&lt;/a&gt;, or the &lt;a href=&quot;http://guides.github.com/overviews/mastering-markdown/&quot;&gt;Github Markdown page&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Seeking Performance from your website? Skip the database</title>

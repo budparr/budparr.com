@@ -1,6 +1,6 @@
-<h4>Latest Articles</h4>
+<h6>Latest Articles</h6>
 <div class="list">	
-	{% for news in site.posts limit:5 %}
+	{% for news in site.posts limit:3 %}
 		<h5 class="title">
 			<a href="{{ news.url }}">
 				{{ news.title }}
@@ -11,4 +11,6 @@
 		</small>
 		<hr />	
 	{% endfor %}
+
+	<small><a href="/archive/">&raquo; more</a></small>
 </div>

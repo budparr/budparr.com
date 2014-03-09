@@ -38,6 +38,11 @@ li 													{ line-height: inherit; }
 strong, b 											{ font-weight: 700; }
 em, i, q 											{ font-style: italic; }
 
+blockquote p em {
+  font-size: 70%;
+}
+
+
 // Adjust type size for iPads where para text is too small
 @include respond-to-max(1025px, $IE9: false) { // Stop at precise width, as we're talking about devices
 p{ text-transform:none;

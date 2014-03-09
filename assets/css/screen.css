@@ -701,6 +701,10 @@ em, i, q {
   font-style: italic;
 }
 
+blockquote p em {
+  font-size: 70%;
+}
+
 @media screen and (max-width: 1024px) {
   p {
     text-transform: none;

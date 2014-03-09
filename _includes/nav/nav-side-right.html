@@ -1,4 +1,11 @@
 <aside class="sidebar-right">
+
+{% if page.sidebar_include %}
+<section>
+      {% include {{page.sidebar_include}} %}
+    </section>
+    {% endif %}
+
 	<section>
 		{% include snippets/related-articles.html %}
 	</section>

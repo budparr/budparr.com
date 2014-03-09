@@ -165,7 +165,7 @@ $sidebar-right-color: #555 !default;
 
 @include respond-to($sidebar-right-breakpoint, $IE9: false) {
 
-        padding: 2rem 1rem;
+        padding: 2rem 3rem;
 
         section:first-child {
           margin-top: 37% !important;

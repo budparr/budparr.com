@@ -59,6 +59,14 @@ hr + p
  }
 
 
+
+p {
+text-indent: 1.5rem;
+ }
+
+
+
+
 }
 
 aside.sidebar-right {
@@ -77,15 +85,6 @@ small {
  @include adjust-font-size-to($kappa);   
  @extend .font-var;
 }
-
-
-p {
-  //@extend .as-para--typeset; //add-ons _module-typeset 
-  //text-align: justify;
-}
-p {
-text-indent: 1.5rem;
- }
 
 
  

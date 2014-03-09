@@ -13,14 +13,15 @@
 {% endfor %}
 
 	<div class="tagsNote">
-		<h4>{{page.tags}}</h4>
-		<p>This article is Part {{ idx }} in a {{ count }}-Part Series</p>
+		
+		
 		<ul>
+			<li><strong>Part {{ idx }} in a {{ count }}-part series on {{page.tags}}</strong></li>
 		{% assign count = '0' %}
 		{% for post in site.posts reversed %}
 		{% if post.tags == page.tags %}
 			{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-			<li>Part {{ count }} - 
+			<li>
 			{% if page.url == post.url %}
 				{{post.title}}
 			{% else %}

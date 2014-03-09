@@ -51,7 +51,7 @@
 	p 			{ @extend .as-para--typeset; }
 	ol			{ @extend .as-ordered-list--typeset; }
 	ul 			{ @extend .as-unordered-list--typeset; }
-	li 			{ @extend .as-list--typeset; }
+	li 			{ @extend .as-list--typeset;}
 	blockquote 	{ @extend .as-blockquote--typeset; }
 }
 

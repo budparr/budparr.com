@@ -10,4 +10,6 @@ Here's a perfect example for a short story being told with video. This short is 
 
 This short was played at the Sundance Film Festival, and it's terrific:
 
-{{ video:youtube id="6qrwwM1Hgwk" }}
+#### What do we have in our pockets?
+
+<iframe width="640" height="360" style="max-width:100%;" src="//www.youtube.com/embed/6qrwwM1Hgwk?rel=0" frameborder="0" allowfullscreen></iframe>

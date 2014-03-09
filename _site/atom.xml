@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-09T08:44:08-04:00</updated>
+ <updated>2014-03-09T09:35:27-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -123,71 +123,85 @@ The primary benefits of using static sites generators are:&lt;/p&gt;
    <id>/article/2013/03/10/mixing-future-and-past-dated-entries-in-wordpress-with-date-based-filters</id>
    <content type="html">&lt;p&gt;We build web properties for publishers who are often promoting books that are not yet published. In Wordpress we treat the publish date of an entry as the publish date of the book. This presents a few problems in Wordpress showing yet-to-be-published entries, but we’ve been able to solve them with filters. Action hooks and filters are the most powerful feature of Wordpress, in my view. Used concisely and judiciously, they give you great control over how your content is displayed.&lt;/p&gt;
 
-&lt;p&gt;For a recent project for &lt;a title=&quot;The Website of Bellevue Literary Press&quot; href=&quot;http://blpress.org&quot;&gt;Bellevue Literary Press&lt;/a&gt; we wanted to display the client’s books mixed in various ways based on the following rules:&lt;/p&gt;
-&lt;ol&gt;
-	&lt;li&gt;We have room for 9 books total in 3 locations. &lt;/li&gt;
-	&lt;li&gt;Location #1 shows 1 book: the most recently published.&lt;/li&gt;
-	&lt;li&gt;Location #2 shows 2 books, recently published, not including the book displayed in location #1 (solved with a simple &quot;&#39;offset&#39; =&amp;gt; 1&quot;)&lt;/li&gt;
-	&lt;li&gt;Location #3 show up to 6 books, if there are any, that will be published in the next 7 months.&lt;/li&gt;
-	&lt;li&gt;Location #3 - If there are fewer than 6 books that meet the criteria in previous rule, then, and only then, we want to show the most recently published books that were not included in locations #1 or 2&lt;/li&gt;
-&lt;/ol&gt;
+&lt;p&gt;For a recent project for &lt;a href=&quot;http://blpress.org&quot;&gt;Bellevue Literary Press&lt;/a&gt; we wanted to display the client’s books mixed in various ways based on the following rules:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;We have room for 9 books total in 3 locations.   &lt;/li&gt;
+  &lt;li&gt;Location #1 shows 1 book: the most recently published.  &lt;/li&gt;
+  &lt;li&gt;Location #2 shows 2 books, recently published, not including the book displayed in location #1 (solved with a simple “‘offset’ =&amp;gt; 1”)  &lt;/li&gt;
+  &lt;li&gt;Location #3 show up to 6 books, if there are any, that will be published in the next 7 months.  &lt;/li&gt;
+  &lt;li&gt;Location #3 - If there are fewer than 6 books that meet the criteria in previous rule, then, and only then, we want to show the most recently published books that were not included in locations #1 or 2  &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;p&gt;&lt;img class=&quot;aligncenter size-full wp-image-4051&quot; alt=&quot;Bellevue-Literary-Press-_-Bellevue-Literary-Press&quot; src=&quot;http://budparr.com/assets/img/uploads/2013/03/Bellevue-Literary-Press-_-Bellevue-Literary-Press.jpg&quot; width=&quot;700&quot; height=&quot;758&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The first two locations are handled simply with an offset rule, so we’ll skip to location 3.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;First, create a function to define our date filter*:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;
-function filter_where( $where = &#39;&#39; ) {
+
+&lt;pre&gt;&lt;code&gt;function filter_where( $where = &#39;&#39; ) {
 // posts from X to Y days 
-   $where .= &quot; AND post_date &amp;gt;= &#39;&quot; . date(&#39;Y-m-d&#39;, strtotime(&#39;0 days&#39;)) . &quot;&#39;&quot; . &quot;
-               AND post_date &amp;lt;= &#39;&quot; . date(&#39;Y-m-d&#39;, strtotime(&#39;210 days&#39;)) . &quot;&#39;&quot;;
+   $where .= &quot; AND post_date &amp;amp;gt;= &#39;&quot; . date(&#39;Y-m-d&#39;, strtotime(&#39;0 days&#39;)) . &quot;&#39;&quot; . &quot;
+               AND post_date &amp;amp;lt;= &#39;&quot; . date(&#39;Y-m-d&#39;, strtotime(&#39;210 days&#39;)) . &quot;&#39;&quot;;
      return $where;
 }
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;The structure of this function gives me a bit of flexibility because when I wrote the code for this section I didn’t know what the specific time constraints would be. You can google for other ways to set your date parameters.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Apply the function in a filter just before our query:&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;source: &lt;a href=&quot;http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_where&quot;&gt;Filter Reference/posts_where&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;source: Filter Reference/posts_where](http://codex.wordpress.org/Plugin_API/Filter_Reference/posts_where)&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;add_filter( &#39;posts_where&#39;, &#39;filter_where&#39; );
 
 $books_forthcoming_args = array(
-       &#39;post_type&#39; =&amp;gt; &#39;product&#39;,
-       &#39;posts_per_page&#39; =&amp;gt; 6,
-       &#39;orderby&#39; =&amp;gt; &#39;date&#39;,
-       &#39;order&#39; =&amp;gt; &#39;asc&#39;,
-       &#39;meta_key&#39; =&amp;gt; &#39;_thumbnail_id&#39;,
-        &#39;post_status&#39; =&amp;gt; &#39;future&#39;
+       &#39;post_type&#39; =&amp;amp;gt; &#39;product&#39;,
+       &#39;posts_per_page&#39; =&amp;amp;gt; 6,
+       &#39;orderby&#39; =&amp;amp;gt; &#39;date&#39;,
+       &#39;order&#39; =&amp;amp;gt; &#39;asc&#39;,
+       &#39;meta_key&#39; =&amp;amp;gt; &#39;_thumbnail_id&#39;,
+        &#39;post_status&#39; =&amp;amp;gt; &#39;future&#39;
                ) ;
  $books_forthcoming = new WP_Query( $books_forthcoming_args );
+
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;&lt;em&gt;aside: note that I wanted to only show books that had a thumbnail image, so added “‘meta_key’ =&amp;gt; ‘_thumbnail_id’,” to my parameters.&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Do a little math:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;$forthcoming_count = $books_forthcoming-&amp;gt;post_count;
+
+&lt;pre&gt;&lt;code&gt;$forthcoming_count = $books_forthcoming-&amp;amp;gt;post_count;
 $books_remaining = 6 - $forthcoming_count;
+
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;The first line gives me a count of the results in the $books_list query.&lt;/p&gt;
 
 &lt;p&gt;The second line gives me my count of the total number of books I want to show, less the number of books I am showing with this query.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;I needed to manipulate my header based on results, so add this sort of rule to header:&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;&amp;lt;h3&amp;gt;Recent&amp;lt;?php if ( $forthcoming_count &amp;gt; 0 ){ echo &#39; &amp;amp; Forthcoming&#39;; } ?&amp;gt; Titles&amp;lt;/h3&amp;gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;amp;lt;h3&amp;amp;gt;Recent&amp;amp;lt;?php if ( $forthcoming_count &amp;amp;gt; 0 ){ echo &#39; &amp;amp;amp; Forthcoming&#39;; } ?&amp;amp;gt; Titles&amp;amp;lt;/h3&amp;amp;gt;
+&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;strong style=&quot;line-height: 1.714285714; font-size: 1rem;&quot;&amp;gt;Display posts in the usual fashion, then remove filter**
+
+remove_filter( &#39;posts_where&#39;, &#39;filter_where&#39; );  
+
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;strong style=&quot;line-height: 1.714285714; font-size: 1rem;&quot;&gt;Display posts in the usual fashion, then remove filter&lt;/strong&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;remove_filter( &#39;posts_where&#39;, &#39;filter_where&#39; );  
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt; &lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Set up the second query using our $books_remaining variable to determine the number of books to show.&lt;/strong&gt;&lt;/p&gt;
+
 &lt;pre&gt;&lt;code&gt;     $books_recent_args = array(
-     &#39;posts_per_page&#39; =&amp;gt; $books_remaining,
-     &#39;offset&#39; =&amp;gt; 3,
-     &#39;orderby&#39; =&amp;gt; &#39;date&#39;,
-     &#39;order&#39; =&amp;gt; &#39;desc&#39;,
-     &#39;post_status&#39; =&amp;gt; &#39;publish&#39;
+     &#39;posts_per_page&#39; =&amp;amp;gt; $books_remaining,
+     &#39;offset&#39; =&amp;amp;gt; 3,
+     &#39;orderby&#39; =&amp;amp;gt; &#39;date&#39;,
+     &#39;order&#39; =&amp;amp;gt; &#39;desc&#39;,
+     &#39;post_status&#39; =&amp;amp;gt; &#39;publish&#39;
      );
+
 &lt;/code&gt;&lt;/pre&gt;
+
 &lt;p&gt;“‘posts_per_page’ =&amp;gt; $books_remaining,” uses my earlier math to show the total number of slots available less the number of books shown in the first query.&lt;/p&gt;
 
 &lt;p&gt;“‘offset’ =&amp;gt; 3,” - accounting for the books I showed in locations #1 and 2.&lt;/p&gt;
@@ -211,6 +225,9 @@ $books_remaining = 6 - $forthcoming_count;
 
 &lt;p&gt;This short was played at the Sundance Film Festival, and it’s terrific:&lt;/p&gt;
 
+&lt;h4 id=&quot;what-do-we-have-in-our-pockets&quot;&gt;What do we have in our pockets?&lt;/h4&gt;
+
+&lt;iframe width=&quot;640&quot; height=&quot;360&quot; style=&quot;max-width:100%;&quot; src=&quot;//www.youtube.com/embed/6qrwwM1Hgwk?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 </content>
  </entry>
  
@@ -221,17 +238,19 @@ $books_remaining = 6 - $forthcoming_count;
    <id>/article/2013/01/29/quartz-and-the-new-the-new-republic</id>
    <content type="html">&lt;p&gt;We’re going to see myriad new redesigns of magazine and newspaper websites as the landscape shifts online. I’ve been studying some of these and am working on forming educated opinions. I’m very much enamored with &lt;a href=&quot;http://qz.com/&quot;&gt;_Quartz’s&lt;/a&gt; design (it’s not a redesign, but a new publication). Everything makes sense to me: immediately hitting readers with something to read, and nary a pixel wasted. The site’s &lt;a href=&quot;http://en.wikipedia.org/wiki/Responsive_web_design&quot;&gt;reponsiveness&lt;/a&gt; is superb, simply because they must have designed mobile first, something that is more difficult than it may seem. However, this tablet-centric design is not for everyone. &lt;em&gt;Quartz&lt;/em&gt; is streaming news, so their design is unique to the problems of presenting a lot of news to an audience with a short attention span.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;&#39;/assets/img/2013/01/qz-com.png&#39;&quot; alt=&quot;Quartz&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/qz-com.png&quot; alt=&quot;Quartz&quot; /&gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.newrepublic.com/&quot;&gt;&lt;em&gt;The New Republic&lt;/em&gt;&lt;/a&gt; just days ago relaunched their website and iPad app. They’re solving a different problem: engaging readers now while still interesting them in subscription only content or products. The home page feels like a print magazine cover; dramatic, positively retro and low information density. One wonders if the cover will be “art-directed” each month, though I’d wager given the publisher’s pedigree that they will be testing and adjusting at the least.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/2013/01/tnr-home.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;img src=&quot;/assets/img/tnr-home.png&quot; alt=&quot;&quot; /&gt;  &lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;What’s interesting about the &lt;em&gt;TNR&lt;/em&gt; design is the article page. Elements shared with one of my other favorite content designs, &lt;a href=&quot;https://medium.com/&quot;&gt;Medium&lt;/a&gt;, are centered text with a large font. &lt;em&gt;TNR&lt;/em&gt; is using 16px “Publico Text” (interestingly there doesn’t appear to be a font stack for &lt;em&gt;TNR&lt;/em&gt;. oversight, or the way embedded fonts need to work?), which is about 20% smaller than Medium’s 20px (measured, roughly, by cap height) and a generous line height, slightly less than Medium’s. While I think Medium really nails typography, &lt;em&gt;TNR&lt;/em&gt; does pretty good, compared, for example, to &lt;a href=&quot;http://www.forbes.com/sites/parmyolson/2013/01/29/rim-prepares-to-launch-new-blackberry-for-the-hyper-connected/&quot;&gt;&lt;em&gt;Forbes.com&lt;/em&gt;&lt;/a&gt;, which flubs the type on article pages by not venturing past Georgia (not the worst thing) and not getting line height right.&lt;/p&gt;
 
 &lt;p&gt;But there’s lots going on here besides type. You may not notice at first, but there’s a progress bar up top. This is something that readers may soon come to expect. This one is subtle enough to be useful yet not get in the way of reading.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;&#39;/assets/img/2013/01/tnr-home.png&#39;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Someone at &lt;em&gt;TNR&lt;/em&gt; was brave enough not to pack article pages with all the garbage we’re used to seeing at the NYTimes.com. There are side-notes to the right. I love these, though not the link color, which I think directs to much attention to itself. Features like sharing, type-size adjustment and audio buttons are up top. Those buttons move to the top of the screen when the reader scrolls the article.&lt;/p&gt;
 

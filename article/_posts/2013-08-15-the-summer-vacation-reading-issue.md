@@ -1,8 +1,9 @@
 ---
 layout: page
 title: Me, The Summer Vacation Reading Issue
-categories:
-  - Reading
+categories: Reading
+tags: Reading
+class: dev
 ---
 FINALLY. Vacation. Long overdue and a chance to catch up on some reading. Here's what I'm taking to the beach:
 

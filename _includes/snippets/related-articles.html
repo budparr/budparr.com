@@ -12,11 +12,22 @@
 	{% endif %}
 {% endfor %}
 
+
+
+
 	<div class="tagsNote">
 		
 		
 		<ul>
-			<li><strong>Part {{ idx }} in a {{ count }}-part series on {{page.tags}}</strong></li>
+			<li>
+
+				<strong>
+					{% if count > '1' %}
+					Part {{ idx }} in a {{ count }}-part series on 
+					{% else %}	
+Topic: 
+						{% endif %}
+					{{page.tags | array_to_sentence_string}}</strong></li>
 		{% assign count = '0' %}
 		{% for post in site.posts reversed %}
 		{% if post.tags == page.tags %}
@@ -31,7 +42,14 @@
 		{% endif %}
 		{% endfor %}
 		</ul>
+
+
 	</div>
+		
+
 </aside>
+		    
+
+
 {% endif %}
 

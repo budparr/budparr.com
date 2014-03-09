@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Archive
-permalink: /
+permalink: /archive/
 include: "snippets/news.html"
 sharing: false
 published: true

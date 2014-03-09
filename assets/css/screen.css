@@ -610,7 +610,7 @@ a:hover .icon-twitter-squared {
 
 /* '' */
 .font-display, article.hentry h1 {
-  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-family: 'Mercury SSm A', 'Mercury SSm B', 'PT Serif', Georgia, "Droid Serif" serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -620,7 +620,7 @@ a:hover .icon-twitter-squared {
 }
 
 .font-body, body {
-  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-family: 'Mercury SSm A', 'Mercury SSm B', 'PT Serif', Georgia, "Droid Serif" serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -657,47 +657,47 @@ em, i, q {
     line-height: 1.5238095em;
   }
 }
-.as-heading__headline, article.hentry h1, .is-typeset .headline, blockquote .headline {
+.as-heading__headline, article.hentry h1, .is-typeset .headline {
   font-size: 2.625em;
   line-height: 1.1428571em;
 }
 
-.as-heading__largest, article.hentry h2, .is-typeset h1, blockquote h1 {
+.as-heading__largest, article.hentry h2, .is-typeset h1 {
   font-size: 2em;
   line-height: 1.25em;
 }
 
-.as-heading__large, .is-typeset h2, blockquote h2 {
+.as-heading__large, .is-typeset h2 {
   font-size: 1.75em;
   line-height: 1.1428571em;
 }
 
-.as-heading__medium, .is-typeset h3, blockquote h3 {
+.as-heading__medium, .is-typeset h3 {
   font-size: 1.625em;
   line-height: 1.2307692em;
 }
 
-.as-heading__normal, article.hentry h3, article.hentry h4, .is-typeset h4, blockquote h4 {
+.as-heading__normal, article.hentry h3, article.hentry h4, .is-typeset h4 {
   font-size: 1.5em;
   line-height: 1.3333333em;
 }
 
-.as-heading__small, article.hentry .list h5, article.hentry article h5, .is-typeset h5, blockquote h5 {
+.as-heading__small, article.hentry .list h5, article.hentry article h5, .is-typeset h5 {
   font-size: 1.25em;
   line-height: 1.2em;
 }
 
-.as-heading__smallest, .is-typeset h6, blockquote h6 {
+.as-heading__smallest, .is-typeset h6 {
   font-size: 1.125em;
   line-height: 1.3333333em;
 }
 
-.as-blockquote, .as-blockquote--typeset, .is-typeset blockquote, blockquote blockquote {
-  font-size: 2em;
-  line-height: 1.25em;
+.as-blockquote, .as-blockquote--typeset, blockquote, .is-typeset blockquote {
+  font-size: 1.625em;
+  line-height: 1.2307692em;
   line-height: normal;
 }
-.as-blockquote p, .as-blockquote--typeset p, .is-typeset blockquote p, blockquote blockquote p {
+.as-blockquote p, .as-blockquote--typeset p, blockquote p, .is-typeset blockquote p {
   margin: 0;
   font-style: italic;
 }
@@ -707,55 +707,55 @@ em, i, q {
   line-height: 1.5em;
 }
 
-.as-heading__headline--typeset, article.hentry h1, .is-typeset .headline, blockquote .headline {
+.as-heading__headline--typeset, article.hentry h1, .is-typeset .headline {
   margin: 0 0 0.5714286em 0;
 }
 
-.as-heading__largest--typeset, .is-typeset h1, blockquote h1 {
+.as-heading__largest--typeset, .is-typeset h1 {
   margin: 2rem 0 0.75em 0;
 }
 
-.as-heading__large--typeset, article.hentry h2, .is-typeset h2, blockquote h2 {
+.as-heading__large--typeset, article.hentry h2, .is-typeset h2 {
   margin: 2rem 0 0.8571429em 0;
 }
 
-.as-heading__medium--typeset, .is-typeset h3, blockquote h3 {
+.as-heading__medium--typeset, .is-typeset h3 {
   margin: 2rem 0 0.9230769em 0;
 }
 
-.as-heading__normal--typeset, article.hentry h3, article.hentry h4, .is-typeset h4, blockquote h4 {
+.as-heading__normal--typeset, article.hentry h3, article.hentry h4, .is-typeset h4 {
   margin: 2rem 0 1em 0;
 }
 
-.as-heading__small--typeset, article.hentry article h5, .is-typeset h5, blockquote h5 {
+.as-heading__small--typeset, article.hentry article h5, .is-typeset h5 {
   margin: 2rem 0 1.2em 0;
 }
 
-.as-heading__smallest--typeset, .is-typeset h6, blockquote h6 {
+.as-heading__smallest--typeset, .is-typeset h6 {
   margin: 0 0 1.3333333em 0;
 }
 
-.as-para--typeset, .is-typeset p, blockquote p {
+.as-para--typeset, .is-typeset p {
   margin: 0 0 1em 0;
 }
 
-.as-list--typeset, .as-unordered-list--typeset, .as-ordered-list--typeset, .is-typeset ol, blockquote ol, .is-typeset ul, blockquote ul, .is-typeset li, blockquote li {
+.as-list--typeset, .as-unordered-list--typeset, .as-ordered-list--typeset, .is-typeset ol, .is-typeset ul, .is-typeset li {
   margin: 0 0 1em 0;
 }
 
-.as-unordered-list--typeset, .as-ordered-list--typeset, .is-typeset ol, blockquote ol, .is-typeset ul, blockquote ul {
+.as-unordered-list--typeset, .as-ordered-list--typeset, .is-typeset ol, .is-typeset ul {
   margin-left: 1em;
   list-style-position: outside;
   list-style-type: disc;
 }
 
-.as-ordered-list--typeset, .is-typeset ol, blockquote ol {
+.as-ordered-list--typeset, .is-typeset ol {
   list-style-position: outside;
   list-style-type: decimal;
 }
 
-.as-blockquote--typeset, .is-typeset blockquote, blockquote blockquote {
-  margin: 1.5em 0;
+.as-blockquote--typeset, blockquote, .is-typeset blockquote {
+  margin: 0.6153846em 0;
 }
 
 h2, h3, h4, h5 {

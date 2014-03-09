@@ -32,8 +32,13 @@
       {% include {{page.include}} %}
     {% endif %}
   </div>
+  {% if site.include_addthis_sharing %}
+      
+  
   <div class="sharing">
    {% include articles/sharing.html %}
   </div>  
+
+  {% endif %}
       {% include global/edit.html %}
 </article>

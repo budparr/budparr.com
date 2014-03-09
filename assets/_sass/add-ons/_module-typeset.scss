@@ -36,7 +36,7 @@
 
 .as-unordered-list--typeset 			{ @extend .as-list--typeset; margin-left: 1em; @include unordered; }
 .as-ordered-list--typeset 				{ @extend .as-unordered-list--typeset; @include ordered; }
-.as-blockquote--typeset 				{ @extend .as-blockquote; margin: rhythm(6, $quote) 0; }
+.as-blockquote--typeset 				{ @extend .as-blockquote; margin: rhythm(2, $quote) 0; }
 
 
 // Use on parent element to style elements within. E.g an article page

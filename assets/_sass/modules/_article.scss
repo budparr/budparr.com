@@ -89,7 +89,8 @@ small {
 
  
 blockquote {
-	@extend .is-typeset;
+	@extend .as-blockquote--typeset ;
+
 }
 
 .content img:first-child {

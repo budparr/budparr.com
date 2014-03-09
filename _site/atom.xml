@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-08T22:28:58-05:00</updated>
+ <updated>2014-03-09T08:44:08-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -219,17 +219,19 @@ $books_remaining = 6 - $forthcoming_count;
    <link href="/article/2013/01/29/quartz-and-the-new-the-new-republic/"/>
    <updated>2013-01-29T00:00:00-05:00</updated>
    <id>/article/2013/01/29/quartz-and-the-new-the-new-republic</id>
-   <content type="html">&lt;p&gt;We’re going to see myriad new redesigns of magazine and newspaper websites as the landscape shifts online. I’ve been studying some of these and am working on forming educated opinions. I’m very much enamored with &lt;em&gt;&lt;a href=&quot;http://qz.com/&quot;&gt;Quartz’s&lt;/a&gt;&lt;/em&gt; design (it’s not a redesign, but a new publication). Everything makes sense to me: immediately hitting readers with something to read, and nary a pixel wasted. The site’s &lt;a href=&quot;http://en.wikipedia.org/wiki/Responsive_web_design&quot;&gt;responsiveness&lt;/a&gt; is superb, simply because they must have designed mobile first, something that is more difficult than it may seem. However, this tablet-centric design is not for everyone. &lt;em&gt;Quartz&lt;/em&gt; is streaming news, so their design is unique to the problems of presenting a lot of news to an audience with a short attention span.
-&amp;lt;p style=&quot;text-align: center;&quot;&amp;gt;&lt;a href=&quot;/assets/img/uploads/2013/01/qz-com.png&quot;&gt;&lt;img class=&quot;alignnone&quot; alt=&quot;qz-com&quot; src=&quot;/assets/img/uploads/2013/01/qz-com.png&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;/assets/img/uploads/2013/01/tnr-home.png&quot;&gt;
-&lt;/a&gt;&amp;lt;/p&amp;gt;
-&lt;a href=&quot;http://www.newrepublic.com/&quot;&gt;&lt;em&gt;The New Republic&lt;/em&gt;&lt;/a&gt; just days ago relaunched their website and iPad app. They’re solving a different problem: engaging readers now while still interesting them in subscription only content or products. The home page feels like a print magazine cover; dramatic, positively retro and low information density. One wonders if the cover will be “art-directed” each month, though I’d wager given the publisher’s pedigree that they will be testing and adjusting at the least.&lt;/p&gt;
+   <content type="html">&lt;p&gt;We’re going to see myriad new redesigns of magazine and newspaper websites as the landscape shifts online. I’ve been studying some of these and am working on forming educated opinions. I’m very much enamored with &lt;a href=&quot;http://qz.com/&quot;&gt;_Quartz’s&lt;/a&gt; design (it’s not a redesign, but a new publication). Everything makes sense to me: immediately hitting readers with something to read, and nary a pixel wasted. The site’s &lt;a href=&quot;http://en.wikipedia.org/wiki/Responsive_web_design&quot;&gt;reponsiveness&lt;/a&gt; is superb, simply because they must have designed mobile first, something that is more difficult than it may seem. However, this tablet-centric design is not for everyone. &lt;em&gt;Quartz&lt;/em&gt; is streaming news, so their design is unique to the problems of presenting a lot of news to an audience with a short attention span.&lt;/p&gt;
 
-&lt;p&gt;&lt;img class=&quot;aligncenter&quot; alt=&quot;tnr-home&quot; src=&quot;/assets/img/uploads/2013/01/tnr-home.png&quot; width=&quot;700&quot; height=&quot;387&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;&#39;/assets/img/2013/01/qz-com.png&#39;&quot; alt=&quot;Quartz&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;What’s interesting about the &lt;em&gt;TNR&lt;/em&gt; design is the article page. Elements shared with one of my other favorite content designs, &lt;a href=&quot;https://medium.com/&quot;&gt;Medium&lt;/a&gt;, are centered text with a large font. &lt;em&gt;TNR&lt;/em&gt; is using 16px “Publico Text” (interestingly there doesn’t appear to be a font stack for &lt;em&gt;TNR&lt;/em&gt;. oversight, or the way embedded fonts need to work?), which is about 20% smaller than Medium’s 20px (measured, roughly, by cap height) and a generous line height, slightly less than Medium’s. While I think Medium really nails typography, &lt;em&gt;TNR&lt;/em&gt; does pretty good, compared, for example, to &lt;em&gt;&lt;a href=&quot;http://www.forbes.com/sites/parmyolson/2013/01/29/rim-prepares-to-launch-new-blackberry-for-the-hyper-connected/&quot;&gt;Forbes.com&lt;/a&gt;&lt;/em&gt;, which flubs the type on article pages by not venturing past Georgia (not the worst thing) and not getting line height right.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.newrepublic.com/&quot;&gt;&lt;em&gt;The New Republic&lt;/em&gt;&lt;/a&gt; just days ago relaunched their website and iPad app. They’re solving a different problem: engaging readers now while still interesting them in subscription only content or products. The home page feels like a print magazine cover; dramatic, positively retro and low information density. One wonders if the cover will be “art-directed” each month, though I’d wager given the publisher’s pedigree that they will be testing and adjusting at the least.&lt;/p&gt;
 
-&lt;p&gt;But there’s lots going on here besides type. You may not notice at first, but there’s a progress bar up top. This is something that readers may soon come to expect. This one is subtle enough to be useful yet not get in the way of reading.&lt;a style=&quot;color: #005580; text-decoration: underline; text-align: center;&quot; href=&quot;/assets/img/uploads/2013/01/tnr-home.png&quot;&gt;
-&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/2013/01/tnr-home.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;What’s interesting about the &lt;em&gt;TNR&lt;/em&gt; design is the article page. Elements shared with one of my other favorite content designs, &lt;a href=&quot;https://medium.com/&quot;&gt;Medium&lt;/a&gt;, are centered text with a large font. &lt;em&gt;TNR&lt;/em&gt; is using 16px “Publico Text” (interestingly there doesn’t appear to be a font stack for &lt;em&gt;TNR&lt;/em&gt;. oversight, or the way embedded fonts need to work?), which is about 20% smaller than Medium’s 20px (measured, roughly, by cap height) and a generous line height, slightly less than Medium’s. While I think Medium really nails typography, &lt;em&gt;TNR&lt;/em&gt; does pretty good, compared, for example, to &lt;a href=&quot;http://www.forbes.com/sites/parmyolson/2013/01/29/rim-prepares-to-launch-new-blackberry-for-the-hyper-connected/&quot;&gt;&lt;em&gt;Forbes.com&lt;/em&gt;&lt;/a&gt;, which flubs the type on article pages by not venturing past Georgia (not the worst thing) and not getting line height right.&lt;/p&gt;
+
+&lt;p&gt;But there’s lots going on here besides type. You may not notice at first, but there’s a progress bar up top. This is something that readers may soon come to expect. This one is subtle enough to be useful yet not get in the way of reading.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;&#39;/assets/img/2013/01/tnr-home.png&#39;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Someone at &lt;em&gt;TNR&lt;/em&gt; was brave enough not to pack article pages with all the garbage we’re used to seeing at the NYTimes.com. There are side-notes to the right. I love these, though not the link color, which I think directs to much attention to itself. Features like sharing, type-size adjustment and audio buttons are up top. Those buttons move to the top of the screen when the reader scrolls the article.&lt;/p&gt;
 
@@ -238,10 +240,6 @@ $books_remaining = 6 - $forthcoming_count;
 &lt;p&gt;I don’t particularly care for stark white backgrounds for reading, but I suppose that’s just a matter of preference.&lt;/p&gt;
 
 &lt;p&gt;Overall, it’s a successful imprint of the new publisher. The home page is an interesting and needed departure, though it remains to be seen if this particular style will be successful with readers.&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
 </content>
  </entry>
  

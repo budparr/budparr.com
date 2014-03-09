@@ -1,3 +1,6 @@
 -
  name: About
  slug: about
+-
+ name: Archive
+ slug: archive

@@ -2,7 +2,7 @@
 layout: page
 title: Bud Parr
 permalink: /
-include: "snippets/news.html"
+include: "snippets/article-latest.html"
 sharing: false
 published: true
 ---

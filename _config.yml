@@ -4,6 +4,7 @@ description: 'Designer, Developer'
 # do not include  https://github.com/...
 repo: 'budparr/budparr.github.io'
 branch: master
+default_author: "Bud Parr"
 
 #Jekyll Options
 # if using more than one Jekyll instance on your local machine

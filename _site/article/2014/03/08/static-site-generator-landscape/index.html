@@ -1,0 +1,665 @@
+  <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+      
+        <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+      
+
+      <meta name="HandheldFriendly" content="True">
+      <meta name="MobileOptimized" content="320">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+              <!-- TODO: make correct URL for rss -->
+      <link rel="alternate" type="application/rss+xml" href="/rss" title="RSS Feed">
+      
+      <title> The No-db Landscape -  budparr</title>
+      
+        <link rel="canonical" href="/article/2014/03/08/static-site-generator-landscape/" />    
+      
+      
+      <link rel="icon" href="/favicon.ico" type="image/x-icon">
+          <!-- Stylesheets -->
+
+      
+        <link href='/assets/css/screen.css?14022509211 ' rel='stylesheet' type="text/css" />
+      
+
+      
+
+      
+      
+            <!-- TODO: add og, twitter card -->
+    
+
+    <meta name="description" content="">
+
+
+  
+  <meta content="article" property="article:section">
+  
+
+
+  
+  <meta content="Static Site Generators" property="article:tag">
+  
+
+
+<!-- Here’s the final snippet of code with the appropriate meta data: -->
+
+<meta content="" property="og:site_name">
+
+  <meta content="The No-db Landscape" property="og:title">
+
+
+  <meta content="article" property="og:type">
+
+
+  <meta content="Designer, Developer" property="og:description">
+
+
+  <meta content="/article/2014/03/08/static-site-generator-landscape/" property="og:url">
+
+
+  <meta content="2014-03-08T00:00:00-05:00" property="article:published_time">
+  <meta content="/about/" property="article:author">
+
+
+  <meta content="/assets/img/logo-high-resolution.png" property="og:image">
+
+
+  
+  <meta content="article" property="article:section">
+  
+
+
+  
+  <meta content="Static Site Generators" property="article:tag">
+  
+
+
+
+      <!--[if lt IE 9]>
+        <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('article');
+          document.createElement('aside');
+          document.createElement('footer');
+        </script>
+        <script src="/assets/js/html5shiv.js"></script>
+        <script src="/assets/js/respond.js"></script>
+      <![endif]-->
+
+      <!--[if lte IE 7]>
+        <link rel="stylesheet" media="all" href="http://universal-ie6-css.googlecode.com/files/ie6.0.3.css">
+      <![endif]-->
+
+    
+      
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-30899180-2', '');
+	  ga('send', 'pageview');
+	</script>
+
+    
+
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7044452/646584/css/fonts.css" />
+    
+  </head>
+
+	<body class="article">
+  	<div class="wrapper">
+    	<aside class="sidebar-left">
+  <h1><a href="">budparr</a></h1>
+  <p>Designer, Developer</p>
+  <hr />  
+  <ul class="nav">
+  <a href="/"><li class="sidebar-nav-item">Home</li></a>
+
+	<a href="/about/">
+		<li id="about" class="sidebar-nav-item">
+			About
+		</li>
+	</a>	
+
+	<a href="/archive/">
+		<li id="archive" class="sidebar-nav-item">
+			Archive
+		</li>
+	</a>	
+
+</ul>
+  <hr />
+  
+  
+    <a href="https://twitter.com/budparr">
+      <span class="screen-reader-text">Twitter</span>
+      <i class="fa fa-twitter-square fa-lg icon-twitter-squared"></i>
+    </a>
+  
+</aside>
+<!-- /aside left -->    
+    	<section class="content">  
+      	<article class="hentry ">
+  <header>
+    
+      <div style="text-align:right;margin-bottom:1em;">
+        <small class="button button-hidden">
+          <a href="#series">
+            See other articles in this series
+          </a>
+        </small>
+      </div>
+    
+    
+    <h1 class="entry-title">The No-db Landscape</h1>
+    
+    
+    
+      <time class='date' datetime="2014-03-08">
+        <small>
+          Saturday Mar 08, 2014
+        </small>
+      </time>
+    
+  </header>
+
+  <div class="entry-content prose">
+
+    
+    <p>Over the past year I’ve become obsessed with the movement toward building websites with no database. I’m enjoying the freedom of moving documents between systems, of being able to see the content I’m publishing and the relative simplicity that these systems have ushered in that allows me to focus on creating a good design instead of wading through layers of configuring applications and server management.</p>
+
+<p>By no means an end, for the most part I’ve been using two applications: For purely static sites I’m using <a href="http://jekyllrb.com">Jekyll</a> and for “flat-file” CMS sites I’ve used <a href="http://statamic.com">Statamic</a>. Each is excellent in its own right, yet serves a different purpose than the other.</p>
+
+<h3 id="so-what-is-the-difference-between-flat-file-and-static">So what is the difference between “Flat File” and “Static”</h3>
+
+<p>Both flat file CMSs and statically generated websites share the fundamental break from the database and are similar in how the layout page designs, but break from there. Flat-file sites generate each page on the fly as it is loaded. This dynamism </p>
+
+
+    
+  </div>
+  
+
+
+
+
+
+      
+<div style="margin:3em 0;">
+<small>
+
+<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">
+	“The No-db Landscape”
+</span> 
+by 
+
+<a xmlns:cc="http://creativecommons.org/ns#" href="/article/2014/03/08/static-site-generator-landscape/" property="cc:attributionName" rel="cc:attributionURL">
+	Bud Parr
+</a> 
+
+	is licensed under a 
+
+	<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">
+		Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</small></div>
+
+
+
+      <div class="edit-article" style="text-align:right;clear:both;margin-top:2em;">
+
+	<small>
+		<a href="http://prose.io/#budparr/budparr.github.io/edit/master/article/_posts/2014-03-08-static-site-generator-landscape.md" target="_blank">
+			<span class="screen-reader-text">Edit This Page</span>
+			<i class="fa fa-pencil-square-o icon-edit"></i>
+		</a>
+	</small>
+
+
+
+
+</div>
+
+
+</article>
+
+
+    	</section>
+      <aside class="sidebar-right">
+
+
+
+	<section>
+		
+
+<aside id="series">
+
+
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+		
+	
+
+	
+		
+		
+			
+		
+	
+
+	
+		
+		
+	
+
+
+
+
+
+	<div class="tagsNote">
+		
+		
+		<ul>
+			<li>
+
+				<strong>
+					
+					Part 2 in a 3-part series on 
+					
+					Static Site Generators</strong></li>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+			<li>
+			
+				<a href="/article/2014/03/06/static-site-generators-introduction/">Want to Speed up Your Website? Skip the database</a>
+			
+			</li>
+		
+		
+		
+			
+			<li>
+			
+				The No-db Landscape
+			
+			</li>
+		
+		
+		
+			
+			<li>
+			
+				<a href="/article/2014/03/09/markdown-tutorial/">The Basics of Markdown Tutorial</a>
+			
+			</li>
+		
+		
+		</ul>
+
+
+	</div>
+		
+
+</aside>
+		    
+
+
+
+
+
+	</section>
+
+<div class="push bg"></div>
+<footer id="content-info">
+  <div class="pure-menu pure-menu-open pure-menu-horizontal">
+    <ul class="no-bullet">
+      <li class="source-org vcarfd copyright">
+        <a href=""><span class="org fn">budparr</span></a>
+      </li> 
+      <li><a href="http://sonnetmedia.net">site by sonnet media</a></li>   
+    </ul>
+  </div>
+</footer>
+
+<!-- /footer -->
+</aside>
+<!-- /aside -->		
+			
+  	</div>
+		
+	<!-- scripts -->
+	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js" }}"><\/script>')</script>
+
+
+<script>
+$('article h1').each(function() {
+    var wordArray = $(this).html().split(' ');
+    if (wordArray.length > 1) {
+        wordArray[wordArray.length-2] += '&nbsp;' + wordArray[wordArray.length-1];
+
+        var lastWord = wordArray.pop();
+        lastWord = lastWord.replace(/.*((?:<\/\w+>)*)$/, '$1');
+        $(this).html(wordArray.join(' ') + lastWord);
+    }
+});
+
+</script>
+
+
+  </body>
+</html>

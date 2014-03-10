@@ -89,7 +89,10 @@ article.hentry img {
 article.hentry h1 {
   color: #2e6f8e;
 }
-article.hentry h3, article.hentry h4 {
+article.hentry h3 {
+  color: #262626;
+}
+article.hentry h4, article.hentry .list h5 {
   color: #262626;
 }
 article.hentry p:first-child,
@@ -767,17 +770,17 @@ blockquote p em {
   line-height: 1.2307692em;
 }
 
-.as-heading__normal, article.hentry h3, article.hentry h4, .is-typeset h4 {
+.as-heading__normal, article.hentry h3, .is-typeset h4 {
   font-size: 1.5em;
   line-height: 1.3333333em;
 }
 
-.as-heading__small, article.hentry .list h5, article.hentry article h5, .is-typeset h5 {
+.as-heading__small, article.hentry h4, article.hentry .list h5, .is-typeset h5 {
   font-size: 1.25em;
   line-height: 1.2em;
 }
 
-.as-heading__smallest, .is-typeset h6 {
+.as-heading__smallest, article.hentry article h5, .is-typeset h6 {
   font-size: 1.125em;
   line-height: 1.3333333em;
 }
@@ -813,15 +816,15 @@ blockquote p em {
   margin: 2rem 0 0.9230769em 0;
 }
 
-.as-heading__normal--typeset, article.hentry h3, article.hentry h4, .is-typeset h4 {
+.as-heading__normal--typeset, article.hentry h3, .is-typeset h4 {
   margin: 2rem 0 1em 0;
 }
 
-.as-heading__small--typeset, article.hentry article h5, .is-typeset h5 {
+.as-heading__small--typeset, article.hentry h4, article.hentry .list h5, .is-typeset h5 {
   margin: 2rem 0 1.2em 0;
 }
 
-.as-heading__smallest--typeset, .is-typeset h6 {
+.as-heading__smallest--typeset, article.hentry article h5, .is-typeset h6 {
   margin: 0 0 1.3333333em 0;
 }
 

@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-09T16:37:50-04:00</updated>
+ <updated>2014-03-09T20:00:09-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -17,12 +17,15 @@
    <link href="/article/2014/03/09/markdown-tutorial/"/>
    <updated>2014-03-09T00:00:00-05:00</updated>
    <id>/article/2014/03/09/markdown-tutorial</id>
-   <content type="html">&lt;p&gt;&lt;a href=&quot;https://gist.github.com/budparr/9257428&quot;&gt;&lt;em&gt;This is also available as a Gist on Github&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
+   <content type="html">&lt;p&gt;&lt;a href=&quot;https://gist.github.com/budparr/9257428&quot;&gt;&lt;em&gt;An abreviated form of this article is available as a Gist on Github&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;what-is-markdown&quot;&gt;What is Markdown?&lt;/h3&gt;
-&lt;p&gt;Markdown is a great way to edit text so that your desired formatting is always intact no matter what editor you’re using. It’s increasingly used on the web as a way to ensure that a writer’s intended formatting never gets lost.&lt;/p&gt;
 
-&lt;p&gt;You can edit Markdown files in any text editor, though there are are some, like &lt;a href=&quot;http://www.iawriter.com/mac/&quot;&gt;iA Writer for Macs&lt;/a&gt;, that are specially built to make this easy way of writing even easier. &lt;/p&gt;
+&lt;p&gt;Markdown is a formatting syntax that allows you to write in plain text in any editing program, but still format your document like you would with a word processor. It was created to convert plain text into HTML for publishing on the web and happens to be super easy to write and just as easy to read even without being converted. &lt;/p&gt;
+
+&lt;p&gt;Markdown ensures that a writer’s intended formatting never gets lost. If you’ve ever worked hard on a Word document only to have its formatting scrambled when you sent it to published to your website or when a colleague opened it in another program, you’ll appreciate the simplicity and stability of Markdown. &lt;/p&gt;
+
+&lt;p&gt;While you can edit Markdown files in any text editor, there are are some, like &lt;a href=&quot;http://www.iawriter.com/mac/&quot;&gt;iA Writer for Macs&lt;/a&gt;, that are specially built to make this easy way of writing even easier. We use an editor called prose.io that still gives us the WYSIWYG style buttons we’re used to, but leaves us to choose who we write our text.&lt;/p&gt;
 
 &lt;h3 id=&quot;how-do-i-write-in-markdown&quot;&gt;How do I write in Markdown?&lt;/h3&gt;
 
@@ -56,9 +59,7 @@ and it shows up like this.&lt;/p&gt;
 
 &lt;h4 id=&quot;blockquotes&quot;&gt;Blockquotes&lt;/h4&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;When typing an extended quote, just put the “greater than” sign before the paragraph.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;When typing an extended quote, just put the “greater than” sign before the paragraph.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 &amp;gt; &quot;I have dipped into books of aesthetics, but I had an uncomfortable feeling that I was reading the works of astronomers who had never looked at the stars. They were writing about poetry as if poetry were a task, and not what it really is, a passion, and a joy.&quot;
@@ -101,7 +102,7 @@ and it shows up like this.&lt;/p&gt;
 
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&quot;resources&quot;&gt;Resources&lt;/h2&gt;
+&lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
 
 &lt;p&gt;If you’re editing content in a Jekyll-based site, you can use the &lt;a href=&quot;http://prose.io/&quot;&gt;prose editor&lt;/a&gt;, if your site is configured for it. If you want more advanced formatting, check out the original &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown site&lt;/a&gt;, or the &lt;a href=&quot;http://guides.github.com/overviews/mastering-markdown/&quot;&gt;Github Markdown page&lt;/a&gt;.&lt;/p&gt;
 </content>
@@ -186,6 +187,22 @@ The primary benefits of using static sites generators are:&lt;/p&gt;
     &lt;/li&gt;
   &lt;/ol&gt;
 &lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Murakami on the Train</title>
+   <link href="/article/2014/01/15/murakami-on-the-train/"/>
+   <updated>2014-01-15T00:00:00-05:00</updated>
+   <id>/article/2014/01/15/murakami-on-the-train</id>
+   <content type="html">&lt;p&gt;I surfaced an old short story of mine a while back and published it on the new publishing platform, &lt;a href=&quot;https://medium.com/p/83c2bc4bd240&quot;&gt;Medium&lt;/a&gt;. You can read the story at Medium, (Medium says it will only take five minutes) but here’s the first sentence: &lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;On the train this morning I stood next to a man reading the same book I was reading and on the same page. &lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://medium.com/p/83c2bc4bd240&quot;&gt;&lt;em&gt;Murakami on the Train&lt;/em&gt;&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  

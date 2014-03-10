@@ -30,19 +30,21 @@ h2 {
     @extend .as-heading__large--typeset;
 }    
 
-h3, h4 {
+h3 {
     color: darken($heading-color, 5%);
     @extend .as-heading__normal;
     @extend .as-heading__normal--typeset;
 }    
 
-.list h5 {
+h4, .list h5 {
+      color: darken($heading-color, 5%);
     @extend .as-heading__small;
+    @extend .as-heading__small--typeset;
 }
 
 article h5 {
-    @extend .as-heading__small;
-    @extend .as-heading__small--typeset;
+    @extend .as-heading__smallest;
+    @extend .as-heading__smallest--typeset;
 }    
 
 

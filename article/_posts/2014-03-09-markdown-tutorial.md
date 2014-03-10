@@ -6,12 +6,17 @@ class: dev
 tags: ["Static Site Generators"]
 ---
 
-[_This is also available as a Gist on Github_](https://gist.github.com/budparr/9257428)
+[_An abreviated form of this article is available as a Gist on Github_](https://gist.github.com/budparr/9257428)
 
 ### What is Markdown?
-Markdown is a great way to edit text so that your desired formatting is always intact no matter what editor you're using. It's increasingly used on the web as a way to ensure that a writer's intended formatting never gets lost.
 
-You can edit Markdown files in any text editor, though there are are some, like [iA Writer for Macs](http://www.iawriter.com/mac/), that are specially built to make this easy way of writing even easier. 
+Markdown is a formatting syntax that allows you to write in plain text in any editing program, but still format your document like you would with a word processor. It was created to convert plain text into HTML for publishing on the web and happens to be super easy to write and just as easy to read even without being converted. 
+
+Markdown ensures that a writer's intended formatting never gets lost. If you've ever worked hard on a Word document only to have its formatting scrambled when you sent it to published to your website or when a colleague opened it in another program, you'll appreciate the simplicity and stability of Markdown. 
+
+While you can edit Markdown files in any text editor, there are are some, like [iA Writer for Macs](http://www.iawriter.com/mac/), that are specially built to make this easy way of writing even easier. We use an editor called prose.io that still gives us the WYSIWYG style buttons we're used to, but leaves us to choose who we write our text.
+
+
 
 ### How do I write in Markdown?
 
@@ -49,7 +54,7 @@ _You can even use these same characters to emphasize complete sentences_.
 
 #### Blockquotes
 
-> When typing an extended quote, just put the "greater than" sign before the paragraph.
+When typing an extended quote, just put the "greater than" sign before the paragraph.
 
 ~~~ 
 
@@ -95,6 +100,6 @@ Images are just like links, but they have an exclamation point in front of them 
 
 
 
-## Resources
+### Resources
 
 If you're editing content in a Jekyll-based site, you can use the [prose editor](http://prose.io/), if your site is configured for it. If you want more advanced formatting, check out the original [Markdown site](http://daringfireball.net/projects/markdown/), or the [Github Markdown page](http://guides.github.com/overviews/mastering-markdown/).

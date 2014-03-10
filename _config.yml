@@ -1,4 +1,4 @@
-baseurl: http://budparr.github.io/
+baseurl: http://budparr.com
 sitename: 'budparr'
 description: 'Designer, Developer'
 # do not include  https://github.com/...
@@ -27,14 +27,14 @@ exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'CNAME', 'rakefile']
 
 # dev options (true/false)
 # if site is in production, 'production: true'
-production: false
+production: true
 use_pure_css: false
 use_jquery: true
 include_font_awesome: false
 include_addthis_sharing: false
 
 # options (data)
-google_analytics_id:  
+google_analytics_id: UA-30899180-2 
 disqus_id:
 addthis_id: ra-52e194380e6e5e78
 # CONTACT FORM http://getsimpleform.com/

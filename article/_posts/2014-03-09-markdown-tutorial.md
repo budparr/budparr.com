@@ -12,11 +12,9 @@ tags: ["Static Site Generators"]
 
 Markdown is a formatting syntax that allows you to write in plain text in any editing program, but still format your document like you would with a word processor. It was created to convert plain text into HTML for publishing on the web and happens to be super easy to write and just as easy to read even without being converted. 
 
-Markdown ensures that a writer's intended formatting never gets lost. If you've ever worked hard on a Word document only to have its formatting scrambled when you sent it to published to your website or when a colleague opened it in another program, you'll appreciate the simplicity and stability of Markdown. 
+Markdown ensures that a writer's intended formatting never gets lost. If you've ever labored on a Word document only to have its formatting scrambled when you sent it to be published to your website or when a colleague opened it in another program, you'll appreciate the simplicity and stability of Markdown. 
 
-While you can edit Markdown files in any text editor, there are are some, like [iA Writer for Macs](http://www.iawriter.com/mac/), that are specially built to make this easy way of writing even easier. We use an editor called prose.io that still gives us the WYSIWYG style buttons we're used to, but leaves us to choose who we write our text.
-
-
+While you can edit Markdown files in any text editor, there are are some, like [iA Writer for Macs](http://www.iawriter.com/mac/), that are specially built to make this easy way of writing even easier. 
 
 ### How do I write in Markdown?
 

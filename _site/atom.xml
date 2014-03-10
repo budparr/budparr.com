@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-10T12:55:39-04:00</updated>
+ <updated>2014-03-10T13:00:22-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -192,6 +192,8 @@ content goes here
 &lt;p&gt;Static site generation is quickly moving out of the realm of “blogs for hackers” and being used for a variety of use-cases. There are still gaps in the usability of these systems for content creators and the software can only be used by developers comfortable in the realm of working without the interface that many rely on. &lt;/p&gt;
 
 &lt;p&gt;While there are hurdles the landscape is changing quickly. &lt;a href=&quot;http://www.siteleaf.com/&quot;&gt;Siteleaf&lt;/a&gt; is an excellent example where some smart developers understand the need for an interface for content creators, while still maintaing the essence of static site generation. There are also platforms like &lt;a href=&quot;https://www.harp.io/&quot;&gt;Harp&lt;/a&gt; that facilitate publishing static sites through Dropbox. There’s no shortage of innovation and I believe these tools will soon be in the mainstream. Both &lt;a href=&quot;http://cactusformac.com/&quot;&gt;Cactus&lt;/a&gt; and &lt;a href=&quot;http://mixture.io/&quot;&gt;Mixture.io&lt;/a&gt; are tools that make the development side as easy as downloading software, and soon we will like see a new form of hybrid content management systems that are more like a loose collection of tools curated rather than developed by one person. &lt;/p&gt;
+
+&lt;p&gt;I’d highly recommend you read through some of the articles listed below, particularly Development Seeds &lt;a href=&quot;http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/&quot;&gt;“How We Build CMS Free Websites”&lt;/a&gt;, Rob Muhlestein’s &lt;a href=&quot;http://robmuh.com/the-static-web-returns/&quot;&gt;“The Static Web Returns”&lt;/a&gt;, and Ben Balter’s &lt;a href=&quot;http://ben.balter.com/2012/10/01/welcome-to-the-post-cms-world/&quot;&gt;“Welcome to the Post-CMS World”&lt;/a&gt;.&lt;/p&gt;
 
 &lt;hr /&gt;
 

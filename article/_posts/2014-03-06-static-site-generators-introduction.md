@@ -69,7 +69,7 @@ Static site generation is quickly moving out of the realm of "blogs for hackers"
 
 While there are hurdles the landscape is changing quickly. [Siteleaf](http://www.siteleaf.com/) is an excellent example where some smart developers understand the need for an interface for content creators, while still maintaing the essence of static site generation. There are also platforms like [Harp](https://www.harp.io/) that facilitate publishing static sites through Dropbox. There's no shortage of innovation and I believe these tools will soon be in the mainstream. Both [Cactus](http://cactusformac.com/) and [Mixture.io](http://mixture.io/) are tools that make the development side as easy as downloading software, and soon we will like see a new form of hybrid content management systems that are more like a loose collection of tools curated rather than developed by one person. 
 
-I'd highly recommend you read through some of the articles listed below, particularly Development Seed's ["How We Build CMS Free Websites,"](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/) Rob Muhlestein's ["The Static Web Returns,"](http://robmuh.com/the-static-web-returns/) and Ben Balter's ["Welcome to the Post-CMS World"](http://ben.balter.com/2012/10/01/welcome-to-the-post-cms-world/).
+I'd highly recommend you read through some of the articles listed below, particularly Development Seed's ["How We Build CMS Free Websites,"](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/) Rob Muhlestein's ["The Static Web Returns,"](http://robmuh.com/the-static-web-returns/) and Ben Balter's ["Welcome to the Post-CMS World"](http://ben.balter.com/2012/10/01/welcome-to-the-post-cms-world/) where he has recently updated his performance analysis.
 
 ---
 

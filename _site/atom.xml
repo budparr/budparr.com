@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-10T12:46:03-04:00</updated>
+ <updated>2014-03-10T12:47:41-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -113,7 +113,8 @@ and it shows up like this.&lt;/p&gt;
    <link href="/article/2014/03/08/static-site-generator-landscape/"/>
    <updated>2014-03-08T00:00:00-05:00</updated>
    <id>/article/2014/03/08/static-site-generator-landscape</id>
-   <content type="html">&lt;p&gt;&lt;em&gt;This post is a working draft. I thought I’d let it live here in public if anyone want to add commentary or ask questions while I write it.&lt;/em&gt;&lt;/p&gt;
+   <content type="html">&lt;pre&gt;&lt;code&gt;This post is a working draft. I thought I&#39;d let it live here in public if anyone want to add commentary or ask questions while I write it.
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Over the past year I’ve become obsessed with the movement toward building websites with no database. I’m enjoying the freedom of moving documents between systems, of being able to see the content I’m publishing and the relative simplicity that these systems have ushered in that allows me to focus on creating a good design instead of wading through layers of applications and server management.&lt;/p&gt;
 

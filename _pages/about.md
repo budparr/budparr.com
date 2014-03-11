@@ -9,7 +9,7 @@ For the past decade I’ve been a designer and developer of websites. I enjoy th
 
 ### Technical Details
 
-/*My wife thinks this site is boring, but my only real goal with it was to try and nail down the typography.*/
+My wife thinks this site is boring, but my only real goal with it was to try and nail down the typography.
 
 This site was created by scratch in a text editor using some amazingly powerful tools:
 

@@ -11,17 +11,17 @@
 //@import url(http://fonts.googleapis.com/css?family=Lato:300,300italic|Lora:400,400italic|PT+Serif:400,400italic);
 
 
-.font-display 					{  
+.font-display 					{
 font-family: 'Mercury SSm A', 'Mercury SSm B', 'PT Serif', Georgia, "Droid Serif" serif; font-weight: 300; font-style: normal;
 
 }
 
 
-.font-var 					{  
-	font-family:  'Open Sans', "Helvetica Neueue", Helvetica, Verdana, Arial, sans-serif, sans-serif; 
+.font-var 					{
+	font-family:  'Open Sans', "Helvetica Neueue", Helvetica, Verdana, Arial, sans-serif, sans-serif;
 
 }
-.font-body  					{ 
+.font-body  					{
 font-family: 'Mercury SSm A', 'Mercury SSm B', 'PT Serif', Georgia, "Droid Serif" serif; font-weight: 300; font-style: normal;
 
 }
@@ -32,9 +32,9 @@ font-family: 'Mercury SSm A', 'Mercury SSm B', 'PT Serif', Georgia, "Droid Serif
 // ------------------------------------------------------------
 
 p, span, cite, ol, ul, pre, label, input, textarea 	{ @include adjust-font-size-to($para); }
-ul 													{ @include nobullet; } 						
-ol 													{ @include nobullet; }	
-li 													{ line-height: inherit; }					
+ul 													{ @include nobullet; }
+ol 													{ @include nobullet; }
+li 													{ line-height: inherit; }
 strong, b 											{ font-weight: 700; }
 em, i, q 											{ font-style: italic; }
 
@@ -50,4 +50,3 @@ p{ text-transform:none;
 }
 
 	}
-

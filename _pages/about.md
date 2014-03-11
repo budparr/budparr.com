@@ -10,7 +10,7 @@ sharing: false
 For the past decade I’ve been a designer and developer of websites. I enjoy the constant renewal and problem solving of this work. I work with organizations and people I admire for their contributions to the world. I have three children and one wife. I love roasting and brewing coffee. I’m an ambivert. I value curiosity and learning. I like challenging books. Gadget junkie. I agree that there are only two types of music.
 
 ### About the Site
-My goal designing this site was to make something highly readable on any device. The type is [Mercury](http://www.typography.com/fonts/mercury-text/overview/) by Hoefler & Frere-Jones, served by that firm's [cloud.typography](http://www.typography.com/cloud/welcome/) service.
+My only goal designing this site was to make something highly readable on any device. My wife thinks it's boring, but that's okay. The type is [Mercury](http://www.typography.com/fonts/mercury-text/overview/) by Hoefler & Frere-Jones, served by that firm's [cloud.typography](http://www.typography.com/cloud/welcome/) service.
 
 ### Technical Details
 

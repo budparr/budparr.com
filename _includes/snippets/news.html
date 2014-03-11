@@ -1,13 +1,14 @@
-<div class="list">	
+<div class="list">
 	{% for news in site.posts limit:250 %}
 		<h5 class="title">
 			<a href="{{ news.url }}">
 				{{ news.title }}
 			</a>
-		</h5>
+		<br />
 		<small>
-			{{ news.date | date: "%B %d, %Y" }}		
+			{{ news.date | date: "%B %d, %Y" }}
 		</small>
-		<hr />	
+	</h5>
+		<hr />
 	{% endfor %}
 </div>

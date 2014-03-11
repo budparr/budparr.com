@@ -44,7 +44,7 @@ h4, .list h5 {
 
 article h5 {
     @extend .as-heading__smallest;
-    //@extend .as-heading__smallest--typeset;
+    @extend .as-heading__smallest--typeset;
 }
 
 

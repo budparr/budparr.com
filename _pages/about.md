@@ -17,3 +17,6 @@ This site was created by scratch in a text editor using some amazingly powerful 
 - The stylesheets were written in Sass with the help of [Sassaparilla](http://sass.fffunction.co/) and [Compass](http://compass-style.org/).   
 - The type is [Mercury](http://www.typography.com/fonts/mercury-text/overview/) by Hoefler & Frere-Jones, served by that firm's [cloud.typography](http://www.typography.com/cloud/welcome/) service.  
 
+I'm working on making the layout for this site into a theme. It can have a left or right sidebar or both and is fully responsive. The CSS file for the current site is ~13kb.
+
+Drop me a line at budparr@sonnetmedia.net or on twitter <http://twitter.com/budparr> if you'd like to know when it's done.

@@ -9,7 +9,7 @@ sharing: false
 
 For the past decade I’ve been a designer and developer of websites. I enjoy the constant renewal and problem solving of this work. I work with organizations and people I admire for their contributions to the world. 
 
-Capabilities: For over a decade I've been making things happen with HTML and CSS (including, now both LESS and Sass) and know my way around frameworks like Foundation and Bootstrap and have worked with popular CMS products like ExpressionEngine and Wordpress as well as the new kids on the block Statamic, Jekyll and other static site generators. While I would never call myself strictly a developer I can manipulate javascript/Jquery and PHP when I need to, and am studying Backbone, etc etc etc. I have administered servers though prefer not to and am not afraid of the command line, including a bit of Git.
+Capabilities: For over a decade I've been making things happen with HTML and CSS (including, now, both LESS and Sass) and know my way around frameworks like Foundation and Bootstrap and have worked with popular CMS products like ExpressionEngine and Wordpress as well as the new kids on the block Statamic, Jekyll and other static site generators. While I would never call myself strictly a developer I can manipulate javascript/Jquery and PHP when I need to, and am studying Backbone, etc etc etc. I have administered servers though prefer not to and am not afraid of the command line, including a bit of Git.
 
 I think of myself as a technologist/strategist first and a designer/developer second. But really one wouldn't be much without the other. 
 

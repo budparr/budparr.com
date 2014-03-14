@@ -10,6 +10,8 @@ prose:
     - favicon.ico
     - license.md
     - readme.md
+    - gemfile
+    - Gemfile.lock
     - robots.txt
     - _config.yml
     - _prose.yml
@@ -28,19 +30,6 @@ prose:
         field:
           element: 'hidden'
           value: 'page'
-      - name: 'category'
-        field:
-          element: 'select'
-          label: 'Category'
-          options:
-            - name: 'News'
-              value: 'news'
-            - name: 'Media'
-              value: 'media'
-      - name: 'old_permalink'
-        field:
-          element: 'hidden'
-          value: ''
     _pages:
       - name: 'layout'
         field:

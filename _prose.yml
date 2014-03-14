@@ -20,7 +20,7 @@ prose:
     - /_includes
     - /_site
   metadata:
-    _posts:
+     _posts:
       - name: 'title'
         field:
           element: 'text'
@@ -30,7 +30,7 @@ prose:
         field:
           element: 'hidden'
           value: 'page'
-    _pages:
+     _pages:
       - name: 'layout'
         field:
           element: 'hidden'

@@ -1,8 +1,6 @@
 #configuration options for http://prose.io editor
 prose:
-  siteurl: 'http://budparr.github.io/'
-  #rooturl: '_posts'
-  site: 
+  siteurl: 'http://budparr.com/'
   media: 'assets/img'
   ignore:
     - .gitignore
@@ -21,52 +19,49 @@ prose:
     - /_site
   metadata:
     _posts:
-      - name: "title"
+      - name: 'title'
         field:
-          element: "text"
-          label: "Title"
-          placeholder: "Put your title here"
-      - name: "layout"
+          element: 'text'
+          label: 'Title'
+          placeholder: 'Put your title here'
+      - name: 'layout'
         field:
-          element: "hidden"
-          value: "page"
-      - name: old_permalink
+          element: 'hidden'
+          value: 'page'
+      - name: 'category'
         field:
-          element: "hidden"
-      - name: "category"
-        field:
-          element: "select"
-          label: "Category"
+          element: 'select'
+          label: 'Category'
           options:
-            - name: "News"
-              value: "news"
-            - name: "Media"
-              value: "media"
+            - name: 'News'
+              value: 'news'
+            - name: 'Media'
+              value: 'media'
     _pages:
-      - name: "layout"
+      - name: 'layout'
         field:
-          element: "hidden"
-          value: "page"
-      - name: "title"
+          element: 'hidden'
+          value: 'page'
+      - name: 'title'
         field:
-          element: "text"
-          label: "Title"
-          placeholder: "Title"
-          value: "Title"
-      - name: permalink
+          element: 'text'
+          label: 'Title'
+          placeholder: 'Title'
+          value: 'Title'
+      - name: 'permalink'
         field:
-          element: "text"
-          label: "Link"
-          help: "/page-name/"
-      - name: include
+          element: 'text'
+          label: 'Link'
+          help: '/page-name/'
+      - name: 'include'
         field:
           label: 'Include Snippet'
-          element: "text"
-          help: "for developer use only"
-          label: "snippet"
-      - name: sharing
+          element: 'text'
+          help: 'for developer use only'
+          label: 'snippet'
+      - name: 'sharing'
         field:
-          element: "checkbox"
-          label: "Add Sharing Buttons to this page?"
-          help: "Check if you want sharing buttons to show up on the page."
-          value: false
+          element: 'checkbox'
+          label: 'Add Sharing Buttons to this page?'
+          help: 'Check if you want sharing buttons to show up on the page.'
+          value: 'false'

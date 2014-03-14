@@ -6,6 +6,8 @@ prose:
     - .gitignore
     - 404.html
     - CNAME
+    - gemfile
+    - Gemfile.lock
     - atom.xml
     - favicon.ico
     - license.md

@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-11T17:21:53-04:00</updated>
+ <updated>2014-03-14T10:25:16-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -21,11 +21,11 @@
 
 &lt;h3 id=&quot;what-is-markdown&quot;&gt;What is Markdown?&lt;/h3&gt;
 
-&lt;p&gt;Markdown is a formatting syntax that allows you to write in plain text in any editing program, but still format your document like you would with a word processor. It was created to convert plain text into HTML for publishing on the web and happens to be super easy to write and just as easy to read even without being converted. &lt;/p&gt;
+&lt;p&gt;Markdown is a formatting syntax that allows you to write in plain text in any editing program, but still format your document like you would with a word processor. It was created to convert plain text into HTML for publishing on the web and happens to be super easy to write and just as easy to read even without being converted.&lt;/p&gt;
 
-&lt;p&gt;Markdown ensures that a writer’s intended formatting never gets lost. If you’ve ever labored on a Word document only to have its formatting scrambled when you sent it to be published to your website or when a colleague opened it in another program, you’ll appreciate the simplicity and stability of Markdown. &lt;/p&gt;
+&lt;p&gt;Markdown ensures that a writer’s intended formatting never gets lost. If you’ve ever labored on a Word document only to have its formatting scrambled when you sent it to be published to your website or when a colleague opened it in another program, you’ll appreciate the simplicity and stability of Markdown.&lt;/p&gt;
 
-&lt;p&gt;While you can edit Markdown files in any text editor, there are are some, like &lt;a href=&quot;http://www.iawriter.com/mac/&quot;&gt;iA Writer for Macs&lt;/a&gt;, that are specially built to make this easy way of writing even easier. &lt;/p&gt;
+&lt;p&gt;While you can edit Markdown files in any text editor, there are are some, like &lt;a href=&quot;http://www.iawriter.com/mac/&quot;&gt;iA Writer for Macs&lt;/a&gt;, that are specially built to make this easy way of writing even easier.&lt;/p&gt;
 
 &lt;h3 id=&quot;how-do-i-write-in-markdown&quot;&gt;How do I write in Markdown?&lt;/h3&gt;
 
@@ -39,15 +39,15 @@ and it shows up like this.&lt;/p&gt;
 
 &lt;p&gt;If you want to make a word &lt;strong&gt;bold&lt;/strong&gt;, you merely put two asterisks around it:  &lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;like **this**&lt;/code&gt; is  like &lt;strong&gt;this&lt;/strong&gt; &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;like **this**&lt;/code&gt; is  like &lt;strong&gt;this&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;To emphasize a word with &lt;em&gt;italics&lt;/em&gt; you put one asterisk around it:  &lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;like *this*&lt;/code&gt; is  like &lt;em&gt;this&lt;/em&gt; &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;like *this*&lt;/code&gt; is  like &lt;em&gt;this&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;or&lt;/p&gt;
 
-&lt;p&gt;&lt;code&gt;use an _underscore_&lt;/code&gt; to get the same results. &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;use an _underscore_&lt;/code&gt; to get the same results.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;You can even use these same characters to emphasize complete sentences&lt;/em&gt;.&lt;/p&gt;
 
@@ -77,7 +77,7 @@ and it shows up like this.&lt;/p&gt;
   &lt;li&gt;Just use a dash with a space before each line&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;- Using Lists is Easy 
+&lt;pre&gt;&lt;code&gt;- Using Lists is Easy
 - Just use a dash with a space before each line
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -103,6 +103,8 @@ and it shows up like this.&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;h3 id=&quot;resources&quot;&gt;Resources&lt;/h3&gt;
+
+&lt;p&gt;See also &lt;a href=&quot;http://whatismarkdown.com/&quot;&gt;“What is Markdown”&lt;/a&gt; for a list of good Markdown editors.&lt;/p&gt;
 
 &lt;p&gt;If you’re editing content in a Jekyll-based site, you can use the &lt;a href=&quot;http://prose.io/&quot;&gt;prose editor&lt;/a&gt;, if your site is configured for it. If you want more advanced formatting, check out the original &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown site&lt;/a&gt;, or the &lt;a href=&quot;http://guides.github.com/overviews/mastering-markdown/&quot;&gt;Github Markdown page&lt;/a&gt;.&lt;/p&gt;
 </content>

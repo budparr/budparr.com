@@ -35,24 +35,16 @@
     {% endif %}
   </div>
   {% if site.include_addthis_sharing %}
-      
-  
-  <div class="sharing">
-   {% include articles/sharing.html %}
-  </div>  
-
+    <div class="sharing">
+      {% include articles/sharing.html %}
+    </div>
   {% endif %}
 
-
-
-
-
+    {% if page.url contains '/article/' %}
+    {% include articles/comments-twitter.html %}
       {% include global/license-creative-commons.html %}
-
-
-
-      {% include global/edit.html %}
+    {% endif %}
+    {% include global/edit.html %}
 
 
 </article>
-

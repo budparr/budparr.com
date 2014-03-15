@@ -111,6 +111,7 @@ blockquote {
 
 }
 
+// the dev class on an article doesn't have indented paragraphs, but has space between them.
 article.dev {
   p {
     margin-bottom: 1.25em;

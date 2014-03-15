@@ -49,6 +49,7 @@ blockquote p em {
 p{
 	text-transform:none;
 	 @include adjust-font-size-to(18px);
+	line-height:1.5;
 }
 
 	}

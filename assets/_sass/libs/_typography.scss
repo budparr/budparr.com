@@ -48,8 +48,7 @@ blockquote p em {
 @include respond-to-max(1025px, $IE9: false) { // Stop at precise width, as we're talking about devices
 p{
 	text-transform:none;
-	 //@include adjust-font-size-to(24px);
-	font-size:17px;
+	 @include adjust-font-size-to(18px);
 }
 
 	}

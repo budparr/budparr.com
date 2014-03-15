@@ -45,11 +45,11 @@ blockquote p em {
 
 
 // Adjust type size for iPads where para text is too small
-@include respond-to-max(1025px, $IE9: false) { // Stop at precise width, as we're talking about devices
-p{
-	text-transform:none;
-	 @include adjust-font-size-to(18px);
-	line-height:1.5;
-}
-
-	}
+// @include respond-to-max(1025px, $IE9: false) { // Stop at precise width, as we're talking about devices
+// p{
+// 	text-transform:none;
+// 	 @include adjust-font-size-to(18px);
+// 	line-height:1.5;
+// }
+//
+// 	}

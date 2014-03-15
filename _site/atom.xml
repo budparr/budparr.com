@@ -4,35 +4,13 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-14T20:55:21-04:00</updated>
+ <updated>2014-03-14T20:58:31-04:00</updated>
  <id></id>
  <author>
    <name></name>
    <email></email>
  </author>
 
- 
- <entry>
-   <title>Your Filename</title>
-   <link href="/article/2014/03/14/your-filename/"/>
-   <updated>2014-03-14T00:00:00-04:00</updated>
-   <id>/article/2014/03/14/your-filename</id>
-   <content type="html">&lt;h2 id=&quot;a-new-post&quot;&gt;A New Post&lt;/h2&gt;
-
-&lt;p&gt;Enter text in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;. Use the toolbar above, or click the &lt;strong&gt;?&lt;/strong&gt; button for formatting help.&lt;/p&gt;
-</content>
- </entry>
- 
- <entry>
-   <title>Your Erwer</title>
-   <link href="/article/2014/03/14/your-erwer/"/>
-   <updated>2014-03-14T00:00:00-04:00</updated>
-   <id>/article/2014/03/14/your-erwer</id>
-   <content type="html">&lt;h2 id=&quot;a-new-postwrewr&quot;&gt;A New Postwrewr&lt;/h2&gt;
-
-&lt;p&gt;Enter text in &lt;a href=&quot;http://daringfireball.net/projects/markdown/&quot;&gt;Markdown&lt;/a&gt;. Use the toolbar above, or click the &lt;strong&gt;?&lt;/strong&gt; button for formatting help.&lt;/p&gt;
-</content>
- </entry>
  
  <entry>
    <title>The Basics of Markdown Tutorial</title>

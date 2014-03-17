@@ -1,5 +1,5 @@
 ---
-title: The No-db Landscape
+title: The No-db Landscape (part 1)
 layout: page
 tags: ["Static Site Generators"]
 categories: ["For Developers and Designers"]

@@ -1,9 +1,9 @@
 ---
 title: "The No-db Landscape (part 1)"
 layout: page
-tags:
+tags: 
   - Static Site Generators
-categories:
+categories: 
   - For Developers and Designers
 class: dev
 published: true
@@ -43,7 +43,7 @@ All of the no-db applications organize content similarly in pages that can be or
 #### The similarities end there.
 **Static site generators** do little more than the name implies. They compile text-based content files (when I say text file that may mean any sort of text file, depending on the app, including markdown or text) into HTML pages using templates to determine the layout of the page. Depending on the app, they may process Sass/Less or other files to help make development more efficient.
 
-Once the site is compiled you get a folder with your website in it. None of these are currently what you would call a CMS because there is no control panel and no inherent asset/content organizing principle or interface.
+Once the site is compiled you get a folder with your website in it. None of these are currently what you would call a CMS because there is no control panel and no inherent asset/content organizing principle or interface. And not a single bell or whistle to be found.
 
 Most, though not all, of these apps run on a local computer via command line and once the site is compiled it can be moved to pretty much any server. There are more direct methods of deployment, including, prominently, Jekyll's integration with Github's Pages hosting service, which builds the site for you whenever you update your site's Github repo.
 

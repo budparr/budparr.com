@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-17T09:07:42-04:00</updated>
+ <updated>2014-03-17T09:08:30-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -90,8 +90,9 @@ content goes here
 
 &lt;blockquote&gt;
   &lt;h2 id=&quot;prose-screenshotassetsimgproseiojpg&quot;&gt;&lt;img src=&quot;/assets/img/proseio.jpg&quot; alt=&quot;Prose screenshot&quot; /&gt;&lt;/h2&gt;
-  &lt;p&gt;It’s important to note that Prose’s development is only semi-active as of this writing and it has some quirky behavior that makes it not entirely suitable for client use, but I don’t feel it’s that far away from being a great minimalist content editor.&lt;/p&gt;
 &lt;/blockquote&gt;
+
+&lt;p&gt;It’s important to note that Prose’s development is only semi-active as of this writing and it has some quirky behavior that makes it not entirely suitable for client use, but I don’t feel it’s that far away from being a great minimalist content editor.&lt;/p&gt;
 
 &lt;p&gt;Jekyll is a Ruby app created by the founder of Github. It’s the house-app for serving Github Pages, that company’s free website hosting service, and that alone gives it a leg up on most of these apps, even if just making deployment a bit easier than otherwise.&lt;/p&gt;
 

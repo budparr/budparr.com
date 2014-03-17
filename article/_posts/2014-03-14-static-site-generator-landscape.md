@@ -83,6 +83,7 @@ With [Jekyll](http://jekyllrb.com) sites--the only static site generator I've us
 
 > ![Prose screenshot](/assets/img/proseio.jpg)
 ---
+
 It's important to note that Prose’s development is only semi-active as of this writing and it has some quirky behavior that makes it not entirely suitable for client use, but I don't feel it's that far away from being a great minimalist content editor.
 
 Jekyll is a Ruby app created by the founder of Github. It's the house-app for serving Github Pages, that company's free website hosting service, and that alone gives it a leg up on most of these apps, even if just making deployment a bit easier than otherwise.

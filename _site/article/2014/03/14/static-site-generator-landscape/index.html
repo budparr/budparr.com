@@ -213,7 +213,7 @@ content goes here
 
 <p>Once the site is compiled you get a folder with your website in it. None of these are currently what you would call a CMS because there is no control panel and no inherent asset/content organizing principle or interface.</p>
 
-<p>Most, though not all, of these apps run on a local computer via command line and once the site is compiled it can be moved to pretty much any server. There are more direct methods of deployment, including, prominently, Jekyll’s integration with Github’s Pages hosting service, which compiles the site for you whenever you update your site’s Github repo.</p>
+<p>Most, though not all, of these apps run on a local computer via command line and once the site is compiled it can be moved to pretty much any server. There are more direct methods of deployment, including, prominently, Jekyll’s integration with Github’s Pages hosting service, which builds the site for you whenever you update your site’s Github repo.</p>
 
 <p>The beauty of purely static sites, besides the significant performance gain, is that you can create all the complex queries you want in your templates and the end user will not be impacted because they’re not run when the page loads, but at build time. Personally, this is a revelation. The value of a well organized website is that it should keep content creators from repeating themselves while simultaneously creating rich relationships and context around the content of a site. Static sites give me the freedom to create all the complex relationships I like, using content from wherever appropriate, with near total impunity in terms of performance.</p>
 
@@ -237,11 +237,11 @@ content goes here
 
 <h4 id="static-site-generators">Static Site Generators</h4>
 
-<p>I have a feeling that the best of the static site generators will surface as “web architectures” rather than just static site generators. That’s the phrase <a href="http://docpad.org/"><strong>Docpad</strong></a> uses to describe itself and even though what it does is precisely generate a website, Docpad is indeed an extensible tool set for building any sort of website, even one with a database, or with database like characteristics.</p>
+<p>I have a feeling that the best of the static site generators will surface as “web architectures” rather than just static site generators. That’s the phrase <a href="http://docpad.org/"><strong>Docpad</strong></a> uses to describe itself and even though what it does is precisely generate a website, Docpad is indeed an extensible tool set for building any sort of website, even one with a database, or with dynamic characteristics.</p>
 
 <p>Likewise, <a href="http://harpjs.com/"><strong>Harp</strong></a> bills itself as a web server, making the distinction between generating HTML files and all the other processes that go into a modern website, like Sass, or Jade templates, or coffeeScript. Similarly, <a href="http://middlemanapp.com/"><strong>Middleman</strong></a> describes itself as simply a collection of tools.</p>
 
-<p>Ingeniously, the developers behind Harp have also built a commercial <a href="https://www.harp.io/">platform</a> for deploying sites (the server itself is open source) that appears to be as simple as placing files in a Dropbox folder. I like to have a sense that a project will have longevity, so open source projects, in my view, should have a business model close at hand so that the developers are able to continue on with the project.</p>
+<p>Ingeniously, the developers behind Harp have also built a commercial <a href="https://www.harp.io/">platform</a> for deploying sites (the server itself is open source) that appears to be as simple as placing files in a Dropbox folder. I like to have a sense that a project will have longevity, so open source projects, in my view, should have a business model close at hand so that the core developers are able to continue on with the project.</p>
 
 <p>Many of the static site generators are open source. There are three exceptions that I’m aware of. Both <a href="http://cactusformac.com/"><strong>Cactus</strong></a> and <a href="http://mixture.io/"><strong>Mixture.io</strong></a> are focused on making the developer’s life easier, and though Mixture defines itself as a prototyping tool, you could easily deploy sites generated with it in production.</p>
 
@@ -251,13 +251,15 @@ content goes here
 
 <p>With <a href="http://jekyllrb.com">Jekyll</a> sites–the only static site generator I’ve used in production–I’ve been using the <a href="Prose">prose.io</a> content editor. Prose is terrific and works hand-in-hand with GitHub, allowing you to easily traverse all your repositories and files within. For each repository you can define files to exclude so content creators can only see files they’d want to work on. Prose also allows you to define your front-matter in a config file so the user can easily edit an entry’s metadata.</p>
 
+<p><img src="/assets/img/proseio.jpg" alt="Prose screenshot" /></p>
+
 <p>It’s important to note that Prose’s development is only semi-active as of this writing and it has some quirky behavior that makes it not entirely suitable for client use, but I don’t feel it’s that far away from being a great minimalist content editor.</p>
 
 <p>Jekyll is a Ruby app created by the founder of Github. It’s the house-app for serving Github Pages, that company’s free website hosting service, and that alone gives it a leg up on most of these apps, even if just making deployment a bit easier than otherwise.</p>
 
 <p>As of this writing, when used with GitHub Pages, Jekyll doesn’t allow any plugins because of restrictions on the hosting platform. If deployment isn’t an issue there are plugins put out there to overcome some of Jekyll’s–born a “blogging platform for hackers”–lacunae, and there will be a whitelist of plugins allowed in a future release.</p>
 
-<p>Jekyll is also a bit more structured than many of the apps, using a post and page model (its original tagline was “blogging for hackers”) where posts get taxonomies and chronological sorting whereas pages do not. The lack of taxonomies and sorting for pages is a big shortcoming, but I know that the project owners are working toward a more flexible model. All in all, I’ve enjoyed having to find creative solutions to Jekyll’s constraints and have managed to create some fairly complex relationships between pieces of content, even if most everything has to be nested in little _posts folders scattered throughout the site.</p>
+<p>Jekyll is also a bit more structured than many of the apps, using a post and page model where posts get taxonomies and chronological sorting whereas pages do not. The lack of taxonomies and sorting for pages is a big shortcoming, but I know that the project owners are working toward a more flexible model. All in all, I’ve enjoyed having to find creative solutions to Jekyll’s constraints and have managed to create some fairly complex relationships between pieces of content, even if most everything has to be nested in little _posts folders scattered throughout the site.</p>
 
 <p>I use Jekyll’s data model liberally and have enjoyed the freedom of just dumping lists in a Yaml file to use anywhere on a site, like turning that data into JSON files for use in, say, a calendar, or tabular data, or relationships like authors on a multi-author site.</p>
 

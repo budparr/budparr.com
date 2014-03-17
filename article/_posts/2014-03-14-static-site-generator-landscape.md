@@ -35,7 +35,7 @@ content goes here
 
 Generally speaking templates and layout schemes tend to be similar in both types of sites in that they use a central default or base layout and some easy way to include partials in your templates. While this layout scheme is not unique to no-db websites, it's a natural fit. In contrast to some of the popular, "traditional" content management systems, these apps assume nothing about your design, thankfully.
 
-All of the no-db applications organize content similarly in pages that can be organized around collections or categories, though folder structures vary from one app to another.
+All of the no-db applications organize content similarly in pages that can be organized around collections or categories, though folder structures and the way URL schemes vary from one app to another.
 
 #### The similarities end there.
 **Static site generators** do little more than the name implies. They compile text-based content files (when I say text file that may mean any sort of text file, depending on the app, including markdown or text) into HTML pages using templates to determine the layout of the page. Depending on the app, they may process Sass/Less or other files to help make development more efficient.

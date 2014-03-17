@@ -17,7 +17,7 @@ This article is aimed squarely at the designer/developer building websites for c
 ### So what is the difference between a "Flat File CMS" and a "Static Site Generator"?
 Both flat-file CMSs (or file-based CMSs) and statically generated websites have no database at all. That alone is significant. All of your site's content is merely a collection of text files.
 
-This is what a document might look like in a flat-file site:
+This is what a document might look like in a flat-file site (or see [this post as a raw text file](https://raw.github.com/budparr/budparr.github.io/master/article/_posts/2014-03-14-static-site-generator-landscape.md)):
 
 ~~~
 ---
@@ -120,6 +120,10 @@ The guys running and contributing to the project are avid and thoughtful about w
 
 My use case for Jekyll is for when I need a simple deployment and when I need to know the app will have a long life, which its Github backing would seem to ensure. Despite any shortcomings mention above, I really enjoy working with it, find it quite easy to use. The site this article was published on, [budparr.com](http://budparr.com) was created on Jekyll as well as several others, including a project I have in beta that has quite an involved content-set.
 
-While Jekyll is my go-to app (and the app of choice for the firm that introduced me to static site generators, Development Seed) I'm actively looking at Middleman, also a Ruby app; Docpad, Harp, [Assemblejs](http://assemble.io/), and Siteleaf for use in a variety of projects. With no-db websites in general, it's proven not difficult to move content and even site structure between apps, so it should be easy to get to know several of them so that you can always choose the right set of tools for the task at hand. I've never liked the way CMSs develop fan-bases rather than user-bases and welcome the change to choosing toolsets to get a job done.
+While Jekyll is my go-to app (and the app of choice for the firm that introduced me to static site generators, Development Seed) I'm actively looking at Middleman, also a Ruby app; Docpad, Harp, [Assemblejs](http://assemble.io/), and Siteleaf for use in a variety of projects. There are [myriad](http://staticsitegenerators.net/) choices to suite your needs.
+
+With no-db websites in general, it's proven not difficult to move content and even site structure between apps, so it should be easy to get to know several of them so that you can always choose the right set of tools for the task at hand. I've never liked the way CMSs develop fan-bases rather than user-bases and welcome the change to choosing toolsets to get a job done.
+
+If you want to get your feet wet without worry about setting up the proper environment for Jekyll, give [**Mixture**](http://mixture.io/) a try. While it's meant to be a prototyping tool, Mixture is well designed and easy to use so you can get a static site up an running pretty quickly, with a vareity of boilerplates to choose from to help you start as well.
 
 I'll go into these more as I've gotten a chance to build some sites with them.

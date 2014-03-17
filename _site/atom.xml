@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-17T09:08:30-04:00</updated>
+ <updated>2014-03-17T09:11:24-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -96,9 +96,9 @@ content goes here
 
 &lt;p&gt;Jekyll is a Ruby app created by the founder of Github. It’s the house-app for serving Github Pages, that company’s free website hosting service, and that alone gives it a leg up on most of these apps, even if just making deployment a bit easier than otherwise.&lt;/p&gt;
 
-&lt;p&gt;As of this writing, when used with GitHub Pages, Jekyll doesn’t allow any plugins because of restrictions on the hosting platform. If deployment isn’t an issue there are plugins put out there to overcome some of Jekyll’s–born a “blogging platform for hackers”–lacunae, and there will be a whitelist of plugins allowed in a future release.&lt;/p&gt;
+&lt;p&gt;As of this writing, when used with GitHub Pages, Jekyll doesn’t allow any plugins because of restrictions on the hosting platform. If deployment isn’t an issue there are plugins put out there to overcome some of Jekyll’s–born a “blogging platform for hackers”–lacunae, and there will be a whitelist of plugins allowed in a future release and I’ve managed to get by fine without them.&lt;/p&gt;
 
-&lt;p&gt;Jekyll is also a bit more structured than many of the apps, using a post and page model where posts get taxonomies and chronological sorting whereas pages do not. The lack of taxonomies and sorting for pages is a big shortcoming, but I know that the project owners are working toward a more flexible model. All in all, I’ve enjoyed having to find creative solutions to Jekyll’s constraints and have managed to create some fairly complex relationships between pieces of content, even if most everything has to be nested in little _posts folders scattered throughout the site.&lt;/p&gt;
+&lt;p&gt;Jekyll is also a bit more structured than many of the apps, using a post and page model where posts get taxonomies and chronological sorting whereas pages do not. The lack of taxonomies and sorting for pages is a big shortcoming, but I know that the project owners are working toward a more flexible, collections-based, model. All in all, I’ve enjoyed having to find creative solutions to Jekyll’s constraints and have managed to create some fairly complex relationships between pieces of content, even if most everything has to be nested in little _posts folders scattered throughout the site.&lt;/p&gt;
 
 &lt;p&gt;I use Jekyll’s data model liberally and have enjoyed the freedom of just dumping lists in a Yaml file to use anywhere on a site, like turning that data into JSON files for use in, say, a calendar, or tabular data, or relationships like authors on a multi-author site.&lt;/p&gt;
 

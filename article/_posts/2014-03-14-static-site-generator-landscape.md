@@ -1,9 +1,12 @@
 ---
-title: The No-db Landscape (part 1)
+title: "The No-db Landscape (part 1)"
 layout: page
-tags: ["Static Site Generators"]
-categories: ["For Developers and Designers"]
+tags: 
+  - Static Site Generators
+categories: 
+  - For Developers and Designers
 class: dev
+published: true
 ---
 
 It's no coincidence that as I've become obsessed with website performance I've also become enamored with building sites with no database. They're unequivocally faster, simpler to maintain and build, and more secure and stable than database-driven websites. There are tradeoffs of course, but in my view well worth it. I don't understand the talk I see about static sites being for "hackers" or small or simple sites. I've seen some [large](http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/), [complex](http://developmentseed.org/blog/2013/09/19/relaunching-undp-portal/) and [highly trafficked](http://developmentseed.org/blog/2013/10/24/its-called-jekyll/) sites built this way. See my earlier [post](/article/2014/03/06/static-site-generators-introduction/) in this series for more information.
@@ -81,12 +84,12 @@ One reason I love static site generators is that you can define custom fields on
 
 With [Jekyll](http://jekyllrb.com) sites--the only static site generator I've used in production--I've been using the [prose.io](Prose) content editor. Prose is terrific and works hand-in-hand with GitHub, allowing you to easily traverse all your repositories and files within. For each repository you can define files to exclude so content creators can only see files they'd want to work on. Prose also allows you to define your front-matter in a config file so the user can easily edit an entry’s metadata.
 
-> ![Prose screenshot](/assets/img/proseio.jpg)
+![Prose screenshot](/assets/img/proseio.jpg)
 ---
 
 It's important to note that Prose’s development is only semi-active as of this writing and it has some quirky behavior that makes it not entirely suitable for client use, but I don't feel it's that far away from being a great minimalist content editor.
 
-Jekyll is a Ruby app created by the founder of Github. It's the house-app for serving Github Pages, that company's free website hosting service, and that alone gives it a leg up on most of these apps, even if just making deployment a bit easier than otherwise.
+Jekyll is a Ruby app created by the founder of Github. It's the house-app for serving Github Pages, that company's free static website hosting service, and that alone gives it a leg up on most of these apps, even if just making deployment a bit easier than otherwise.
 
 As of this writing, when used with GitHub Pages, Jekyll doesn't allow any plugins because of restrictions on the hosting platform. If deployment isn't an issue there are plugins put out there to overcome some of Jekyll’s--born a “blogging platform for hackers”--lacunae, and there will be a whitelist of plugins allowed in a future release and I've managed to get by fine without them.
 

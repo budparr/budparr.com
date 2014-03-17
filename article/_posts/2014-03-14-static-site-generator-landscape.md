@@ -119,7 +119,7 @@ To my mind there's nothing simpler than dumping some info in a text file, which 
 
 One thing to be aware of for more complex sites is that for a large site the time to build the site can get pretty long. It's page generation that takes so long (though we're mostly talking about a matter of seconds) so I've moved anything I can into data files, which has proven to dramatically help build-times.
 
-The guys running and contributing to the project are avid and thoughtful about where Jekyll is going and it's integration with Github make it the best place to start for anyone new to static site generators, particularly given its ease of deployment and use of the easy, if somewhat limited, Liquid templating language.
+The guys running and contributing to the project are avid and thoughtful about where Jekyll is going and it's integration with Github make it the best place to start for anyone new to static site generators, particularly given its ease of deployment and use of the easy, if somewhat limited, [Liquid](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) templating language.
 
 My use case for Jekyll is for when I need a simple deployment and when I need to know the app will have a long life, which its Github backing would seem to ensure. Despite any shortcomings mention above, I really enjoy working with it, find it quite easy to use. The site this article was published on, [budparr.com](http://budparr.com) was created on Jekyll as well as several others, including a project I have in beta that has quite an involved content-set.
 
@@ -129,4 +129,4 @@ With no-db websites in general, it's proven not difficult to move content and ev
 
 If you want to get your feet wet without worry about setting up the proper environment for Jekyll, give [**Mixture**](http://mixture.io/) a try. While it's meant to be a prototyping tool, Mixture is well designed and easy to use so you can get a static site up an running pretty quickly, with a vareity of boilerplates to choose from to help you start as well.
 
-I'll go into these more as I've gotten a chance to build some sites with them.
+I'll go into these more as I've gotten a chance to build some sites with them and report back.

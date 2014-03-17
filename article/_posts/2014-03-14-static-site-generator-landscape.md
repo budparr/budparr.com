@@ -84,7 +84,7 @@ One reason I love static site generators is that you can define custom fields on
 
 With [Jekyll](http://jekyllrb.com) sites--the only static site generator I've used in production--I've been using the [prose.io](Prose) content editor. Prose is terrific and works hand-in-hand with GitHub, allowing you to easily traverse all your repositories and files within. For each repository you can define files to exclude so content creators can only see files they'd want to work on. Prose also allows you to define your front-matter in a config file so the user can easily edit an entry’s metadata.
 
-![Prose screenshot](/assets/img/proseio.jpg)
+![Prose screenshot](/assets/img/proseio.jpg){: style="float: none"}
 
 ---
 

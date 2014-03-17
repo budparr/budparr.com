@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-17T09:40:19-04:00</updated>
+ <updated>2014-03-17T09:44:01-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -88,7 +88,7 @@ content goes here
 
 &lt;p&gt;With &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; sites–the only static site generator I’ve used in production–I’ve been using the &lt;a href=&quot;Prose&quot;&gt;prose.io&lt;/a&gt; content editor. Prose is terrific and works hand-in-hand with GitHub, allowing you to easily traverse all your repositories and files within. For each repository you can define files to exclude so content creators can only see files they’d want to work on. Prose also allows you to define your front-matter in a config file so the user can easily edit an entry’s metadata.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/assets/img/proseio.jpg&quot; alt=&quot;Prose screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/proseio.jpg&quot; alt=&quot;Prose screenshot&quot; style=&quot;float: none&quot; /&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 

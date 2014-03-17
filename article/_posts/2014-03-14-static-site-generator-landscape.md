@@ -48,7 +48,7 @@ The beauty of purely static sites, besides the significant performance gain, is 
 
 Keep in mind, that since the site is purely static, calendars or  other dynamic elements will need to be done outside of the site. I've been using javascript for calendaring in Jekyll, so this so far has not proven to be a problem.
 
-While both types of software could be called flat-file, what we mean when we say "flat-file CMS" is likely to be a dynamic application that creates HTML pages on the fly when the page loads. These are a terrific go-between the traditional CMS and static site generators because there are no issues with deployment and no problems with dynamic content like calendars while still maintaining the benefits of storing your content in text files. Optionally, you can offer content creators a control panel and WYSIWYG editor, which is very often necessary for client work.
+While both types of software could be called flat-file, what we mean when we say **"flat-file CMS"** is likely to be a dynamic application that creates HTML pages on the fly when the page loads. These are a terrific go-between the traditional CMS and static site generators because there are no issues with deployment and no problems with dynamic content like calendars while still maintaining the benefits of storing your content in text files. Optionally, you can offer content creators a control panel and WYSIWYG editor, which is very often necessary for client work.
 
 #### Flat-file CMS
 
@@ -82,8 +82,7 @@ One reason I love static site generators is that you can define custom fields on
 With [Jekyll](http://jekyllrb.com) sites--the only static site generator I've used in production--I've been using the [prose.io](Prose) content editor. Prose is terrific and works hand-in-hand with GitHub, allowing you to easily traverse all your repositories and files within. For each repository you can define files to exclude so content creators can only see files they'd want to work on. Prose also allows you to define your front-matter in a config file so the user can easily edit an entry’s metadata.
 
 > ![Prose screenshot](/assets/img/proseio.jpg)
-
-
+---
 It's important to note that Prose’s development is only semi-active as of this writing and it has some quirky behavior that makes it not entirely suitable for client use, but I don't feel it's that far away from being a great minimalist content editor.
 
 Jekyll is a Ruby app created by the founder of Github. It's the house-app for serving Github Pages, that company's free website hosting service, and that alone gives it a leg up on most of these apps, even if just making deployment a bit easier than otherwise.

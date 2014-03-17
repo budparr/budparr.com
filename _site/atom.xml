@@ -4,7 +4,7 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-17T09:13:52-04:00</updated>
+ <updated>2014-03-17T09:40:19-04:00</updated>
  <id></id>
  <author>
    <name></name>
@@ -88,13 +88,13 @@ content goes here
 
 &lt;p&gt;With &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; sites–the only static site generator I’ve used in production–I’ve been using the &lt;a href=&quot;Prose&quot;&gt;prose.io&lt;/a&gt; content editor. Prose is terrific and works hand-in-hand with GitHub, allowing you to easily traverse all your repositories and files within. For each repository you can define files to exclude so content creators can only see files they’d want to work on. Prose also allows you to define your front-matter in a config file so the user can easily edit an entry’s metadata.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;h2 id=&quot;prose-screenshotassetsimgproseiojpg&quot;&gt;&lt;img src=&quot;/assets/img/proseio.jpg&quot; alt=&quot;Prose screenshot&quot; /&gt;&lt;/h2&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/proseio.jpg&quot; alt=&quot;Prose screenshot&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;It’s important to note that Prose’s development is only semi-active as of this writing and it has some quirky behavior that makes it not entirely suitable for client use, but I don’t feel it’s that far away from being a great minimalist content editor.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Jekyll is a Ruby app created by the founder of Github. It’s the house-app for serving Github Pages, that company’s free website hosting service, and that alone gives it a leg up on most of these apps, even if just making deployment a bit easier than otherwise.&lt;/p&gt;
+&lt;p&gt;It’s important to note that Prose’s development isn’t terribly active as of this writing and it has some quirky behavior that makes it not entirely suitable for client use, but I don’t feel it’s that far away from being a great minimalist content editor. In fact, I’ve edited some of this post using it on my iPhone.&lt;/p&gt;
+
+&lt;p&gt;Jekyll is a Ruby app created by the founder of Github. It’s the house-app for serving Github Pages, that company’s free static website hosting service, and that alone gives it a leg up on most of these apps, even if just making deployment a bit easier than otherwise.&lt;/p&gt;
 
 &lt;p&gt;As of this writing, when used with GitHub Pages, Jekyll doesn’t allow any plugins because of restrictions on the hosting platform. If deployment isn’t an issue there are plugins put out there to overcome some of Jekyll’s–born a “blogging platform for hackers”–lacunae, and there will be a whitelist of plugins allowed in a future release and I’ve managed to get by fine without them.&lt;/p&gt;
 

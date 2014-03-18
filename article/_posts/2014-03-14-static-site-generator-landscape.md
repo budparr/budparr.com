@@ -78,7 +78,7 @@ Ingeniously, the developers behind Harp have also built a commercial [platform](
 
 Many of the static site generators are open source. There are three exceptions that I'm aware of. Both [**Cactus**](http://cactusformac.com/) and [**Mixture.io**](http://mixture.io/) are focused on making the developer’s life easier, and though Mixture defines itself as a prototyping tool, you could easily deploy sites generated with it in production.
 
-On the other side of the coin, there's [**Siteleaf**](http://www.siteleaf.com/), also a commercial product, which uniquely provides a control panel for content entry. With Siteleaf it appears that you can manage multiple sites from one control panel and deploy to any number of servers.
+On the other side of the coin, there's [**Siteleaf**](http://www.siteleaf.com/), also a commercial product, which, uniquely, provides a control panel for content entry. With Siteleaf it appears that you can manage multiple sites from one control panel and deploy to any number of servers.
 
 One reason I love static site generators is that you can define custom fields on the fly just by writing in the field in the front matter of a page, or defining it in a YAML file and then referencing it in your template. I'm not sure yet how this would work in Siteleaf because of the control panel, but I imagine for straight page-based sites where you have to give clients a control panel, it's a good choice. I should note that the control panel is nicely designed and seems extremely friendly, but that very friendliness makes it simplistic enough that I would hesitate to use it for larger clients who might prefer something more serious.
 

@@ -72,7 +72,7 @@ Here are some additional examples of sites I've built in Statamic: [1](http://ja
 
 I have a feeling that the best of the static site generators will surface as "web architectures" rather than just static site generators. That's the phrase [**Docpad**](http://docpad.org/) uses to describe itself and even though what it does is precisely generate a website, Docpad is indeed an extensible tool set for building any sort of website, even one with a database, or with dynamic characteristics.
 
-Likewise, [**Harp**](http://harpjs.com/) bills itself as a web server, making the distinction between generating HTML files and all the other processes that go into a modern website, like Sass, or Jade templates, or coffeeScript. Similarly, [**Middleman**](http://middlemanapp.com/) describes itself as simply a collection of tools.
+Likewise, [**Harp**](http://harpjs.com/) bills itself as a web server, making the distinction between generating a website and all the other processes that go into a modern website, like Sass, or Jade templates, or coffeeScript. Similarly, [**Middleman**](http://middlemanapp.com/) describes itself as simply a collection of tools.
 
 Ingeniously, the developers behind Harp have also built a commercial [platform](https://www.harp.io/) for deploying sites (the server itself is open source) that appears to be as simple as placing files in a Dropbox folder. I like to have a sense that a project will have longevity, so open source projects, in my view, should have a business model close at hand so that the core developers are able to continue on with the project.
 

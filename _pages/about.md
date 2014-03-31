@@ -30,7 +30,7 @@ I'm working on making the layout for this site into a theme. It can have a left 
 
 Drop me a line at budparr@sonnetmedia.net or on twitter <http://twitter.com/budparr> if you'd like to know when it's done.
 
-
+[t](http://localhost:3575/)
 <!-- Place this tag where you want the widget to render. -->
 <div class="g-person" data-href="//plus.google.com/u/0/100935873127010495540" data-rel="author"></div>
 

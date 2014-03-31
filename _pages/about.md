@@ -29,16 +29,3 @@ This site was created by scratch in a text editor using some amazingly powerful 
 I'm working on making the layout for this site into a theme. It can have a left or right sidebar or both and is fully responsive. The CSS file for the current site is ~13kb.
 
 Drop me a line at budparr@sonnetmedia.net or on twitter <http://twitter.com/budparr> if you'd like to know when it's done.
-
-[t](http://localhost:3575/)
-<!-- Place this tag where you want the widget to render. -->
-<div class="g-person" data-href="//plus.google.com/u/0/100935873127010495540" data-rel="author"></div>
-
-<!-- Place this tag after the last widget tag. -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/platform.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>

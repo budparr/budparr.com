@@ -1,6 +1,6 @@
 baseurl: http://budparr.com
 sitename: 'budparr'
-description: 'web technologist, for lack of a better'
+description: 'web technologist, <br />for lack of a better'
 # do not include  https://github.com/...
 repo: 'budparr/budparr.github.io'
 branch: master

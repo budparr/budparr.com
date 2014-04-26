@@ -7,7 +7,7 @@ published: true
 sharing: false
 ---
 
-For the past decade I’ve been a designer and developer of websites. I enjoy the constant renewal and problem solving of this work. I work with organizations and people I admire for their contributions to the world. 
+![](/assets/img/linnullmann.no.jpg)For the past decade I’ve been a designer and developer of websites. I enjoy the constant renewal and problem solving of this work. I work with organizations and people I admire for their contributions to the world. 
 
 I think of myself as a technologist/strategist first and a designer/developer second. But really, one wouldn't be much without the other. 
 

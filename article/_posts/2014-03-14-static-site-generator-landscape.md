@@ -127,7 +127,7 @@ The guys running and contributing to the project are avid and thoughtful about w
 
 My use case for Jekyll is for when I need a simple deployment and when I need to know the app will have a long life, which its Github backing would seem to ensure. Despite any shortcomings mention above, I really enjoy working with it, find it quite easy to use. The site this article was published on, [budparr.com](http://budparr.com) was created on Jekyll as well as several others, including a project I have in beta that has quite an involved content-set.
 
-While Jekyll is my go-to app (and the app of choice for the firm that introduced me to static site generators, Development Seed) I'm actively looking at Middleman, also a Ruby app; Docpad, Harp, [Assemblejs](http://assemble.io/), and Siteleaf for use in a variety of projects. There are [myriad](http://staticsitegenerators.net/) choices to suite your needs.
+While Jekyll is my go-to app (and the app of choice for the firm that introduced me to static site generators, Development Seed) I'm actively looking at Middleman, also a Ruby app; Docpad, Harp, [Assemblejs](http://assemble.io/), and Siteleaf for use in a variety of projects. There are [myriad](http://staticsitegenerators.net/) choices to suit your needs.
 
 With no-db websites in general, it's proven not difficult to move content and even site structure between apps, so it should be easy to get to know several of them so that you can always choose the right set of tools for the task at hand. I've never liked the way CMSs develop fan-bases rather than user-bases and welcome the change to choosing toolsets to get a job done.
 

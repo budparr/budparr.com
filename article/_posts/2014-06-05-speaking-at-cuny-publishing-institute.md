@@ -1,3 +1,10 @@
+---
+title: Speaking at the CUNY Publishing Institute
+layout: page
+category: speaking
+tags: speaking
+published: true
+---
 Today I spoke for the 2014 class at the [CUNY Publishing Institute](http://cpi.journalism.cuny.edu/) run by John Oakes of [OR Books](http://orbooks.com/). Here's a great article John wrote about the Institute for the _Journal of Electronic Publishing_: ["By the Book: A New Approach to Teaching the Art of Book Publishing"](http://quod.lib.umich.edu/j/jep/3336451.0017.208/--by-the-book-a-new-approach-to-teaching-the-art-of-book?rgn=main;view=fulltext).
 
 Here are the slides from my talk:

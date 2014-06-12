@@ -13,6 +13,7 @@ I think of myself as a technologist/strategist first and a designer/developer se
 
 I have three children and one wife. I love roasting and brewing coffee. I’m an ambivert. I value curiosity and learning. I like challenging books. Gadget junkie. I agree that there are only two types of music.
 
+{% comment %}[See my full bio](/bio/){% endcomment %}
 
 ### About the site
 
@@ -20,7 +21,7 @@ My wife thinks this site is boring, but my only real goal with it was to try and
 
 This site was created by scratch in a text editor using some amazingly powerful tools:
 
-- The text editor is [Sublime Text ~~2~~ 3](http://www.sublimetext.com/).  
+- The text editor is [Sublime Text 3](http://www.sublimetext.com/), which is even better than S2, as hard as that is to believe.  
 - The site's HTML is generated with [Jekyll](http://jekyllrb.com/) and its [source](https://github.com/budparr/budparr.github.io) is freely available on Github, where it is hosted using Github's [Pages](pages.github.com) service.
 - It uses [Cloudflare's](https://www.cloudflare.com) powerful Content Delivery Network to make the site even faster and more secure.  
 - The stylesheets were written in Sass with the help of [Sassaparilla](http://sass.fffunction.co/) and [Compass](http://compass-style.org/).

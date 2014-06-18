@@ -4,13 +4,67 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-03-30T21:30:27-04:00</updated>
+ <updated>2014-06-17T20:48:40-04:00</updated>
  <id></id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Jekyll Content Decision Tree</title>
+   <link href="/article/2014/06/11/jekyll-content-decision-tree/"/>
+   <updated>2014-06-11T00:00:00-04:00</updated>
+   <id>/article/2014/06/11/jekyll-content-decision-tree</id>
+   <content type="html">&lt;p&gt;With the addition of collections in Jekyll 2.0 there are a lot of choices one can make about how to structure their site. Besides collections, now you can also add JSON files to the _data directory. I put together this decision tree to help anyone who needs it. This, of course, reflects my own way of thinking about content in a static site generator context, specifically applied to Jekyll. One thing I love about not using a database is that your content is much closer to its original form: documents are documents, data is data. Note that this variety may very well change in the future as collections pages and posts converge toward one content type, likely to be collections with optional features of posts, I’m guessing.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/assets/files/jekyll-content-140611_v1.pdf&quot;&gt;Download the PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/jekyll-content-140611_v1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Speaking at the CUNY Publishing Institute</title>
+   <link href="/article/2014/06/05/speaking-at-cuny-publishing-institute/"/>
+   <updated>2014-06-05T00:00:00-04:00</updated>
+   <id>/article/2014/06/05/speaking-at-cuny-publishing-institute</id>
+   <content type="html">&lt;p&gt;Today I spoke for the 2014 class at the &lt;a href=&quot;http://cpi.journalism.cuny.edu/&quot;&gt;CUNY Publishing Institute&lt;/a&gt; run by John Oakes of &lt;a href=&quot;http://orbooks.com/&quot;&gt;OR Books&lt;/a&gt;. Here’s a great article John wrote about the Institute for the &lt;em&gt;Journal of Electronic Publishing&lt;/em&gt;: &lt;a href=&quot;http://quod.lib.umich.edu/j/jep/3336451.0017.208/--by-the-book-a-new-approach-to-teaching-the-art-of-book?rgn=main;view=fulltext&quot;&gt;“By the Book: A New Approach to Teaching the Art of Book Publishing”&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Here are the slides from my talk:&lt;/p&gt;
+
+&lt;script async=&quot;&quot; class=&quot;speakerdeck-embed&quot; data-id=&quot;4e2abb40ceff0131a8cd564ad4407ede&quot; data-ratio=&quot;1.33333333333333&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;And, while they weren’t part of the slides, we also talked about using Markdown when writing for the web and static site generators. Here are my two posts about those topics:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.budparr.com/article/2014/03/09/markdown-tutorial/&quot;&gt;“The Basics of Markdown Tutorial”&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.budparr.com/article/2014/03/06/static-site-generators-introduction/&quot;&gt;“Want to Speed up Your Website? Skip the Database”&lt;/a&gt;&lt;/p&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>László Krasznahorkai and Colm Tóibín</title>
+   <link href="/article/2014/05/06/krasznahorkai-event/"/>
+   <updated>2014-05-06T00:00:00-04:00</updated>
+   <id>/article/2014/05/06/krasznahorkai-event</id>
+   <content type="html">&lt;p&gt;I wrote a brief piece on seeing Colm Tóibín interview László Krasznahorkai at a PEN World Voices Festival event. It was a truly fascinating conversation. Here’s an excerpt:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;I found one of the most interesting facts about Mr. Krasznahorkai is the way he combines his love of travel (or more likely, love of being in different places) with his love of music. He said that he plays several instruments and that while traveling he seeks out music, but will then, the very next day, try to find the instrument that he heard and play it himself. That insatiable curiousity and desire for empathy seem to me to be the hallmark of a great writer, living a life of curiosity rather than some notion of a writer’s life.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Read the rest at &lt;a href=&quot;http://wordswithoutborders.org/dispatches/article/pen-world-voices-master-class-laszlo-krasznahorkai-and-colm-toibin#ixzz30zHq01oI&quot;&gt;Words Without Borders&lt;/a&gt; &lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>The No-db Landscape (part 1)</title>
@@ -130,7 +184,7 @@ content goes here
 
 &lt;p&gt;My use case for Jekyll is for when I need a simple deployment and when I need to know the app will have a long life, which its Github backing would seem to ensure. Despite any shortcomings mention above, I really enjoy working with it, find it quite easy to use. The site this article was published on, &lt;a href=&quot;http://budparr.com&quot;&gt;budparr.com&lt;/a&gt; was created on Jekyll as well as several others, including a project I have in beta that has quite an involved content-set.&lt;/p&gt;
 
-&lt;p&gt;While Jekyll is my go-to app (and the app of choice for the firm that introduced me to static site generators, Development Seed) I’m actively looking at Middleman, also a Ruby app; Docpad, Harp, &lt;a href=&quot;http://assemble.io/&quot;&gt;Assemblejs&lt;/a&gt;, and Siteleaf for use in a variety of projects. There are &lt;a href=&quot;http://staticsitegenerators.net/&quot;&gt;myriad&lt;/a&gt; choices to suite your needs.&lt;/p&gt;
+&lt;p&gt;While Jekyll is my go-to app (and the app of choice for the firm that introduced me to static site generators, Development Seed) I’m actively looking at Middleman, also a Ruby app; Docpad, Harp, &lt;a href=&quot;http://assemble.io/&quot;&gt;Assemblejs&lt;/a&gt;, and Siteleaf for use in a variety of projects. There are &lt;a href=&quot;http://staticsitegenerators.net/&quot;&gt;myriad&lt;/a&gt; choices to suit your needs.&lt;/p&gt;
 
 &lt;p&gt;With no-db websites in general, it’s proven not difficult to move content and even site structure between apps, so it should be easy to get to know several of them so that you can always choose the right set of tools for the task at hand. I’ve never liked the way CMSs develop fan-bases rather than user-bases and welcome the change to choosing toolsets to get a job done.&lt;/p&gt;
 

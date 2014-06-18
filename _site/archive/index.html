@@ -52,7 +52,7 @@
   <meta content="article" property="og:type">
 
 
-  <meta content="web technologist" property="og:description">
+  <meta content="web technologist, <br />for lack of a better" property="og:description">
 
 
   <meta content="/archive/" property="og:url">
@@ -104,7 +104,7 @@
   	<div class="wrapper">
     	<aside class="sidebar-left">
   <h1><a href="">budparr</a></h1>
-  <p>web technologist</p>
+  <p>web technologist, <br />for lack of a better</p>
   <hr />  
   <ul class="nav">
   <a href="/"><li class="sidebar-nav-item">home</li></a>
@@ -151,6 +151,39 @@
 
     
       <div class="list">
+	
+		<h5 class="title">
+			<a href="/article/2014/06/11/jekyll-content-decision-tree/">
+				Jekyll Content Decision Tree
+			</a>
+		<br />
+		<small>
+			June 11, 2014
+		</small>
+	</h5>
+		<hr />
+	
+		<h5 class="title">
+			<a href="/article/2014/06/05/speaking-at-cuny-publishing-institute/">
+				Speaking at the CUNY Publishing Institute
+			</a>
+		<br />
+		<small>
+			June 05, 2014
+		</small>
+	</h5>
+		<hr />
+	
+		<h5 class="title">
+			<a href="/article/2014/05/06/krasznahorkai-event/">
+				László Krasznahorkai and Colm Tóibín
+			</a>
+		<br />
+		<small>
+			May 06, 2014
+		</small>
+	</h5>
+		<hr />
 	
 		<h5 class="title">
 			<a href="/article/2014/03/14/static-site-generator-landscape/">
@@ -1063,26 +1096,17 @@
 <!-- /aside -->		
 
   	</div>
-		
-	<!-- scripts -->
-	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js" }}"><\/script>')</script>
-
-
-<script>
-$('article h1').each(function() {
-    var wordArray = $(this).html().split(' ');
-    if (wordArray.length > 1) {
-        wordArray[wordArray.length-2] += '&nbsp;' + wordArray[wordArray.length-1];
-
-        var lastWord = wordArray.pop();
-        lastWord = lastWord.replace(/.*((?:<\/\w+>)*)$/, '$1');
-        $(this).html(wordArray.join(' ') + lastWord);
-    }
-});
-
+		<script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "/assets/js/scripts.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
 </script>
-
-
   </body>
 </html>

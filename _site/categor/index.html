@@ -52,7 +52,7 @@
   <meta content="article" property="og:type">
 
 
-  <meta content="web technologist" property="og:description">
+  <meta content="web technologist, <br />for lack of a better" property="og:description">
 
 
   <meta content="/categor/" property="og:url">
@@ -104,7 +104,7 @@
   	<div class="wrapper">
     	<aside class="sidebar-left">
   <h1><a href="">budparr</a></h1>
-  <p>web technologist</p>
+  <p>web technologist, <br />for lack of a better</p>
   <hr />  
   <ul class="nav">
   <a href="/"><li class="sidebar-nav-item">home</li></a>
@@ -158,6 +158,21 @@
 			<span></span></a></li>						
 	
       
+		<li><a href="/article/2014/06/11/jekyll-content-decision-tree/" title="&lt;p&gt;With the addition of collections in Jekyll 2.0 there are a lot of choices one can make about how to structure their site. Besides collections, now you can also add JSON files to the _data directory. I put together this decision tree to help anyone who needs it. This, of course, reflects my own way of thinking about content in a static site generator context, specifically applied to Jekyll. One thing I love about not using a database is that your content is much closer to its original form: documents are documents, data is data. Note that this variety may very well change in the future as collections pages and posts converge toward one content type, likely to be collections with optional features of posts, I’m guessing.&lt;/p&gt;
+
+">Jekyll Content Decision Tree 
+			<span>11.06.14</span></a></li>						
+	
+		<li>&lt;a href="/article/2014/06/05/speaking-at-cuny-publishing-institute/" title="<p>Today I spoke for the 2014 class at the <a href="http://cpi.journalism.cuny.edu/">CUNY Publishing Institute</a> run by John Oakes of <a href="http://orbooks.com/">OR Books</a>. Here’s a great article John wrote about the Institute for the <em>Journal of Electronic Publishing</em>: <a href="http://quod.lib.umich.edu/j/jep/3336451.0017.208/--by-the-book-a-new-approach-to-teaching-the-art-of-book?rgn=main;view=fulltext">“By the Book: A New Approach to Teaching the Art of Book Publishing”</a>.</p>
+
+"&gt;Speaking at the CUNY Publishing Institute 
+			<span>05.06.14</span></li>						
+	
+		<li><a href="/article/2014/05/06/krasznahorkai-event/" title="&lt;p&gt;I wrote a brief piece on seeing Colm Tóibín interview László Krasznahorkai at a PEN World Voices Festival event. It was a truly fascinating conversation. Here’s an excerpt:&lt;/p&gt;
+
+">László Krasznahorkai and Colm Tóibín 
+			<span>06.05.14</span></a></li>						
+	
 		<li>&lt;a href="/article/2014/03/14/static-site-generator-landscape/" title="<p>It’s no coincidence that as I’ve become obsessed with website performance I’ve also become enamored with building sites with no database. They’re unequivocally faster, simpler to maintain and build, and more secure and stable than database-driven websites. There are tradeoffs of course, but in my view well worth it. I don’t understand the talk I see about static sites being for “hackers” or small or simple sites. I’ve seen some <a href="http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/">large</a>, <a href="http://developmentseed.org/blog/2013/09/19/relaunching-undp-portal/">complex</a> and <a href="http://developmentseed.org/blog/2013/10/24/its-called-jekyll/">highly trafficked</a> sites built this way. See my earlier <a href="/article/2014/03/06/static-site-generators-introduction/">post</a> in this series for more information.</p>
 
 "&gt;The No-db Landscape (part 1) 
@@ -1854,26 +1869,17 @@ B, D, F, V </code> 47th St.<br />
 <!-- /aside -->		
 
   	</div>
-		
-	<!-- scripts -->
-	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js" }}"><\/script>')</script>
-
-
-<script>
-$('article h1').each(function() {
-    var wordArray = $(this).html().split(' ');
-    if (wordArray.length > 1) {
-        wordArray[wordArray.length-2] += '&nbsp;' + wordArray[wordArray.length-1];
-
-        var lastWord = wordArray.pop();
-        lastWord = lastWord.replace(/.*((?:<\/\w+>)*)$/, '$1');
-        $(this).html(wordArray.join(' ') + lastWord);
-    }
-});
-
+		<script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "/assets/js/scripts.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
 </script>
-
-
   </body>
 </html>

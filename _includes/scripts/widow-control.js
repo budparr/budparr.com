@@ -1,4 +1,3 @@
-<script>
 $('article h1').each(function() {
     var wordArray = $(this).html().split(' ');
     if (wordArray.length > 1) {
@@ -9,5 +8,3 @@ $('article h1').each(function() {
         $(this).html(wordArray.join(' ') + lastWord);
     }
 });
-
-</script>

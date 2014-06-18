@@ -60,7 +60,7 @@
   <meta content="article" property="og:type">
 
 
-  <meta content="web technologist" property="og:description">
+  <meta content="web technologist, <br />for lack of a better" property="og:description">
 
 
   <meta content="/article/2014/03/14/static-site-generator-landscape/" property="og:url">
@@ -123,7 +123,7 @@
   	<div class="wrapper">
     	<aside class="sidebar-left">
   <h1><a href="">budparr</a></h1>
-  <p>web technologist</p>
+  <p>web technologist, <br />for lack of a better</p>
   <hr />  
   <ul class="nav">
   <a href="/"><li class="sidebar-nav-item">home</li></a>
@@ -293,7 +293,7 @@ content goes here
 
 <p>My use case for Jekyll is for when I need a simple deployment and when I need to know the app will have a long life, which its Github backing would seem to ensure. Despite any shortcomings mention above, I really enjoy working with it, find it quite easy to use. The site this article was published on, <a href="http://budparr.com">budparr.com</a> was created on Jekyll as well as several others, including a project I have in beta that has quite an involved content-set.</p>
 
-<p>While Jekyll is my go-to app (and the app of choice for the firm that introduced me to static site generators, Development Seed) I’m actively looking at Middleman, also a Ruby app; Docpad, Harp, <a href="http://assemble.io/">Assemblejs</a>, and Siteleaf for use in a variety of projects. There are <a href="http://staticsitegenerators.net/">myriad</a> choices to suite your needs.</p>
+<p>While Jekyll is my go-to app (and the app of choice for the firm that introduced me to static site generators, Development Seed) I’m actively looking at Middleman, also a Ruby app; Docpad, Harp, <a href="http://assemble.io/">Assemblejs</a>, and Siteleaf for use in a variety of projects. There are <a href="http://staticsitegenerators.net/">myriad</a> choices to suit your needs.</p>
 
 <p>With no-db websites in general, it’s proven not difficult to move content and even site structure between apps, so it should be easy to get to know several of them so that you can always choose the right set of tools for the task at hand. I’ve never liked the way CMSs develop fan-bases rather than user-bases and welcome the change to choosing toolsets to get a job done.</p>
 
@@ -525,6 +525,12 @@ by
 		
 	
 
+	
+
+	
+
+	
+
 
 
 
@@ -719,6 +725,12 @@ by
 			</li>
 		
 		
+		
+		
+		
+		
+		
+		
 		</ul>
 
 
@@ -751,26 +763,17 @@ by
 <!-- /aside -->		
 
   	</div>
-		
-	<!-- scripts -->
-	<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="/assets/js/jquery.min.js" }}"><\/script>')</script>
-
-
-<script>
-$('article h1').each(function() {
-    var wordArray = $(this).html().split(' ');
-    if (wordArray.length > 1) {
-        wordArray[wordArray.length-2] += '&nbsp;' + wordArray[wordArray.length-1];
-
-        var lastWord = wordArray.pop();
-        lastWord = lastWord.replace(/.*((?:<\/\w+>)*)$/, '$1');
-        $(this).html(wordArray.join(' ') + lastWord);
-    }
-});
-
+		<script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "/assets/js/scripts.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
 </script>
-
-
   </body>
 </html>

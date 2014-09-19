@@ -4,10 +4,6 @@ layout: page
 published: true
 tags: 
   - Static Site Generators
-  - Post CMS
-  - Prismic.io
-  - Content.ly
-  - Webhook
 categories: 
   - tools
 ---

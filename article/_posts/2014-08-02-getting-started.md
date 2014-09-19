@@ -2,9 +2,8 @@
 title: Getting Started with Static Site Generators
 layout: page
 category: "getting-started"
-date: {}
 published: true
-tags: 
+tags:
   - Static Site Generators
 ---
 

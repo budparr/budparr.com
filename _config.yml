@@ -5,10 +5,10 @@ description: 'web technologist, <br />for lack of a better'
 repo: 'budparr/budparr.github.io'
 branch: master
 default_author: "Bud Parr"
-
+port: 8087
 #Jekyll Options
 # if using more than one Jekyll instance on your local machine
-# port: 
+# port:
 # paginate tells Jekyll how many posts per page
 # paginate: 1
 # Permalinks
@@ -34,11 +34,11 @@ include_font_awesome: false
 include_addthis_sharing: false
 
 # options (data)
-google_analytics_id: UA-30899180-2 
+google_analytics_id: UA-30899180-2
 disqus_id:
 addthis_id: ra-52e194380e6e5e78
 # CONTACT FORM http://getsimpleform.com/
-simple_form_api_token: 
+simple_form_api_token:
 
 # options (social)
 # facebook_id: pages/The-Lost-Chalice/36279809755

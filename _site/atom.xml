@@ -4,13 +4,98 @@
  <title></title>
  <link href="/atom.xml" rel="self"/>
  <link href="/"/>
- <updated>2014-06-17T20:48:40-04:00</updated>
+ <updated>2014-09-18T21:23:56-04:00</updated>
  <id></id>
  <author>
    <name></name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>The Post-CMS Landscape</title>
+   <link href="/article/2014/08/29/the-post-cms-landscape/"/>
+   <updated>2014-08-29T00:00:00-04:00</updated>
+   <id>/article/2014/08/29/the-post-cms-landscape</id>
+   <content type="html">&lt;p&gt;In &lt;a href=&quot;/article/2014/03/14/static-site-generator-landscape/&quot;&gt;&lt;em&gt;The No-db Landscape&lt;/em&gt;&lt;/a&gt; I wrote about the differences between “flat-file” CMSs and static site generators. Today we’ll have a look at the idea of a “Post-CMS” and some new developments.&lt;/p&gt;
+
+&lt;p&gt;I didn’t &lt;a href=&quot;http://ben.balter.com/2012/10/01/welcome-to-the-post-cms-world/&quot;&gt;make up&lt;/a&gt; it up, but I love the idea of a  &lt;a href=&quot;http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/&quot;&gt;“Post CMS”&lt;/a&gt; world and it should resonate with anyone who has devoted countless hours to installing, configuring, updating and coding big content management systems. To my mind, “post-CMS” means the disaggregation and, in many cases, elimination of the component parts of a CMS. What remains is simply the tools we need to for a particular project and nothing more.&lt;/p&gt;
+
+&lt;p&gt;Is there such a thing as a Post-CMS CMS? Perhaps, but it doesn’t look much like what we’ve known in the past. A post-CMS CMS may or may not have a database of some sort, and it may have an editor and many other facets of a CMS, but it won’t have layers of pre-built software that comes with it. Each of those components is not only entirely optional, but may very well come from different sources. They’re &lt;em&gt;ála carte&lt;/em&gt; rather than &lt;em&gt;prix fixe&lt;/em&gt;; tapas rather than Beef Wellington!&lt;/p&gt;
+
+&lt;p&gt;An exemplar of this approach is the static site generator &lt;a href=&quot;http://www.metalsmith.io/&quot;&gt;Metalsmith.io&lt;/a&gt;. Just launched in March and already proving to be popular, Metalsmith, built on Node.js, is as sophisticated as it is simple, owing to its “everything is a plugin” philosophy.&lt;/p&gt;
+
+&lt;p&gt;Statically generated sites are but a subset of the post-CMS paradigm and actually the most minimal manifestation; the opposite, in most cases, of a CMS. When we think of static site generators we think of content in markdown or text documents, or perhaps a JSON file or even a spreadsheet, which is then processed through templates with the result being an entire website generated at once. There are trade-offs to this approach and one of them is the lack, at the moment, of a truly competent web-based editor.&lt;/p&gt;
+
+&lt;p&gt;Another recent trend: Entirely separating the function of content management from the functions of displaying that content on a website. Stripping the “system” from content management, these tools are billed as “content management as a service” and are entirely focused on the content editing aspects of a website. In fact, none of the features of a content management system are present other than actual content management. You can use your content on as many sites as you like; it’s all available via an API to deploy with, typically, a variety of programming languages.&lt;/p&gt;
+
+&lt;p&gt;CMaaS examples include &lt;a href=&quot;http://osmek.com/&quot;&gt;Osmek&lt;/a&gt;, &lt;a href=&quot;https://www.contentful.com/&quot;&gt;Contentful&lt;/a&gt;, and &lt;a href=&quot;https://prismic.io/&quot;&gt;Prismic&lt;/a&gt;. &lt;a href=&quot;http://www.webhook.com/&quot;&gt;Webhook&lt;/a&gt; is a closely related example, though it’s a fully blown system, it is also a static site generator.&lt;/p&gt;
+
+&lt;p&gt;One contender in the CMaaS field, Prismic.io, has created their own static site generator, &lt;a href=&quot;http://prismicio.github.io/baked.js/&quot;&gt;baked.js&lt;/a&gt; &lt;a href=&quot;https://blog.prismic.io/U3TAFgEAAC8AwopU/bakedjs-integrate-content-management-into-a-static-website-generator-using-javascript&quot;&gt;(blog post)&lt;/a&gt;. Additionally, the community has contributed plugins for Metalsmith to integrate both &lt;a href=&quot;https://github.com/mbanting/metalsmith-prismic&quot;&gt;Prismic.io&lt;/a&gt; and &lt;a href=&quot;https://github.com/contentful/contentful-metalsmith&quot;&gt;Contentful&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One aspect of static site generators I enjoy is the ease with which one can move content from one application to another. After all, these are developer tools and should be chosen to fit the job. One wonders though, with the CMaaS systems, how easy it would be to move content from on system to another if a provider went out of business, changed their service or pricing, or your needs changed.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Search Options for Static Websites</title>
+   <link href="/article/2014/08/24/search-options-for-static-websites/"/>
+   <updated>2014-08-24T00:00:00-04:00</updated>
+   <id>/article/2014/08/24/search-options-for-static-websites</id>
+   <content type="html">&lt;p&gt;Here are some options for adding search and/or filters to your static website. These have various approaches, costs and ease of implementation.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://lunrjs.com/&quot;&gt;Lunr.js&lt;/a&gt; (plugins: &lt;a href=&quot;https://github.com/slashdotdash/jekyll-lunr-js-search&quot;&gt;Jeyll&lt;/a&gt;, &lt;a href=&quot;https://github.com/CMClay/metalsmith-lunr&quot;&gt;Metalsmith&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://listjs.com/&quot;&gt;List.js&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://swiftype.com/&quot;&gt;Swiftype&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.tipue.com/search/&quot;&gt;Tipue Search&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.google.com/cse/&quot;&gt;Google Custom Search Engine&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://tapirgo.com/&quot;&gt;Tapir&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://mathayward.com/jekyll-search/&quot;&gt;Jekyll search with JSON&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The less-technically inclined may want to look at something like Swiftype (paid, but has a limited free option), Tapir or Tipue. I use List.js extensively for filtering and recommend it highly.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>How Vox Media uses Static Site Generators</title>
+   <link href="/article/2014/08/02/how-vox-media-uses-static-site-generators/"/>
+   <updated>2014-08-02T00:00:00-04:00</updated>
+   <id>/article/2014/08/02/how-vox-media-uses-static-site-generators</id>
+   <content type="html">&lt;p&gt;I’m constantly on the lookout for sophisticated and interesting uses of static site generators. Here’s the forward thinking Vox Media on their use of Middleman as part of their publishing strategy:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;In a nutshell, our Editorial Apps system consists of a static &lt;a href=&quot;http://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt; site, which is populated from one or more Google Spreadsheets at build time (using our &lt;a href=&quot;https://github.com/voxmedia/middleman-google_drive&quot;&gt;middleman-google-drive&lt;/a&gt; extension, which we’ll talk about in a future article), and then deployed to &lt;a href=&quot;http://product.voxmedia.com/2012/5/6/5426772/all-together-now-introducing-the-vox-product-blog-and-chorus&quot;&gt;Chorus&lt;/a&gt; by doing a git push and using git post-receive hooks, in a way not unlike deploying an app to &lt;a href=&quot;https://www.heroku.com/&quot;&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Read the rest at &lt;a href=&quot;http://product.voxmedia.com/2014/7/29/5863004/take-a-peek-at-the-code-that-powered-the-verge-50&quot;&gt;Vox Media’s Product blog&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is interesting for a lot of reasons. Vox is, aside even from their publishing efforts, is on the forefront of content management with their Chorus CMS, so I’m happy to hear that static sites fit into their vision. I’m also interested to hear that their using Google Spreadsheets for data. As easy as I find Markdown documents and YAML lists, not everyone feels comfortable with them and a spreadsheet is comfortable and certainly good for some data, and, of course, using Google Spreadsheets has the benefit of being great for collaboration.&lt;/p&gt;
+
+&lt;p&gt;I’ve seen others use this approach. Jim Pravetz used GS for an online shop and wrote about it on his blog &lt;a href=&quot;http://jimpravetz.com/blog/2011/12/generating-jekyll-pages-from-data/&quot;&gt;(“Generating Jekyll Pages From Data”)&lt;/a&gt;, though I believe he’s now using Shopify for that site now. Coderwall has a brief tutorial on &lt;a href=&quot;https://coderwall.com/p/duapqq&quot;&gt;“Use a Google Spreadsheet as your JSON backend”&lt;/a&gt; too.&lt;/p&gt;
+
+&lt;p&gt;Vox has made the source code for the &lt;a href=&quot;https://github.com/voxmedia/verge-50&quot;&gt;Verge-50 site&lt;/a&gt; public so anyeone can benefit from their work.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Getting Started with Static Site Generators</title>
+   <link href="/article/2014/08/02/getting-started/"/>
+   <updated>2014-08-02T00:00:00-04:00</updated>
+   <id>/article/2014/08/02/getting-started</id>
+   <content type="html">&lt;p&gt;Here are some of the blog posts that first got me excited about the potential for static site generators:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://kylerush.net/blog/meet-the-obama-campaigns-250-million-fundraising-platform/&quot;&gt;“Meet the Obama campaign’s $250 million fundraising platform”, by Kyle Rush&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://robmuh.com/the-static-web-returns/&quot;&gt;“The Static Web Returns”, by Rob Muhlestein&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/&quot;&gt;“How We Build CMS-Free Websites”, by Dave Cole at Development Seed&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.webperformancetoday.com/2014/02/25/the-great-web-slowdown-infographic/&quot;&gt;Why? “The Great Web Slowdown [INFOGRAPHIC]”, by Tammy Everts&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://ben.balter.com/2012/10/01/welcome-to-the-post-cms-world/&quot;&gt;“Welcome to the Post-CMS World”, by Ben Balter&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.theatlantic.com/technology/archive/2013/06/healthcaregov-code-developed-by-the-people-and-for-the-people-released-back-to-the-people/277295/&quot;&gt;&lt;strong&gt;Not the app!&lt;/strong&gt; “Healthcare.gov: Code Developed by the People and for the People, Released Back to the People” by Alex Howard at &lt;em&gt;The Atlantic&lt;/em&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Jekyll Content Decision Tree</title>
@@ -604,6 +689,9 @@ remove_filter( &#39;posts_where&#39;, &#39;filter_where&#39; );
    <id>/article/2012/11/29/jeremy-denk</id>
    <content type="html">&lt;p&gt;Listening to his latest album &lt;a href=&quot;http://www.nonesuch.com/albums/ligeti-beethoven&quot;&gt;Ligeti/Beethoven&lt;/a&gt; and it’s the best thing I’ve listened to in a long time.&lt;/p&gt;
 
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;//www.youtube.com/embed/MThqIWwzL78?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;[update - I’ll be seeing him at CMS in 2015, playing Ligeti]&lt;/p&gt;
 </content>
  </entry>
  

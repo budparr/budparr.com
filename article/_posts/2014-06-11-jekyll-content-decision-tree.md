@@ -1,9 +1,8 @@
 ---
 title: Jekyll Content Decision Tree
 layout: page
-category: null
 class: dev
-tags: 
+tags:
   - Static Site Generators
 published: true
 ---

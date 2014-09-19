@@ -2,12 +2,11 @@
 title: Search Options for Static Websites
 layout: page
 category: Search
-tags: 
+tags:
   - Static Site Generators
-published: true
 ---
 
-Here are some options for adding search and/or filters to your static website. These have various approaches, costs and ease of implementation. 
+Here are some options for adding search and/or filters to your static website. These have various approaches, costs and ease of implementation.
 
 - [Lunr.js](http://lunrjs.com/) (plugins: [Jeyll](https://github.com/slashdotdash/jekyll-lunr-js-search), [Metalsmith](https://github.com/CMClay/metalsmith-lunr))
 - [List.js](http://listjs.com/)

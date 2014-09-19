@@ -12,7 +12,7 @@ categories:
   - tools
 ---
 
-In [_The No-db Landscape_](/tools/the-no-db-landscape/) I wrote about the differences between "flat-file" CMSs and static site generators. Today we'll have a look at the idea of a "Post-CMS" and some new developments.
+In [_The No-db Landscape_](/article/2014/03/14/static-site-generator-landscape/) I wrote about the differences between "flat-file" CMSs and static site generators. Today we'll have a look at the idea of a "Post-CMS" and some new developments.
 
 
 I didn't [make up](http://ben.balter.com/2012/10/01/welcome-to-the-post-cms-world/) it up, but I love the idea of a  ["Post CMS"](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/) world and it should resonate with anyone who has devoted countless hours to installing, configuring, updating and coding big content management systems. To my mind, "post-CMS" means the disaggregation and, in many cases, elimination of the component parts of a CMS. What remains is simply the tools we need to for a particular project and nothing more.

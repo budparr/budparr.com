@@ -26,6 +26,7 @@ body {
 	@extend .font-body;
 	background: $body-color;
 	color: $base-color;
+	font-family: "Mercury SSm A", "Mercury SSm B", Georgia, "Times New Roman", serif;
 }
 
 a {

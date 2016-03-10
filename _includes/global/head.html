@@ -6,10 +6,10 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    
+
       {% if site.production == true %}
         <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
-      {% else %}    
+      {% else %}
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
       {% endif %}
 
@@ -19,17 +19,17 @@
 
               <!-- TODO: make correct URL for rss -->
       <link rel="alternate" type="application/rss+xml" href="/rss" title="RSS Feed">
-      
+
       <title>{% if page.title %} {{page.title}} - {% endif %} {{site.sitename}}</title>
       {% if page.url %}
-        <link rel="canonical" href="{{site.baseurl}}{{ page.url }}" />    
+        <link rel="canonical" href="{{site.baseurl}}{{ page.url }}" />
       {% endif %}
-      
+
       <link rel="icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
           <!-- Stylesheets -->
 
       {% if site.use_pure_css == true %}
-        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">    
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
         {% else %}
         <link href='{{site.baseurl}}/assets/css/screen.css?14022509211 ' rel='stylesheet' type="text/css" />
       {% endif %}
@@ -38,8 +38,14 @@
           <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
       {% endif %}
 
-      
-      
+
+
+        {% include global/analytics.html %}
+         {% include global/seo.html %}
+      {% if jekyll.environment == "production" %}  {% endif %}
+
+
+
       {% include global/meta-data.html %}
 
 
@@ -65,5 +71,5 @@
     {% endif %}
 
 <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7044452/646584/css/fonts.css" />
-    
+
   </head>

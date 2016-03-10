@@ -1,5 +1,6 @@
 sitename: 'budparr'
-description: 'Content Strategy<br />Web Design<br />Development'
+title: Bud Parr
+description: 'Content Strategy Web Design Development'
 # do not include  https://github.com/...
 repo: 'budparr/budparr.github.io'
 branch: master
@@ -20,7 +21,10 @@ include: ['_pages']
 relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory. Also will change exclude directory
 exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'CNAME', 'rakefile']
 
-
+twitter:
+  username: budparr
+logo: 'uploads/bpny_1000x774.jpg'
+url: http://www.budparr.com
 
 # dev options (true/false)
 # if site is in production, 'production: true'
@@ -29,6 +33,9 @@ use_pure_css: false
 use_jquery: true
 include_font_awesome: false
 include_addthis_sharing: false
+gems:
+  - jekyll-seo-tag
+
 
 # options (data)
 google_analytics_id: UA-30899180-2

@@ -24,7 +24,7 @@ exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'CNAME', 'rakefile']
 twitter:
   username: budparr
 logo: 'uploads/bpny_1000x774.jpg'
-url: http://www.budparr.com
+url: https://www.budparr.com
 
 # dev options (true/false)
 # if site is in production, 'production: true'

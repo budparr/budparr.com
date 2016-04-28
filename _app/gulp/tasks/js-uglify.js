@@ -4,7 +4,7 @@ gulp.task('js-uglify', function() {
      .pipe(plugins.plumber({
          errorHandler: plugins.notify.onError("ERROR: JS Compilation Failed")
        }))
-     .pipe(plugins.uglify())
+     //.pipe(plugins.uglify())
      .pipe(plugins.concat('scripts.min.js'))
      .pipe(gulp.dest(config.scriptsDest))
    });

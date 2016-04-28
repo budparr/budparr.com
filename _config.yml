@@ -1,7 +1,7 @@
 title: Bud Parr
 description: 'Bud Parr is a web designer, developer and strategist. For 15 years his efforts have focused on the cultural and human rights sectors, including work for New Directions, HarperCollins, Other Press, Retro Report, The American Bar Association, The Royal Kingdom of the Netherlands, and numerous others.'
 
-exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'CNAME', 'rakefile']
+exclude: ['readme.md','license.md','Gemfile']
 
 twitter:
   username: budparr

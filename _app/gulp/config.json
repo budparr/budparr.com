@@ -4,9 +4,8 @@
  "cssDist":"./../assets/css",
 
  "scriptsSrc":[
-   "./node_modules/jquery/dist/jquery.js",
-   "./node_modules/list.js/dist/list.js",
-   "./js/*.js"
+   "./js/jquery.min.js",
+    "./js/*.js"
   ],
   "scriptsWatch":"./js",
   "scriptsDest":"./../assets/js",
@@ -26,4 +25,3 @@
 
 
 }
-

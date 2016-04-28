@@ -15,3 +15,12 @@ gems:
 # options (data)
 google_analytics_id: UA-30899180-2
 addthis_id: ra-52e194380e6e5e78
+
+
+collections:
+  landing_pages:
+    output: true
+    permalink: /awesome/:path/
+  my_collection:
+    output: true
+    permalink: /awesome/:path/

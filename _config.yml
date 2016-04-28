@@ -1,24 +1,6 @@
-sitename: 'budparr'
 title: Bud Parr
-description: 'Content Strategy Web Design Development'
-# do not include  https://github.com/...
-repo: 'budparr/budparr.github.io'
-branch: master
-default_author: "Bud Parr"
-#Jekyll Options
-# if using more than one Jekyll instance on your local machine
-# port:
-# paginate tells Jekyll how many posts per page
-# paginate: 1
-# Permalinks
-permalink:  pretty
-# Dependencies
-markdown: kramdown
-#redcarpet:
-# extensions: ['autolink', 'smart']
-#Pages - store all pages in the _pages directory
-include: ['_pages']
-relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory. Also will change exclude directory
+description: 'Bud Parr is a web designer, developer and strategist. For 15 years his efforts have focused on the cultural and human rights sectors, including work for New Directions, HarperCollins, Other Press, Retro Report, The American Bar Association, The Royal Kingdom of the Netherlands, and numerous others.'
+
 exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'CNAME', 'rakefile']
 
 twitter:
@@ -26,24 +8,10 @@ twitter:
 logo: 'uploads/bpny_1000x774.jpg'
 url: https://www.budparr.com
 
-# dev options (true/false)
-# if site is in production, 'production: true'
 production: true
-use_pure_css: false
-use_jquery: true
-include_font_awesome: false
-include_addthis_sharing: false
 gems:
   - jekyll-seo-tag
 
-
 # options (data)
 google_analytics_id: UA-30899180-2
-disqus_id:
 addthis_id: ra-52e194380e6e5e78
-# CONTACT FORM http://getsimpleform.com/
-simple_form_api_token:
-
-# options (social)
-# facebook_id: pages/The-Lost-Chalice/36279809755
-twitter_id: budparr

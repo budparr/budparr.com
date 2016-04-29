@@ -12,6 +12,6 @@ Bud Parr is a web designer, developer and strategist working independently for n
 
 He runs the blog/resource site, [{static is} The New Dynamic](https://www.thenewdynamic.org/), exploring static site generators and the “post-CMS” paradigm.
 
-He lives on the Upper West Side of Manhattan with his wife and three boys.
+He lives on the Upper West Side of Manhattan with his wife and three sons.
 
 [Get in touch](javascript:void(location.href='mailto:'+String.fromCharCode(98,117,100,112,97,114,114,64,103,109,97,105,108,46,99,111,109)+'?subject=from%20the%20budparr.com%20website'))

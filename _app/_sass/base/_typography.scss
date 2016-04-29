@@ -17,6 +17,19 @@ h6 {
   margin: 0 0 $small-spacing;
 }
 
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: modular-scale((6 - $i), 1em, 1.1);
+  }
+
+  @media($large-screen) {
+  h#{$i} {
+    font-size: modular-scale((6 - $i), 1em, 1.25);
+  }
+}
+}
+
+
 p {
   margin: 0 0 $small-spacing;
 }

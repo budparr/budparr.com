@@ -1,0 +1,158 @@
+// ------------------------------------------------------------
+// SIDEBAR MODULE
+// ------------------------------------------------------------
+
+// =============== VARIABLES ===============
+//These must be in % values to calculate widths
+$sidebar-width: 21.6477% !default;
+$sidebar-right-width: 21.6477% !default;
+$sidebar-left-breakpoint: $large-screen-breakpoint !default;
+$sidebar-right-breakpoint: $large-screen-breakpoint !default;
+
+$sidebar-color-background: #333 !default;
+$sidebar-color: #CCC !default;
+
+$sidebar-right-color-background: #fff !default;
+$sidebar-right-color: #555 !default;
+
+$include-sidebar-right: true;
+$include-sidebar-left: true;
+
+
+
+// =============== LEFT SIDEBAR ===============
+
+@if $include-sidebar-left != false {
+  .content {
+    min-width: 0;
+    margin-left: 0;
+    @media (min-width: $sidebar-left-breakpoint) {
+      min-width: $b-vp;
+      margin-left:  $sidebar-width;
+    }
+  }
+
+  .sidebar-left {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    position: static;
+    color: #777;
+    a {
+      color: #505050;
+    }
+    @media (min-width: $sidebar-left-breakpoint) {
+      width: $sidebar-width;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      overflow: visible;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}
+
+@else {
+  .sidebar-left {
+    display:none;
+  }
+}
+
+
+// =============== RIGHT SIDEBAR ===============
+
+@if $include-sidebar-right != false {
+
+  .content {
+    margin-right: 0;
+    @media (min-width: $sidebar-right-breakpoint) {
+      margin-right:  $sidebar-right-width;
+    }
+  }
+  .sidebar-right {
+    overflow: hidden;
+    z-index: 1000;
+    width: 100%;
+    height: auto;
+    position: static;
+    @media screen and (min-width: $sidebar-left-breakpoint) and (max-width: $sidebar-right-breakpoint)
+    {
+      @if $include-sidebar-left != false {
+        margin-left: $sidebar-width;
+        width: 100% - $sidebar-width;
+      }
+    }
+    @media (min-width: $sidebar-left-breakpoint) {
+      width: $sidebar-right-width;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      right: 0;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+}
+
+@else {
+  .sidebar-right {
+    display:none;
+  }
+}
+
+
+// =============== STYLING ===============
+
+@if $include-sidebar-left != false {
+
+  .sidebar-left {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: $sidebar-color-background;
+    text-align: center !important;
+    color: $sidebar-color;
+    /* Sidebar nav */
+    .sidebar-nav {
+      padding-left: 0;
+      list-style: none;
+    }
+    .sidebar-nav-item {
+      display: block;
+      padding-top: .35em;
+      padding-bottom: .35em;
+    }
+    .sidebar-nav-item:hover,
+    .sidebar-nav-item:focus {
+      text-decoration: underline;
+      //background-color: #000;//darken($sidebar-color-background, 25%);
+    }
+    .sidebar-nav-item.active a {
+      //font-weight: bold;
+      color: darken($sidebar-color, 33%);
+    }
+    hr {
+      margin:1em auto;
+      border-top: 1px solid lighten($sidebar-color-background, 3%);
+    }
+  }
+}
+
+@if $include-sidebar-right != false {
+
+  .sidebar-right {
+    text-align: left;
+    padding: 2em 7em 4em 2em;
+    background-color: $sidebar-right-color-background;
+    color: $sidebar-right-color;
+    @media (min-width: $sidebar-right-breakpoint){
+      padding: 2em 3em;
+      section:first-child {
+        margin-top: 37% !important;
+      }
+      section:last-child {
+        margin-bottom: 10% !important;
+      }
+    }
+  }
+}

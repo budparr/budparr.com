@@ -1,6 +1,5 @@
 ---
-layout: alt
-permalink: /
+#permalink: /
 sidebar_include: "snippets/article-latest.html"
 sharing: false
 published: true

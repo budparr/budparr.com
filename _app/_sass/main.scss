@@ -10,5 +10,17 @@
 
 @import
 "modules/poole",
-"modules/lanyon"
+// "modules/lanyon"
+"modules/hyde"
 ;
+
+p, nav h1 {
+  font-family: "Mercury SSm A", "Mercury SSm B";
+  font-style: normal;
+  font-weight: 300;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.0125em;
+}

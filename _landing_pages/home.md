@@ -2,7 +2,7 @@
 #permalink: /
 sidebar_include: "snippets/article-latest.html"
 sharing: false
-published: true
+published: false
 category: home
 ---
 >“If we can't have everything, true perfection is nothingness.”  

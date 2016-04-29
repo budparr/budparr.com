@@ -1,7 +1,6 @@
 ---
-layout: page
-title: Archive
+layout: posts
+title: Posts
 permalink: /archive/
-published: false
-include: "snippets/news.html"
+published: true
 ---

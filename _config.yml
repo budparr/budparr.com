@@ -18,13 +18,29 @@ google_analytics_id: UA-30899180-2
 addthis_id: ra-52e194380e6e5e78
 
 
+permalink: /article/:title/
+
 collections:
   landing_pages:
     output: true
-    permalink: /awesome/:path/
-  my_collection:
-    output: true
-    permalink: /awesome/:path/
+    permalink: /:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: ''
+      type: landing_pages
+    values:
+      layout: page
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: post
 
 
 compress_html:

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      The Post-CMS Landscape &middot; Bud Parr
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+
+  
+
+</head>
+
+
+  <body class="theme-base-08 layout-reverseTK sidebar-overlay">
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="">
+          Bud Parr
+        </a>
+      </h1>
+      <p class="lead">Bud Parr is a web designer, developer and strategist.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+          
+            <a class="sidebar-nav-item" href="/about/">About</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/archive/">Posts</a>
+          
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/speaking/">Speaking</a>
+          
+        
+      
+    </nav>
+
+    <!-- <p>&copy; 2016. All rights reserved.</p> -->
+
+    <p>
+      <a href="https://twitter.com/budparr">
+        <i class="icon-ion-social-twitter"></i>
+      </a>
+      <a href="https://github.com/budparr">
+        <i class="icon-ion-social-github"></i>
+      </a>
+    </p>
+
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <!-- <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">Bud Parr</a>
+            <small></small>
+          </h3>
+        </div>
+      </div> -->
+
+      <div class="container content">
+        <div class="page">
+  <h1 class="page-title">The Post-CMS Landscape</h1>
+  <p>In <a href="/article/2014/03/14/static-site-generator-landscape/"><em>The No-db Landscape</em></a> I wrote about the differences between “flat-file” CMSs and static site generators. Today we’ll have a look at the idea of a “Post-CMS” and some new developments.</p>
+
+<p>I didn’t <a href="http://ben.balter.com/2012/10/01/welcome-to-the-post-cms-world/">make up</a> it up, but I love the idea of a  <a href="http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/">“Post CMS”</a> world and it should resonate with anyone who has devoted countless hours to installing, configuring, updating and coding big content management systems. To my mind, “post-CMS” means the disaggregation and, in many cases, elimination of the component parts of a CMS. What remains is simply the tools we need to for a particular project and nothing more.</p>
+
+<p>Is there such a thing as a Post-CMS CMS? Perhaps, but it doesn’t look much like what we’ve known in the past. A post-CMS CMS may or may not have a database of some sort, and it may have an editor and many other facets of a CMS, but it won’t have layers of pre-built software that comes with it. Each of those components is not only entirely optional, but may very well come from different sources. They’re <em>ála carte</em> rather than <em>prix fixe</em>; tapas rather than Beef Wellington!</p>
+
+<p>An exemplar of this approach is the static site generator <a href="http://www.metalsmith.io/">Metalsmith.io</a>. Just launched in March and already proving to be popular, Metalsmith, built on Node.js, is as sophisticated as it is simple, owing to its “everything is a plugin” philosophy.</p>
+
+<p>Statically generated sites are but a subset of the post-CMS paradigm and actually the most minimal manifestation; the opposite, in most cases, of a CMS. When we think of static site generators we think of content in markdown or text documents, or perhaps a JSON file or even a spreadsheet, which is then processed through templates with the result being an entire website generated at once. There are trade-offs to this approach and one of them is the lack, at the moment, of a truly competent web-based editor.</p>
+
+<p>Another recent trend: Entirely separating the function of content management from the functions of displaying that content on a website. Stripping the “system” from content management, these tools are billed as “content management as a service” and are entirely focused on the content editing aspects of a website. In fact, none of the features of a content management system are present other than actual content management. You can use your content on as many sites as you like; it’s all available via an API to deploy with, typically, a variety of programming languages.</p>
+
+<p>CMaaS examples include <a href="http://osmek.com/">Osmek</a>, <a href="https://www.contentful.com/">Contentful</a>, and <a href="https://prismic.io/">Prismic</a>. <a href="http://www.webhook.com/">Webhook</a> is a closely related example, though it’s a fully blown system, it is also a static site generator.</p>
+
+<p>One contender in the CMaaS field, Prismic.io, has created their own static site generator, <a href="http://prismicio.github.io/baked.js/">baked.js</a> <a href="https://blog.prismic.io/U3TAFgEAAC8AwopU/bakedjs-integrate-content-management-into-a-static-website-generator-using-javascript">(blog post)</a>. Additionally, the community has contributed plugins for Metalsmith to integrate both <a href="https://github.com/mbanting/metalsmith-prismic">Prismic.io</a> and <a href="https://github.com/contentful/contentful-metalsmith">Contentful</a>.</p>
+
+<p>One aspect of static site generators I enjoy is the ease with which one can move content from one application to another. After all, these are developer tools and should be chosen to fit the job. One wonders though, with the CMaaS systems, how easy it would be to move content from on system to another if a provider went out of business, changed their service or pricing, or your needs changed.</p>
+
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+    <script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Lato:900,900italic:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+  </body>
+</html>
+

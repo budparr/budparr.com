@@ -9,12 +9,18 @@
 //
 
 @import
+"modules/fontello",
 "modules/poole",
-// "modules/lanyon"
-"modules/hyde"
-;
+"modules/hyde",
+"modules/font-mercury";
 
-p, nav h1 {
+h1, h2 {
+  //font-family: 'Lato', "PT Sans", Helvetica, Arial, sans-serif;
+    font-family: "Mercury SSm A", "Mercury SSm B";
+    font-weight: 300;
+}
+
+p, .sidebar-about h1, blockquote, blockquote p {
   font-family: "Mercury SSm A", "Mercury SSm B";
   font-style: normal;
   font-weight: 300;
@@ -23,4 +29,17 @@ p, nav h1 {
 p {
   line-height: 1.6;
   font-size: 1.0125em;
+}
+
+blockquote {
+  border-left: none;
+}
+
+
+.post-date {
+  font-size: .875em;
+}
+
+h2 a {
+  color: #111;
 }

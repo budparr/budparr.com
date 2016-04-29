@@ -18,7 +18,6 @@
   <link rel="stylesheet" href="/assets/css/main.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7044452/646584/css/fonts.css" />
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
@@ -26,4 +25,11 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+
+  {% if jekyll.environment == "production" %}
+    {% include analytics.html %}
+    {% include seo.html %}
+  {% endif %}
+
 </head>

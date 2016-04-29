@@ -22,9 +22,6 @@ layout: compress
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
   <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.ico">
 
-  <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
-
 
   {% if jekyll.environment == "production" %}
     {% include analytics.html %}
@@ -34,21 +31,9 @@ layout: compress
 </head>
 
 
-  <body class="theme-base-08 layout-reverseTK sidebar-overlay">
+  <body class="theme-base-08">
 
     {% include sidebar.html %}
-
-    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-    <!-- <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-            <small>{{ site.tagline }}</small>
-          </h3>
-        </div>
-      </div> -->
 
       <div class="container content">
         {{ content }}

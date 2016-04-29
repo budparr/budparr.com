@@ -1,10 +1,5 @@
 ---
-layout: page
 title: About
-permalink: /about/
-class: dev
-published: true
-sharing: false
 ---
 
 

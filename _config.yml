@@ -8,6 +8,7 @@ twitter:
 logo: 'uploads/bpny_1000x774.jpg'
 url: https://www.budparr.com
 
+version: 3.0.3
 production: true
 gems:
   - jekyll-seo-tag

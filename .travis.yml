@@ -7,7 +7,7 @@ install:
 - npm install -g firebase-tools
 script: bundle exec jekyll build
 after_success:
-  firebase deploy --token ${FIREBASE_TOKEN}
+  firebase deploy --token "${FIREBASE_TOKEN}"
 
 branches:
   only:
@@ -15,19 +15,4 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-sudo: false   
-# deploy:
-#   provider: gcs
-#   access_key_id: ${access_key_id}
-#   secret_access_key:
-#     secure: ${secret_access_key}
-#   bucket: www.brooklinebooksmith.com
-#   acl: public-read
-#   detect_encoding: true # <== default is false
-#   cache_control: "no-cache"
-#   local-dir: _site
-#   skip_cleanup: true
-#   on:
-#     repo: sonnetmedia/brooklinebooksmith.com
-#     branch: gh-pages
-    
+sudo: false 

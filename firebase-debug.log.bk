@@ -1,0 +1,19 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      /usr/local/Cellar/node/4.2.1/bin/node /usr/local/bin/firebase deploy
+[debug] CLI Version:  3.0.0
+[debug] Platform:     darwin
+[debug] Node Version: v4.2.1
+[debug] Time:         Sun May 22 2016 19:52:16 GMT-0400 (EDT)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/blistering-torch-219 
+[debug] <<< HTTP RESPONSE 200
+[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/blistering-torch-219/tokens 
+[debug] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'blistering-torch-219'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  hosting: preparing _site directory for upload...
+[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/blistering-torch-219/uploads/-KIPsYVJ5SRvPtv-sTa9?fileCount=169&message= 

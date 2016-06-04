@@ -11,12 +11,12 @@
 @import
 "modules/fontello",
 "modules/poole",
-"modules/hyde",
+"modules/lanyon",
 "modules/font-mercury";
 
-h1, h2 {
-  //font-family: 'Lato', "PT Sans", Helvetica, Arial, sans-serif;
-    font-family: "Mercury SSm A", "Mercury SSm B";
+h1, h2, .masthead-title {
+  font-family: 'Lato', "PT Sans", Helvetica, Arial, sans-serif;
+    //font-family: "Mercury SSm A", "Mercury SSm B";
     font-weight: 300;
 }
 

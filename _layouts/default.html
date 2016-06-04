@@ -17,7 +17,10 @@ layout: compress
   <link rel="stylesheet" href="/assets/css/main.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
 
-
+{% if jekyll.environment == "production" %}
+          {% include global/analytics.html %}
+          {% include global/seo.html %}
+        {% endif %}
   <!-- Icons -->
   
   <link rel="shortcut icon" href="{{ site.url }}/favicon.ico">
@@ -45,7 +48,7 @@ layout: compress
     </div>
 
 <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-{% include scripts.html %} 
+{% include global/scripts.html %} 
     
 
   </body>

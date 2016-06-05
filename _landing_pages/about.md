@@ -10,4 +10,4 @@ He lives on the upper west side of Manhattan with his wife and three sons.
 
 [Get in touch](javascript:void(location.href='mailto:'+String.fromCharCode(98,117,100,112,97,114,114,64,103,109,97,105,108,46,99,111,109)+'?subject=from%20the%20budparr.com%20website'))
 
-[@budparr](http://twitter.com/budparr)
+[twitter.com/@budparr](http://twitter.com/budparr)

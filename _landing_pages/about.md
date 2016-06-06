@@ -2,9 +2,9 @@
 title: About
 ---
 
-Bud Parr is a web designer, developer and strategist working independently for nearly 15 years as Sonnet Media in New York City. His work is primarily focused on the cultural and human rights sectors. He has worked for The American Bar Association, The Royal Kingdom of the Netherlands, HarperCollins Publishers, New York University and numerous publishers, journals, and authors. Prior to his work on the web, he enjoyed a 15 year career in finance, working for Merrill Lynch, and Prudential International Investments.
+I am a web designer, developer and strategist working independently for nearly 15 years as Sonnet Media in New York City. My work is primarily focused on the cultural and human rights sectors. I've done work for The American Bar Association, The Royal Kingdom of the Netherlands, HarperCollins Publishers, New York University and numerous publishers, journals, and many authors. Prior to working on the web, I had a 15 year career in finance, working for Merrill Lynch, and Prudential International Investments.
 
-He earned a Bachelor of Science and Master of Arts from New York University.
+I earned a Bachelor of Science and Master of Arts from New York University.
 
 He runs the blog/resource site, [{static is} The New Dynamic](https://www.thenewdynamic.org/), exploring static web technologies and the “post-CMS” paradigm. 
 

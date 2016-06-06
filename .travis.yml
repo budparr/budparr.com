@@ -1,8 +1,9 @@
 language: ruby
+sudo: false 
 cache:
   bundler: true
   directories:
-    - node_modules
+  - node_modules
 rvm:
 - 2.1
 install: 
@@ -18,4 +19,3 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-sudo: false 

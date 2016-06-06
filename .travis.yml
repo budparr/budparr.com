@@ -5,7 +5,9 @@ cache:
     - node_modules
 rvm:
 - 2.1
-
+install: 
+- bundle install 
+- npm install -g firebase-tools
 script: JEKYLL_ENV=production bundle exec jekyll build
 after_success:
   firebase deploy --token "${FIREBASE_TOKEN}"

@@ -6,7 +6,7 @@ I am a web designer, developer and strategist working independently for nearly 1
 
 I earned a Bachelor of Science and Master of Arts from New York University.
 
-He runs the blog/resource site, [{static is} The New Dynamic](https://www.thenewdynamic.org/), exploring static web technologies and the “post-CMS” paradigm. 
+In my spare time, I run the [{static is} The New Dynamic](https://www.thenewdynamic.org/), project, exploring static web technologies and the “post-CMS” paradigm.
 
 He lives on the upper west side of Manhattan with his wife and three sons.
 

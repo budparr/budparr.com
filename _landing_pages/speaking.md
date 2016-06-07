@@ -11,8 +11,9 @@ title: Speaking
 ### Past
 
 “Real World Content Strategy with Jekyll”
-<br>7 May 2016 [Jekyllconf](http://jekyllrb.com/) “Full Stack Static”
+<br>7 May 2016 [Jekyllconf](http://jekyllrb.com/) 
 
+“Full Stack Static”  
 Dec 2015 [New York Web Performance Meetup](https://youtu.be/cTjw-QUpoVs)
 
 “The Post CMS Paradigm”

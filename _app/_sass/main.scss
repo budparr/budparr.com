@@ -43,3 +43,9 @@ blockquote {
 h2 a {
   color: #111;
 }
+@media all and (display-mode: fullscreen) {
+  body {
+    margin: 0;
+    border: 5px solid black;
+  }
+}

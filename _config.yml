@@ -1,5 +1,18 @@
+# jekyll-seo-tag
 title: Bud Parr
 description: 'Bud Parr is a web designer, developer and strategist.'
+url: "https://www.budparr.com" # the base hostname & protocol for your site
+author: Bud Parr
+twitter:
+  username: budparr
+facebook:
+  app_id: 
+  publisher: 
+  admins: 
+logo: #path
+
+short_name: BPNY
+
 
 exclude: ['readme.md','license.md','Gemfile']
 paginate:            5

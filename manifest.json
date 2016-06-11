@@ -4,6 +4,23 @@ layout: null
 {
   "short_name": "{{ site.short_name | default: site.title }}",
   "name": "{{ site.title }}",
+   "icons": [
+    {
+      "src": "/assets/img/icons/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/icons/apple-touch-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/img/icons/favicon-194x194.png",
+      "sizes": "194x194",
+      "type": "image/png"
+    }
+  ],
   "start_url": "/",
   "display": "{{ site.display | default: 'standalone' }}"
 }

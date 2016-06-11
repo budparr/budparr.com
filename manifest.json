@@ -1,0 +1,9 @@
+---
+layout: null
+---
+{
+  "short_name": "{{ site.short_name | default: site.title }}",
+  "name": "{{ site.title }}",
+  "start_url": "/",
+  "display": "{{ site.display | default: 'standalone' }}"
+}

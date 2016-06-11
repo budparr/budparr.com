@@ -12,6 +12,7 @@ facebook:
 logo: #path
 
 short_name: BPNY
+display: fullscreen
 
 
 exclude: ['readme.md','license.md','Gemfile']

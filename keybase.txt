@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/budparr
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.budparr.com
+  * I am budparr (https://keybase.io/budparr) on keybase.
+  * I have a public key with fingerprint 9DDE D468 81E7 3D62 C315  1F12 FFD4 EFBD AF91 5796
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "012041445480ffdaa3917bf0207919c7a9a2562b59254a0b94b24edbda8368ddc9d20a",
+            "fingerprint": "9dded46881e73d62c3151f12ffd4efbdaf915796",
+            "host": "keybase.io",
+            "key_id": "ffd4efbdaf915796",
+            "kid": "0101f72ff36a89f05c1092dc53c1375c77de6031e6afc3911f08425d647fa9ff57410a",
+            "uid": "3b880675c6809e8c73428b727a854c19",
+            "username": "budparr"
+        },
+        "service": {
+            "hostname": "www.budparr.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1465953201,
+    "expire_in": 157680000,
+    "prev": "26e642f7f2f3b8bdc564db0910e7b75030b66b539154d1861694599761dc631b",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.53
+Comment: https://keybase.io/crypto
+
+yMNwAnicbVJtUFRVGF4+lC9BCWSgmXWGuzOGSXTP/Tj33hUli7VGmmZMiUEblvtx
+7nIH9qPdhQUFC9NignIgg/CPiIQhKEnagPQhGiXSyMCAMuUGmBQxGtlgI7K6nWXw
+X+fPmfOe53ne53nn/T46RBcZ5B+d+6azNqc+aLCvsViXk99+dh8h2ZUywriPKERL
+FypSkMttLtQUwkiQgCIZwDAsw5OqqogiLQBOUkmK5AQgyJwoiBQLKYkVKJYRSUlg
+JIpBiqSIPA15RZEFhSJFIpVQNZsFOR1OzebGsoKiIIWBPA8QRyuQkmnAAhVQuAWD
+VMxWBcByAsTEArsrwMDmJNGF0jQ7ruGHecne/+Cf+CaBymE9Goq8oJKsDEiBUmSW
+lgHNsTLHKQiSNEBQVGWcCagkz1CsAhlOFQVVZTkGLPkuXpKjJZ4nIeZBnhQQL3M0
+Q/ESR3EizzIyEAJAF3LaRCvCaKlYcYhOJ1GRSuBiiSajwFwDQZYBHo8nbRmUJtut
+mO1w2t122V6EPwvcbofLGCC7yxxLaCSZl3XMkmZT8CQxowQ5XZrdRhgBRspuLSAM
+GMgKLE2RIJVApQ7NicxaAMFy2Dc+gT6oBEtSEEGGUjmVUnE0Cc8FMopECoBEnMSx
+JE1KEEosHgzLKICHAAoMKwgcBIoMaSARgWRv2eyEUcA2RQuWdGkWm+gudiKi4lLf
+m6G6oEjdyhXBgQ3TRUasebJ33ker/Sb95Udtcdn6jZWmw/M1A1ers144Hb96gzlR
+f/ZYRWNC8faRxROj99YGG76z7Z1YfH4m/o35H2K2ZN3816WYLualX6i7Fxu9sywy
+7OXgp2y166pPDqT23jp1dMBqrT/14u1zOa+xEZ6y0NGkle0G31dDcdoROHmetYxc
+G46yRttv9395JfS3tj037v8efbLft5D0/vqRbm9DSvOVxcnNzO72jDW+5zyWM/sj
+whvyHZ11ia/MLJ7/cPAunCp4Bs3u3tbW0THHRfWMmX65HBG7PvxBeX9VaUzfwkTz
+R6bpgpS5vJ4fD9a8npA3MN/+x2b/8bV/76ppfVp2/pnrKx+8RPwTEvXAX5jykjdr
+Vm2JP3wo/YOmhIlXh+b25zJUZl6rfjLeX3d9vP+vd4/3dlc93NF63ZP4WUOC84uq
+A9WfF8VU35f0+SHJ57r0O5JNB3b1GMLrmQr/uGSJnY06TRydZjq5vUbL24daptyC
+dG2xI1HzlXdl/qz3NohTD282xkUd2Zq889eMuyuairIHi76+UxM8caz7TPOq2nem
+s4xbPn5W8rdsujWeIcZkrardqsR7cxdmZyczL8rl740lhFXWzYRXl6KNrYbKZCfZ
+Z5jvH/rk6iZ/1wLZKoU1jgFRG0He0QvbksZ7V44eXNAlP95wx5retG7Y9+lPOSdu
+cB3D279F2XsME49heMR/KKbJ0Q==
+=HbNF
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/budparr
+
+==================================================================

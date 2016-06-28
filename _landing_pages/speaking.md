@@ -3,18 +3,14 @@ title: Speaking
 ---
 
 
-### Upcoming
-
 “Web Design and Marketing for Publishers”
 <br>23 Jun 2016 [CUNY Publishing Institute](http://cpi.journalism.cuny.edu/)
 
-### Past
-
 “Real World Content Strategy with Jekyll”
-<br>7 May 2016 [Jekyllconf](http://jekyllrb.com/) 
+<br>7 May 2016 [Jekyllconf](http://jekyllrb.com/)
 
-“Full Stack Static”  
-Dec 2015 [New York Web Performance Meetup](https://youtu.be/cTjw-QUpoVs)
+“Full Stack Static”
+<br>Dec 2015 [New York Web Performance Meetup](https://youtu.be/cTjw-QUpoVs)
 
 “The Post CMS Paradigm”
 <br>Jun 2015 [The New Dynamic](https://speakerdeck.com/budparr/static-site-generators-and-the-post-cms-paradigm-ii-without-notes)

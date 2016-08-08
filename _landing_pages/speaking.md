@@ -6,7 +6,7 @@ title: Speaking
 **Upcoming**
 
 “Untangling the Web: Website Redesign for Literary Presses”
-<br>Feb, 2017 AWP Annual Conference
+<br>Feb 2017 AWP Annual Conference
 
 **Past**
 

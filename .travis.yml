@@ -1,13 +1,12 @@
 language: ruby
-sudo: false 
+sudo: false
 cache:
-  bundler: true
-  directories:
-  - node_modules
+  - bundler
+  - npm
 rvm:
 - 2.1
-install: 
-- bundle install 
+install:
+- bundle install
 - npm install -g firebase-tools
 script: JEKYLL_ENV=production bundle exec jekyll build
 after_success:

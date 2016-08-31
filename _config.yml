@@ -6,9 +6,9 @@ author: Bud Parr
 twitter:
   username: budparr
 facebook:
-  app_id: 
-  publisher: 
-  admins: 
+  app_id:
+  publisher:
+  admins:
 logo: #path
 
 short_name: BPNY
@@ -57,8 +57,8 @@ defaults:
     values:
       layout: post
 
-
-compress_html:
-  ignore:
-    envs: [development]
-  profile: false
+#
+# compress_html:
+#   ignore:
+#     envs: [development]
+#   profile: false

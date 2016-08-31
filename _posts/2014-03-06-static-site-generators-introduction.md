@@ -67,7 +67,7 @@ The lack of rigidity in developing sites without a CMS make changes much faster 
 
 Static site generation is quickly moving out of the realm of "blogs for hackers" and being used for a variety of use-cases. There are still gaps in the usability of these systems for content creators and the software can only be used by developers comfortable in the realm of working without the interface that many rely on. 
 
-While there are hurdles the landscape is changing quickly. [Siteleaf](http://www.siteleaf.com/) is an excellent example where some smart developers understand the need for an interface for content creators while still maintaing the essence of static site generation. There are also platforms like [Harp](https://www.harp.io/) that facilitate publishing static sites through Dropbox. 
+While there are hurdles, the landscape is changing quickly. [Siteleaf](http://www.siteleaf.com/) is an excellent example where some smart developers understand the need for an interface for content creators while still maintaing the essence of static site generation. There are also platforms like [Harp](https://www.harp.io/) that facilitate publishing static sites through Dropbox. 
 
 There's no shortage of innovation and I believe these tools will soon be in the mainstream. Both [Cactus](http://cactusformac.com/) and [Mixture.io](http://mixture.io/) are tools that make the development side as easy as downloading software, and soon we will likely see a new form of hybrid content management systems that are more like a loose collection of tools curated rather than developed by one person. 
 

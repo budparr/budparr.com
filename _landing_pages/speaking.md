@@ -3,6 +3,8 @@ title: Speaking
 ---
 
 
+Regularly speak at my Meetup.com group, “the New Dynamic”
+
 **Upcoming**
 
 “Untangling the Web: Website Redesign for Literary Presses”

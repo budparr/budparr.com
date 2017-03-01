@@ -13,7 +13,7 @@ Jun 2017 [CUNY Publishing Institute](http://cpi.journalism.cuny.edu/)
 **Past**
 
 "A Faster Better Way to Build Websites: Introduction to Static Site Generators"  
-The New Dynamic with the New York Civic Tech Meetup, Civic Hall
+Mar 2017 The New Dynamic with the New York Civic Tech Meetup, Civic Hall
 
 “Untangling the Web: Website Redesign for Literary Presses”
 <br>Feb 2017 AWP Annual Conference

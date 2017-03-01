@@ -7,8 +7,8 @@ Regularly speak at my Meetup.com group, “the New Dynamic”
 
 **Upcoming**
 
-“Web Design and Marketing for Publishers”
-<br>Jun 2017 [CUNY Publishing Institute](http://cpi.journalism.cuny.edu/)
+“Web Design and Marketing for Publishers”  
+Jun 2017 [CUNY Publishing Institute](http://cpi.journalism.cuny.edu/)
 
 **Past**
 

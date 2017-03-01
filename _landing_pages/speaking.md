@@ -7,10 +7,17 @@ Regularly speak at my Meetup.com group, “the New Dynamic”
 
 **Upcoming**
 
+“Web Design and Marketing for Publishers”
+<br>Jun 2017 [CUNY Publishing Institute](http://cpi.journalism.cuny.edu/)
+
+**Past**
+
+"A Faster Better Way to Build Websites: Introduction to Static Site Generators"  
+The New Dynamic with the New York Civic Tech Meetup, Civic Hall
+
 “Untangling the Web: Website Redesign for Literary Presses”
 <br>Feb 2017 AWP Annual Conference
 
-**Past**
 
 “Web Design and Marketing for Publishers”
 <br>23 Jun 2016 [CUNY Publishing Institute](http://cpi.journalism.cuny.edu/)

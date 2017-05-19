@@ -23,6 +23,6 @@ nbproject
 .idea
 *.scssc
 
-_site
+public
 # Folders to ignore
 node_modules

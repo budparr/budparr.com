@@ -9,7 +9,7 @@ I earned a Bachelor of Science and Master of Arts from New York University.
 
 In my spare time, I run the [{static is} The New Dynamic](https://www.thenewdynamic.org/) project and [Meetup group](http://www.meetup.com/the-new-dynamic/), exploring static web technologies and the “post-CMS” paradigm.
 
-I live on the upper west side of Manhattan with his wife and three sons.
+I live on the upper west side of Manhattan with my wife and three sons who are not usually as glum looking as in the photograph on the home page.
 
 
 [twitter/@budparr](http://twitter.com/budparr)

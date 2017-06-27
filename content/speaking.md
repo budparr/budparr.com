@@ -8,7 +8,7 @@ Regularly speak at my Meetup.com group, “the New Dynamic”
 
 **Upcoming**
 
-“Web Design and Marketing for Publishers”
+“Design Thinking for Publishers on the Web”
 Jun 2017 [New School Publishing Institute](http://www.newschool.edu/publishing-institute/)
 
 "Getting Started with Hugo: The World's Fastest framework for building websites."

@@ -5,7 +5,7 @@ menu: main
 
 **Upcoming**
 
-“Design Thinking for Publishers on the Web”
+“Design Thinking for Publishers on the Web” //
 Jun 2017 [New School Publishing Institute](http://www.newschool.edu/publishing-institute/)
 
 "Getting Started with Hugo: The World's Fastest framework for building websites."

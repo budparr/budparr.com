@@ -9,7 +9,12 @@ Regularly speak at my Meetup.com group, “the New Dynamic”
 **Upcoming**
 
 “Web Design and Marketing for Publishers”
-Jun 2017 [CUNY Publishing Institute](http://cpi.journalism.cuny.edu/)
+Jun 2017 [New School Publishing Institute](http://www.newschool.edu/publishing-institute/)
+
+"Getting Started with Hugo: The World's Fastest framework for building websites."
+Jun 2017 [JAMStack NYC](https://www.meetup.com/JAMstack-nyc/events/240821007/)
+
+
 
 **Past**
 

@@ -3,9 +3,6 @@ title: Speaking
 menu: main
 ---
 
-
-Regularly speak at my Meetup.com group, “the New Dynamic”
-
 **Upcoming**
 
 “Design Thinking for Publishers on the Web”

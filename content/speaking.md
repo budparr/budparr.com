@@ -15,6 +15,9 @@ Jun 2017 [JAMStack NYC](https://www.meetup.com/JAMstack-nyc/events/240821007/)
 
 **Past**
 
+Panel moderator: "CMS as Code" and "Pushing the Limits with Static Site Tools" \\
+Apr 2017 [JAMStack NYC](https://www.meetup.com/JAMstack-nyc/events/238110931/)
+
 "A Faster Better Way to Build Websites: Introduction to Static Site Generators"
 Mar 2017 The New Dynamic with the New York Civic Tech Meetup, Civic Hall
 

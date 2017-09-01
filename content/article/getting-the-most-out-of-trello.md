@@ -6,7 +6,7 @@ draft: false
 
 [Trello](https://trello.com/) is the central tool I use to organize the many facets of my life and projects. While I use many other systems for managing projects and data, like [Github](https://github.com) and [Podio](https://podio.com), I find that having one place as the "dashboard" for what I need to be working on or thinking about is essential.
 
-Trello is a blank slate to begin with, which is great, but it leaves you to figure out your own system. It's important to give it a structure and keep with that. What follows is an outline of mine, though there are many examples of basic setups on the [Trello Blog](https://blog.trello.com/).
+Trello is a blank slate to begin with, which is great, but it leaves you to figure out your own system. It's important to give it a structure and stick to it. What follows is an outline of my approach, though there are many examples of basic setups on the [Trello Blog](https://blog.trello.com/).
 
 Like any system, you only get out of it what you put into it. You need to review your dashboard daily and be active about it.
 
@@ -18,7 +18,7 @@ I may keep separate boards for individual projects or ongoing lists, but I keep 
 
 Within that board I keep the following lists:
 
-- **Inbox**: Have a place to throw stuff so you don't have to think about it when it hits you. Try to keep empty this when you do your daily reviews.
+- **Inbox**: Have a place to throw stuff so you don't have to think about it when it hits you. Try to empty this list when you do your daily reviews.
 
 - **Today**: This is the list that the cards on the other lists eventually flow to. When I review my boards (which is often the night before), I look at everything and ask "what do I need to work on today"?
 
@@ -36,9 +36,9 @@ Within that board I keep the following lists:
 
 - **Done (or Outbox)**: Like the Inbox list, this is just a stopping place for cards before they get archived, if, for instance, they are date-based items you want to remain on the calendar, or whatever. This is optional.
 
-While that may seem like a lot of boards, I find that the central lists: Today, Todo, are really important and the others help me keep order. Most everything ultimately flows into the Today list, with few exceptions, otherwise it probably doesn't belong on the board at all.
+While that may seem like a lot of boards, I find that the central lists, Today and Todo, are really important and the others help me keep order. Most everything ultimately flows into the Today list, with few exceptions, otherwise it probably doesn't belong on the board at all.
 
-The important thing is to find a structure that works for you.
+Again, the important thing is to find a structure that works for you.
 
 Here's an example of the board, that I think you can copy into your own account: "[Life dashboard](https://trello.com/b/fjOzpyn2/example-life-dashboard)"
 

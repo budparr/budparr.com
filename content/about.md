@@ -13,6 +13,6 @@ In my spare time, I run the [The New Dynamic](https://www.thenewdynamic.org/) pr
 
 I'm also interested in cooking and bread baking. A purist at heart, I roast my own coffee and maintain my own bread starter. I also enjoy music and photography, though for the last 13 years most of my photography has been of my beautiful children.
 
-I live on the upper west side of Manhattan with my wife and three sons who are not usually as glum looking as in the photograph on the home page.
+I live on the upper west side of Manhattan with my wife and three sons.
 
 [twitter/@budparr](http://twitter.com/budparr)

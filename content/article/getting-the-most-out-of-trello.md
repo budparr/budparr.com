@@ -4,9 +4,9 @@ date: 2017-09-01T11:39:10-04:00
 draft: false
 ---
 
-[Trello](https://trello.com/) is the central tool that I use to organize the many facets of my life and projects. While I use many other systems for managing projects, like Github and Podio, I find that having one place as the "dashboard" for what I need to be working on or thinking about is essential.
+[Trello](https://trello.com/) is the central tool I use to organize the many facets of my life and projects. While I use many other systems for managing projects and data, like [Github](https://github.com) and [Podio](https://podio.com), I find that having one place as the "dashboard" for what I need to be working on or thinking about is essential.
 
-Trello is a blank slate to begin with, which is great, but it leaves you to figure out your own system. There are many examples of basic setups on the [Trello Blog](https://blog.trello.com/), but it's important to give it a structure and keep with it. What follows is an outline of mine.
+Trello is a blank slate to begin with, which is great, but it leaves you to figure out your own system. It's important to give it a structure and keep with that. What follows is an outline of mine, though there are many examples of basic setups on the [Trello Blog](https://blog.trello.com/).
 
 Like any system, you only get out of it what you put into it. You need to review your dashboard daily and be active about it.
 
@@ -42,12 +42,9 @@ The important thing is to find a structure that works for you.
 
 
 
-
-
-
 ## Trello Resources
 
-The key to getting the most out of Trello is getting things into it effortlessly and accessing information as quickly as possible.
+The key to getting the most out of Trello is getting things into it effortlessly and accessing information as quickly as possible. These items will help:
 
 
 - (_indespensible_) Trello has a [Chrome extension](https://chrome.google.com/webstore/detail/trello/dmdidbedhnbabookbkpkgomahnocimke) that allows you to search your Trello boards from the address bar, and add web pages to your boards. If I only used one addon, this would be it.
@@ -76,3 +73,5 @@ The key to getting the most out of Trello is getting things into it effortlessly
 - Hit the "f" key to start filtering. You can then start typing or just hit one of the labels to show only cards with that label.
 
 - Make the most of "Power Ups". You get one for free, three for Gold membership, and unlimited for Business membership. Some helpful ones are: Repeating Cards, Card Snooze, Calendar, Card Aging.
+
+- Have your date-based items feed into whatever calendar you use, like [Google Calendar](http://help.trello.com/article/829-using-trello-with-google-calendar).

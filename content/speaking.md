@@ -1,9 +1,10 @@
 ---
 title: Speaking
 menu: main
+tags: ['speaking', 'events']
 ---
 
-**Upcoming**
+**Past**
 
 “Design Thinking for Publishers on the Web”  \\
 Jun 2017 [New School Publishing Institute](http://www.newschool.edu/publishing-institute/)
@@ -11,9 +12,6 @@ Jun 2017 [New School Publishing Institute](http://www.newschool.edu/publishing-i
 "Getting Started with Hugo: The World's Fastest framework for building websites." \\
 Jun 2017 [JAMStack NYC](https://www.meetup.com/JAMstack-nyc/events/240821007/)
 
-
-
-**Past**
 
 Panel moderator: "CMS as Code" and "Pushing the Limits with Static Site Tools" \\
 Apr 2017 [JAMStack NYC](https://www.meetup.com/JAMstack-nyc/events/238110931/)

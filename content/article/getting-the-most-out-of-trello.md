@@ -10,7 +10,7 @@ Trello is a blank slate to begin with, which is great, but it leaves you to figu
 
 Like any system, you only get out of it what you put into it. You need to review your dashboard daily and be active about it.
 
-
+_Quick note: There are a lot of helpful bits on the [Trello help site](http://help.trello.com/), so I won't go into the basics, with one exception: Trello is structured as a collection of **boards** that hold one or more **lists**, each of which holds one or more **cards**. Cards can be single to-do type items, or entire projects themselves._
 
 ## My Structure
 
@@ -65,7 +65,7 @@ The key to getting the most out of Trello is getting things into it effortlessly
 
 
 
-## Trello Tips
+## Tips
 
 - Email items into your board or an individual card (thanks, Dorian).
 

@@ -4,9 +4,11 @@ date: 2017-09-01T11:39:10-04:00
 draft: false
 ---
 
-[Trello](https://trello.com/) is the central tool that I use to organize the many facets of my life and projects. While I use many other systems for managing projects, like Github and Podio, I find that having one place as the "dashboard" for what I need to be working on or thinking about is essential for not stressing out about what amounts to an infinite and complex to-do list.
+[Trello](https://trello.com/) is the central tool that I use to organize the many facets of my life and projects. While I use many other systems for managing projects, like Github and Podio, I find that having one place as the "dashboard" for what I need to be working on or thinking about is essential.
 
-Trello is a blank slate to begin with, which is great, but it leaves you to figure out your own system. There are many examples of basic setups on the [Trello Blog](https://blog.trello.com/), but it's important to give it a structure and keep with it. Like any system, you only get out of it what you put into it.
+Trello is a blank slate to begin with, which is great, but it leaves you to figure out your own system. There are many examples of basic setups on the [Trello Blog](https://blog.trello.com/), but it's important to give it a structure and keep with it. What follows is an outline of mine.
+
+Like any system, you only get out of it what you put into it.
 
 
 

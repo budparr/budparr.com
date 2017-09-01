@@ -8,7 +8,7 @@ draft: false
 
 Trello is a blank slate to begin with, which is great, but it leaves you to figure out your own system. There are many examples of basic setups on the [Trello Blog](https://blog.trello.com/), but it's important to give it a structure and keep with it. What follows is an outline of mine.
 
-Like any system, you only get out of it what you put into it.
+Like any system, you only get out of it what you put into it. You need to review your dashboard daily and be active about it.
 
 
 
@@ -16,7 +16,8 @@ Like any system, you only get out of it what you put into it.
 
 I may keep separate boards for individual projects or ongoing lists, but I keep one board that I call "Planning" as THE board I use to manage my daily life.
 
-Within that board I keep the following boards:
+Within that board I keep the following lists:
+
 - **Inbox**: Have a place to throw stuff so you don't have to think about it when it hits you. Try to keep empty this when you do your daily reviews.
 
 - **Today**: This is the list that the cards on the other lists eventually flow to. When I review my boards (which is often the night before), I look at everything and ask "what do I need to work on today"?

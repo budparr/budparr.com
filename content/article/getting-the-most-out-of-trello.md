@@ -40,6 +40,8 @@ While that may seem like a lot of boards, I find that the central lists: Today, 
 
 The important thing is to find a structure that works for you.
 
+Here's an example of the board, that I think you can copy into your own account: "[Life dashboard](https://trello.com/b/fjOzpyn2/example-life-dashboard)"
+
 
 
 ## Trello Resources

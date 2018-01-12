@@ -2,7 +2,7 @@
 class: dev
 date: 2014-06-05T00:00:00Z
 published: true
-tags: speaking
+tags: 
 title: Speaking at the CUNY Publishing Institute
 url: /2014/06/05/speaking-at-cuny-publishing-institute/
 ---
@@ -22,4 +22,3 @@ And, while they weren't part of the slides, we also talked about using Markdown 
 ["The Basics of Markdown Tutorial"](http://www.budparr.com/article/2014/03/09/markdown-tutorial/)
 
 ["Want to Speed up Your Website? Skip the Database"](http://www.budparr.com/article/2014/03/06/static-site-generators-introduction/)
-

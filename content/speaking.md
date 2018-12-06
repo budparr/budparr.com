@@ -6,12 +6,17 @@ tags: ['speaking', 'events']
 
 **Past**
 
+"Go Go Hugo!"
+Oct 2018 [JAMstack Conference](https://jamstackconf.com/)
+
+"JAMstack & Performance"
+Sep 2018 [NY Web Performance Group](https://www.meetup.com/Web-Performance-NY/events/253781872/)
+
 “Publishing in the Age of Sand”  \\
 Jun 2018 [New School Publishing Institute](http://www.newschool.edu/publishing-institute/)
 
 "The New Web Development Landscape: Building websites without use of a traditional CMS" \\
 Baruch College, March 2018
-
 
 “Design Thinking for Publishers on the Web”  \\
 Jun 2017 [New School Publishing Institute](http://www.newschool.edu/publishing-institute/)

@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Build
         uses: budparr/actions-eleventy@v1.1
-        with: ELEVENTY_ENV=prod
+        with: "ELEVENTY_ENV=prod"
         env:
           PUBLISH_DIR: dist 
           PUBLISH_BRANCH: master

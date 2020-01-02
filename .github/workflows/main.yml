@@ -1,9 +1,9 @@
 name: Deploy to Cloudflare
 
-on:
-  push:
-    branches:
-      - master
+on: repository_dispatch
+  # push:
+  #   branches:
+  #     - master
 
 jobs:
   deploy:
@@ -12,9 +12,14 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Use Node.js 12.x
+        if: github.event.action == 'build_eleventy'
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
+        env:  
+          Authorization: ${{ secrets.Authorization }}
+          Accept: application/vnd.github.everest-preview+json
+          event_type: build_eleventy
       - name: yarn install, build
         run: |
           yarn install
@@ -30,3 +35,4 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           environment: 'production'
+

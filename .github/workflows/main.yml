@@ -12,12 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Use Node.js 12.x
-        if: github.event.action == 'my_custom_webhook'
+        if: github.event.action == 'build_eleventy'
         uses: actions/setup-node@v1
         with:
           node-version: 12.x        
       - name: yarn install, build
-        if: github.event.action == 'my_custom_webhook_2'
+        if: github.event.action == 'build_eleventy'
         run: |
           echo "Hello From my_custom_webhook_2...doing XYZ"
           yarn install

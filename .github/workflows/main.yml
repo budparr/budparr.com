@@ -15,9 +15,7 @@ jobs:
         if: github.event.action == 'my_custom_webhook'
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
-        run: |
-          echo "Hello From my_custom_webhook...doing ABC"
+          node-version: 12.x        
       - name: yarn install, build
         if: github.event.action == 'my_custom_webhook_2'
         run: |

@@ -1,9 +1,9 @@
 name: Deploy to Cloudflare
-
 on: repository_dispatch
-  # push:
-  #   branches:
-  #     - master
+# on:
+#   push:
+#     branches:
+#       - master
 
 jobs:
   deploy:
@@ -12,16 +12,16 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: Use Node.js 12.x
-        if: github.event.action == 'build_eleventy'
+        if: github.event.action == 'my_custom_webhook'
         uses: actions/setup-node@v1
         with:
           node-version: 12.x
-        env:  
-          Authorization: ${{ secrets.Authorization }}
-          Accept: application/vnd.github.everest-preview+json
-          event_type: build_eleventy
-      - name: yarn install, build
         run: |
+          echo "Hello From my_custom_webhook...doing ABC"
+      - name: yarn install, build
+        if: github.event.action == 'my_custom_webhook_2'
+        run: |
+          echo "Hello From my_custom_webhook_2...doing XYZ"
           yarn install
           yarn build      
         env:
@@ -35,4 +35,3 @@ jobs:
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           environment: 'production'
-

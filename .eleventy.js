@@ -1,4 +1,4 @@
-require('dotenv-extended').load();
+require("dotenv").config();
 
 const cleanCSS = require("clean-css");
 const fs = require("fs");

@@ -11,8 +11,14 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@master
-      - name: Build
-        uses: TartanLlama/actions-eleventy@v1.1        
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: yarn install, build
+        run: |
+          yarn install
+          yarn build      
         env:
           PUBLISH_DIR: dist 
           PUBLISH_BRANCH: master

@@ -11,9 +11,16 @@ jobs:
     name: Deploy
     steps:
       - uses: actions/checkout@master
-      - name: Build site
-        run: 'npm run build'
+      - name: Build
+        uses: TartanLlama/actions-eleventy@v1.1
+        env:
+          PUBLISH_DIR: dist 
+          PUBLISH_BRANCH: master
+          GHOST_API_URL: ${{ secrets.GHOST_API_URL }}
+          GHOST_CONTENT_API_KEY: ${{ secrets.GHOST_CONTENT_API_KEY }}
+          SITE_URL: ${{ secrets.SITE_URL }}
       - name: Publish
         uses: cloudflare/wrangler-action@1.1.0
         with:
           apiToken: ${{ secrets.CF_API_TOKEN }}
+          environment: 'production'

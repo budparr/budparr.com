@@ -1,0 +1,15 @@
+name = "budparr_com"
+type = "webpack"
+account_id = "b63ef5a36fa35b18e6d3e1d9680fdaf2"
+workers_dev = true
+
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
+
+
+[env.production]
+# The ID of your domain you're deploying to
+zone_id = "d894016a9b9641e2899cebb6e55616ea"
+# The route pattern your Workers application will be served at
+route = "www.budparr.com/*"

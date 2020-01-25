@@ -14,12 +14,14 @@ let sanitiseHeaders = {
 };
 
 let removeHeaders = ["Public-Key-Pins", "X-Powered-By", "X-AspNet-Version"];
+let cacheHeaders = {    
+    "Cache-Control": "public, max-age=0, must-revalidate",        
+};
 let cacheControl = {    
-    mustRevalidate: true,
-    public: true,
-    browserTTL: 0, // do not set cache control ttl on responses
+    //Cloudflare Cache Settings
+    browserTTL: null, // do not set cache control ttl on responses
     edgeTTL: 2 * 60 * 60 * 24, // 2 days
-    bypassCache: false, // do not bypass Cloudflare's cache
+    bypassCache: false // do not bypass Cloudflare's cache
 };
 /**
  * The DEBUG flag will do two things that help during development:
@@ -52,7 +54,8 @@ addEventListener("fetch", event => {
                 let setHeaders = Object.assign(
                     {},
                     securityHeaders,
-                    sanitiseHeaders
+                    sanitiseHeaders,
+                    cacheHeaders
                 );
 
                 Object.keys(setHeaders).forEach(name => {

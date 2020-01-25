@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 12.x        
       - name: yarn install, build
-        if: github.event.action == 'build_eleventy'
+        # if: github.event.action == 'build_eleventy'
         run: |
           echo "Hello From my_custom_webhook_2...doing XYZ"
           yarn install

@@ -16,7 +16,7 @@ let sanitiseHeaders = {
 let removeHeaders = ["Public-Key-Pins", "X-Powered-By", "X-AspNet-Version"];
 let cacheControl = {    
     mustRevalidate: true,
-    public: true
+    public: true,
     browserTTL: null, // do not set cache control ttl on responses
     edgeTTL: 2 * 60 * 60 * 24, // 2 days
     bypassCache: false, // do not bypass Cloudflare's cache

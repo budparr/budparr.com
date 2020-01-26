@@ -14,10 +14,10 @@ let sanitiseHeaders = {
 };
 
 let removeHeaders = ["Public-Key-Pins", "X-Powered-By", "X-AspNet-Version"];
-let cacheHeaders = {    
-    "Cache-Control": "public, max-age=0, must-revalidate",        
-};
-let cacheControl = {    
+// let cacheHeaders = {
+//     "Cache-Control": "public, max-age=1, must-revalidate",
+// };
+let cacheControl = {
     //Cloudflare Cache Settings
     browserTTL: null, // do not set cache control ttl on responses
     edgeTTL: 2 * 60 * 60 * 24, // 2 days
@@ -34,45 +34,7 @@ const DEBUG = false;
 
 addEventListener("fetch", event => {
     try {
-        event.respondWith(
-            handleEvent(event).then(function(response) {
-                response = new Response(response.body, response);
-
-                let newHdrs = new Headers(response.headers);
-
-                if (
-                    newHdrs.has("Content-Type") &&
-                    !newHdrs.get("Content-Type").includes("text/html")
-                ) {
-                    return new Response(response.body, {
-                        status: response.status,
-                        statusText: response.statusText,
-                        headers: newHdrs
-                    });
-                }
-
-                let setHeaders = Object.assign(
-                    {},
-                    securityHeaders,
-                    sanitiseHeaders,
-                    cacheHeaders
-                );
-
-                Object.keys(setHeaders).forEach(name => {
-                    newHdrs.set(name, setHeaders[name]);
-                });
-
-                removeHeaders.forEach(name => {
-                    newHdrs.delete(name);
-                });
-
-                return new Response(response.body, {
-                    status: response.status,
-                    statusText: response.statusText,
-                    headers: newHdrs
-                });
-            })
-        );
+        event.respondWith(handleEvent(event).then(SetHeaders));
     } catch (e) {
         if (DEBUG) {
             return event.respondWith(
@@ -88,6 +50,10 @@ addEventListener("fetch", event => {
 async function handleEvent(event) {
     const url = new URL(event.request.url);
     let options = {};
+
+    // let cache  = {
+    //     etag: '0928409987487333'
+    // }
 
     options.cacheControl = cacheControl;
     try {
@@ -117,3 +83,48 @@ async function handleEvent(event) {
         return new Response(e.message || e.toString(), { status: 500 });
     }
 }
+
+const SetHeaders = function(response) {
+        response = new Response(response.body, response);
+
+        let newHdrs = new Headers(response.headers);
+
+        //let cache = caches.default;
+        var ETag = response.headers.get('ETag');
+
+        if (
+            newHdrs.has("Content-Type") &&
+            !newHdrs.get("Content-Type").includes("text/html")
+        ) {
+            return new Response(response.body, {
+                status: response.status,
+                statusText: response.statusText,
+                headers: newHdrs
+            });
+        }
+
+        let setHeaders = Object.assign(
+            {},
+            securityHeaders,
+            sanitiseHeaders,
+            ETag
+            // ,
+            // cacheHeaders
+        );
+
+        Object.keys(setHeaders).forEach(name => {
+            // https://scotthelme.co.uk/security-headers-cloudflare-worker/
+            // use append instead of set to respect previously set headers
+            newHdrs.append(name, setHeaders[name]);
+        });
+
+        removeHeaders.forEach(name => {
+            newHdrs.delete(name);
+        });
+
+        return new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: newHdrs
+        });
+    };

@@ -14,7 +14,7 @@ let sanitiseHeaders = {
 
 let removeHeaders = ["Public-Key-Pins", "X-Powered-By", "X-AspNet-Version"];
 
-const SetHeaders = function(response) {
+const appendHeaders = function(response) {
     response = new Response(response.body, response);
 
     let newHdrs = new Headers(response.headers);
@@ -62,4 +62,4 @@ const SetHeaders = function(response) {
     });
 };
 
-export {SetHeaders}
+export {appendHeaders}

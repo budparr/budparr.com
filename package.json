@@ -1,0 +1,36 @@
+{
+	"name": "budparr.com",
+	"version": "1.0.0",
+	"description": "personal site of Bud Parr",
+	"main": "index.js",
+	"scripts": {
+		"gethugo": "bash get-hugo.sh",
+		"version": "auto-changelog -p --template keepachangelog --unreleased true",
+		"hugo": "NODE_ENV=development bin/hugo* server --gc --navigateToChanged --noHTTPCache",
+		"hugo-prod": "NODE_ENV=production bin/hugo* --gc --minify",
+		"webpack": "NODE_ENV=development webpack --mode=development --progress --colors --watch",
+		"webpack-prod": "NODE_ENV=production webpack --mode=production",
+		"clean": "rm -rf public/ static/dist resources",
+		"deploy": "run-s webpack-prod hugo-prod",
+		"start": "run-p webpack hugo"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/budparr/budparr.com.git"
+	},
+	"author": "budparr",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/budparr/budparr.com/issues"
+	},
+	"homepage": "https://github.com/budparr/budparr.com#readme",
+	"prettier": {
+		"tabWidth": 2,
+		"useTabs": true,
+		"singleQuote": false,
+		"proseWrap": "preserve"
+	},
+	"hugo": {
+		"version": "0.64.0"
+	}
+}

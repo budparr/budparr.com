@@ -1,0 +1,1558 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: static/images
+public_folder: /images
+publish_mode: editorial_workflow
+site_url: https://charming-lime2.netlify.com/
+collections:
+  - name: config
+    label: Global Site Config
+    files:
+      - name: config
+        label: Global Site Config
+        file: config.yaml
+        fields:
+          - widget: string
+            name: title
+            label: Title
+            required: true
+            hint: Site title
+          - widget: hidden
+            name: baseURL
+            label: Base URL
+            required: false
+            hint: Hostname (and path) to the root
+          - widget: object
+            name: params
+            label: Params
+            required: true
+            hint: Site parameters
+            fields:
+              - widget: select
+                name: palette
+                label: Palette
+                required: false
+                default: blue
+                hint: The palette of the theme.
+                options:
+                  - blue
+                  - green
+                  - navy
+                  - violet
+              - widget: hidden
+                name: palettes
+                label: Palettes
+                required: false
+          - widget: object
+            name: menu
+            label: Site Menus
+            required: false
+            hint: Menu items not related to a specific page
+            fields:
+              - widget: list
+                name: main
+                label: Main menu
+                required: false
+                hint: List of items for Main menu
+                fields:
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: true
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: true
+                    hint: The title of the menu item
+                  - widget: string
+                    name: url
+                    label: URL
+                    required: true
+                    hint: The URL the menu item links to
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+              - widget: list
+                name: layouts
+                label: Layouts menu
+                required: false
+                hint: List of items for Layouts menu
+                fields:
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: true
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: true
+                    hint: The title of the menu item
+                  - widget: string
+                    name: url
+                    label: URL
+                    required: true
+                    hint: The URL the menu item links to
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+          - widget: hidden
+            name: disableKinds
+            label: Disable Kinds
+            required: false
+            hint: Enable disabling of all pages of the specified Kinds.
+          - widget: hidden
+            name: uglyURLs
+            label: Ugly URLs
+            required: false
+            hint: >-
+              When enabled, creates URL of the form /filename.html instead of
+              /filename/.
+  - name: author
+    label: Author
+    files:
+      - name: author
+        label: Author
+        file: data/author.json
+        fields:
+          - widget: string
+            name: name
+            label: Name
+            required: false
+          - widget: string
+            name: email
+            label: Email
+            required: false
+          - widget: image
+            name: avatar
+            label: Avatar
+            required: false
+  - name: header
+    label: Header
+    files:
+      - name: header
+        label: Header
+        file: data/header.yml
+        fields:
+          - widget: string
+            name: title
+            label: Header Title
+            required: false
+            hint: The title displayed in the header if no logo image added.
+          - widget: image
+            name: logo_img
+            label: Logo Image
+            required: false
+            hint: The logo image displayed in the header.
+          - widget: string
+            name: url
+            label: Header Title/Logo URL
+            required: false
+            hint: The url of the header title/logo.
+          - widget: boolean
+            name: has_nav
+            label: Enable Navigation Menu
+            required: false
+            default: true
+            hint: Display the navigation menu bar in the header.
+  - name: footer
+    label: Footer
+    files:
+      - name: footer
+        label: Footer
+        file: data/footer.yml
+        fields:
+          - widget: string
+            name: content
+            label: Footer Content
+            required: false
+            hint: The copyright text displayed in the footer.
+          - widget: list
+            name: links
+            label: Links
+            required: false
+            hint: A list of links displayed in the footer.
+            fields:
+              - widget: string
+                name: text
+                label: Link text
+                required: false
+              - widget: string
+                name: url
+                label: URL
+                required: false
+              - widget: boolean
+                name: new_window
+                label: Open in new window
+                required: false
+                default: true
+          - widget: boolean
+            name: has_social
+            label: Enable Social Links
+            required: false
+            default: true
+            hint: Display social links in the footer.
+  - name: social
+    label: Social Links
+    files:
+      - name: social
+        label: Social Links
+        file: data/social.json
+        fields:
+          - widget: list
+            name: links
+            label: Social Links
+            required: false
+            hint: A list of social links displayed in the footer.
+            fields:
+              - widget: hidden
+                name: type
+                label: Type
+                required: false
+              - widget: string
+                name: title
+                label: Title
+                required: true
+              - widget: string
+                name: icon
+                label: Icon
+                required: true
+                hint: Font Awesome icon class name.
+              - widget: string
+                name: url
+                label: URL
+                required: true
+  - name: doc_sections
+    label: Documentation Sections
+    files:
+      - name: doc_sections
+        label: Documentation Sections
+        file: data/doc_sections.yml
+        fields:
+          - widget: string
+            name: root_folder
+            label: Root Folder
+            required: true
+            default: /docs/
+            hint: >-
+              The path under which the documentation pages will be generated.
+              For example, set to "/" to put all documentation pages at root, or
+              set to "/docs/" to put all documentation pages under "/docs/".
+          - widget: list
+            name: sections
+            label: Sections
+            required: false
+            hint: >-
+              The main sections of the documentation. Every item must be the URL
+              slug representing the section.
+            field:
+              label: String
+              name: string
+              widget: string
+  - name: docs
+    label: Documentation Pagess
+    folder: content/
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - widget: string
+        name: title
+        label: Title
+        required: true
+        hint: >-
+          The title of the page, used both as a page title and as a navigation
+          menu title.
+      - widget: number
+        name: weight
+        label: Weight
+        required: false
+        hint: >-
+          The navigation order of the documentation page. This value is ignored
+          for parent section pages.
+        valueType: int
+      - widget: string
+        name: excerpt
+        label: Excerpt
+        required: false
+        hint: >-
+          Short description of the documentation section. This value is used in
+          overview page and is ignored for child section pages.
+      - widget: object
+        name: menu
+        label: Documentation Pages Menus
+        required: false
+        hint: Which menus should this page show up in
+        fields:
+          - widget: object
+            name: main
+            label: Main menu item
+            required: false
+            hint: Main menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+          - widget: object
+            name: layouts
+            label: Layouts menu item
+            required: false
+            hint: Layouts menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+      - widget: hidden
+        name: layout
+        label: Layout
+        required: true
+        default: docs
+      - widget: markdown
+        name: body
+        label: Content
+        required: false
+        hint: Page content
+    filter:
+      field: layout
+      value: docs
+  - name: home
+    label: Home
+    files:
+      - name: home
+        label: Home
+        file: content/_index.md
+        fields:
+          - widget: string
+            name: title
+            label: Title
+            required: true
+            hint: The title of the page.
+          - widget: list
+            name: sections
+            label: Sections
+            required: false
+            hint: Home page sections.
+            types:
+              - name: contentblock
+                widget: object
+                label: Content Section
+                fields:
+                  - widget: string
+                    name: title
+                    label: Title
+                    required: false
+                    hint: The title of the section.
+                  - widget: string
+                    name: section_id
+                    label: Element ID
+                    required: false
+                  - widget: hidden
+                    name: component
+                    label: Component
+                    required: true
+                    default: content_block.html
+                  - widget: markdown
+                    name: content
+                    label: Content
+                    required: false
+                    hint: The text content of the section.
+                  - widget: image
+                    name: image
+                    label: Image
+                    required: false
+                    hint: The image of the section.
+                  - widget: list
+                    name: actions
+                    label: Action Buttons
+                    required: false
+                    fields:
+                      - widget: string
+                        name: label
+                        label: Label
+                        required: true
+                        hint: The text displayed inside the button.
+                      - widget: string
+                        name: url
+                        label: Button URL
+                        required: false
+                  - widget: hidden
+                    name: type
+                    label: Reference Type Name
+                    required: true
+                    hint: >-
+                      Name of the Stackbit object model, used by fields of type
+                      reference
+                    default: contentblock
+              - name: ctablock
+                widget: object
+                label: Call to Action Section
+                fields:
+                  - widget: string
+                    name: title
+                    label: Title
+                    required: false
+                    hint: The title of the section.
+                  - widget: string
+                    name: section_id
+                    label: Element ID
+                    required: false
+                  - widget: hidden
+                    name: component
+                    label: Component
+                    required: true
+                    default: cta_block.html
+                  - widget: string
+                    name: subtitle
+                    label: Subtitle
+                    required: false
+                    hint: The subtitle of the section.
+                  - widget: list
+                    name: actions
+                    label: Action Buttons
+                    required: false
+                    fields:
+                      - widget: string
+                        name: label
+                        label: Label
+                        required: true
+                        hint: The text displayed inside the button.
+                      - widget: string
+                        name: url
+                        label: Button URL
+                        required: false
+                  - widget: hidden
+                    name: type
+                    label: Reference Type Name
+                    required: true
+                    hint: >-
+                      Name of the Stackbit object model, used by fields of type
+                      reference
+                    default: ctablock
+              - name: featuresblock
+                widget: object
+                label: Features Section
+                fields:
+                  - widget: string
+                    name: title
+                    label: Title
+                    required: false
+                    hint: The title of the section.
+                  - widget: string
+                    name: section_id
+                    label: Element ID
+                    required: false
+                  - widget: hidden
+                    name: component
+                    label: Component
+                    required: true
+                    default: features_block.html
+                  - widget: string
+                    name: subtitle
+                    label: Subtitle
+                    required: false
+                    hint: The subtitle of the section.
+                  - widget: list
+                    name: featureslist
+                    label: Features List
+                    required: false
+                    fields:
+                      - widget: string
+                        name: title
+                        label: Title
+                        required: false
+                      - widget: markdown
+                        name: content
+                        label: Content
+                        required: false
+                        hint: The text content of the feature.
+                      - widget: list
+                        name: actions
+                        label: Action Buttons
+                        required: false
+                        fields:
+                          - widget: string
+                            name: label
+                            label: Label
+                            required: true
+                            hint: The text displayed inside the button.
+                          - widget: string
+                            name: url
+                            label: Button URL
+                            required: false
+                  - widget: hidden
+                    name: type
+                    label: Reference Type Name
+                    required: true
+                    hint: >-
+                      Name of the Stackbit object model, used by fields of type
+                      reference
+                    default: featuresblock
+              - name: heroblock
+                widget: object
+                label: Hero Section
+                fields:
+                  - widget: string
+                    name: title
+                    label: Title
+                    required: false
+                    hint: The title of the section.
+                  - widget: string
+                    name: section_id
+                    label: Element ID
+                    required: false
+                  - widget: hidden
+                    name: component
+                    label: Component
+                    required: true
+                    default: hero_block.html
+                  - widget: markdown
+                    name: content
+                    label: Content
+                    required: false
+                    hint: The text content of the section.
+                  - widget: image
+                    name: image
+                    label: Image
+                    required: false
+                    hint: The image shown in the background of the section.
+                  - widget: list
+                    name: actions
+                    label: Action Buttons
+                    required: false
+                    fields:
+                      - widget: string
+                        name: label
+                        label: Label
+                        required: true
+                        hint: The text displayed inside the button.
+                      - widget: string
+                        name: url
+                        label: Button URL
+                        required: false
+                  - widget: hidden
+                    name: type
+                    label: Reference Type Name
+                    required: true
+                    hint: >-
+                      Name of the Stackbit object model, used by fields of type
+                      reference
+                    default: heroblock
+          - widget: object
+            name: menu
+            label: Home Menus
+            required: false
+            hint: Which menus should this page show up in
+            fields:
+              - widget: object
+                name: main
+                label: Main menu item
+                required: false
+                hint: Main menu item for this page
+                fields:
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: false
+                    hint: The title of the menu item
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: false
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+              - widget: object
+                name: layouts
+                label: Layouts menu item
+                required: false
+                hint: Layouts menu item for this page
+                fields:
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: false
+                    hint: The title of the menu item
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: false
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+          - widget: hidden
+            name: layout
+            label: Layout
+            required: true
+            default: home
+  - name: blog
+    label: Blog
+    preview_path: blog/{{slug}}
+    files:
+      - name: blog
+        label: Blog
+        file: content/blog/_index.md
+        fields:
+          - widget: string
+            name: title
+            label: Title
+            required: true
+            hint: The title of the page.
+          - widget: string
+            name: subtitle
+            label: Subtitle
+            required: false
+            hint: The text shown just below the page title.
+          - widget: image
+            name: img_path
+            label: Image
+            required: false
+            hint: The image shown in the background of the page header.
+          - widget: object
+            name: menu
+            label: Blog Menus
+            required: false
+            hint: Which menus should this page show up in
+            fields:
+              - widget: object
+                name: main
+                label: Main menu item
+                required: false
+                hint: Main menu item for this page
+                fields:
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: false
+                    hint: The title of the menu item
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: false
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+              - widget: object
+                name: layouts
+                label: Layouts menu item
+                required: false
+                hint: Layouts menu item for this page
+                fields:
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: false
+                    hint: The title of the menu item
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: false
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+          - widget: hidden
+            name: layout
+            label: Layout
+            required: true
+            default: blog
+  - name: overview
+    label: Overview
+    files:
+      - name: overview
+        label: Overview
+        file: content/overview.md
+        fields:
+          - widget: string
+            name: title
+            label: Title
+            required: true
+            hint: The title of the page.
+          - widget: string
+            name: subtitle
+            label: Subtitle
+            required: false
+            hint: The text shown just below the page title.
+          - widget: image
+            name: img_path
+            label: Image
+            required: false
+            hint: The image shown in the background of the page header.
+          - widget: list
+            name: sections
+            label: Sections
+            required: false
+            hint: Home page sections.
+            types:
+              - name: contentblock
+                widget: object
+                label: Content Section
+                fields:
+                  - widget: string
+                    name: title
+                    label: Title
+                    required: false
+                    hint: The title of the section.
+                  - widget: string
+                    name: section_id
+                    label: Element ID
+                    required: false
+                  - widget: hidden
+                    name: component
+                    label: Component
+                    required: true
+                    default: content_block.html
+                  - widget: markdown
+                    name: content
+                    label: Content
+                    required: false
+                    hint: The text content of the section.
+                  - widget: image
+                    name: image
+                    label: Image
+                    required: false
+                    hint: The image of the section.
+                  - widget: list
+                    name: actions
+                    label: Action Buttons
+                    required: false
+                    fields:
+                      - widget: string
+                        name: label
+                        label: Label
+                        required: true
+                        hint: The text displayed inside the button.
+                      - widget: string
+                        name: url
+                        label: Button URL
+                        required: false
+                  - widget: hidden
+                    name: type
+                    label: Reference Type Name
+                    required: true
+                    hint: >-
+                      Name of the Stackbit object model, used by fields of type
+                      reference
+                    default: contentblock
+              - name: ctablock
+                widget: object
+                label: Call to Action Section
+                fields:
+                  - widget: string
+                    name: title
+                    label: Title
+                    required: false
+                    hint: The title of the section.
+                  - widget: string
+                    name: section_id
+                    label: Element ID
+                    required: false
+                  - widget: hidden
+                    name: component
+                    label: Component
+                    required: true
+                    default: cta_block.html
+                  - widget: string
+                    name: subtitle
+                    label: Subtitle
+                    required: false
+                    hint: The subtitle of the section.
+                  - widget: list
+                    name: actions
+                    label: Action Buttons
+                    required: false
+                    fields:
+                      - widget: string
+                        name: label
+                        label: Label
+                        required: true
+                        hint: The text displayed inside the button.
+                      - widget: string
+                        name: url
+                        label: Button URL
+                        required: false
+                  - widget: hidden
+                    name: type
+                    label: Reference Type Name
+                    required: true
+                    hint: >-
+                      Name of the Stackbit object model, used by fields of type
+                      reference
+                    default: ctablock
+          - widget: object
+            name: menu
+            label: Overview Menus
+            required: false
+            hint: Which menus should this page show up in
+            fields:
+              - widget: object
+                name: main
+                label: Main menu item
+                required: false
+                hint: Main menu item for this page
+                fields:
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: false
+                    hint: The title of the menu item
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: false
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+              - widget: object
+                name: layouts
+                label: Layouts menu item
+                required: false
+                hint: Layouts menu item for this page
+                fields:
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: false
+                    hint: The title of the menu item
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: false
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+          - widget: hidden
+            name: layout
+            label: Layout
+            required: true
+            default: overview
+  - name: showcase
+    label: Showcase
+    files:
+      - name: showcase
+        label: Showcase
+        file: content/showcase.md
+        fields:
+          - widget: string
+            name: title
+            label: Title
+            required: true
+            hint: The title of the page.
+          - widget: string
+            name: subtitle
+            label: Subtitle
+            required: false
+            hint: The text shown just below the page title.
+          - widget: image
+            name: img_path
+            label: Image
+            required: false
+            hint: The image shown in the background of the page header.
+          - widget: list
+            name: items
+            label: Items
+            required: false
+            hint: Showcase items.
+            fields:
+              - widget: string
+                name: title
+                label: Title
+                required: false
+                hint: The title of the item.
+              - widget: string
+                name: subtitle
+                label: Subtitle
+                required: false
+                hint: The subtitle of the item.
+              - widget: image
+                name: preview_img
+                label: Preview Image
+                required: false
+                hint: The preview image of the item.
+              - widget: string
+                name: url
+                label: URL
+                required: false
+                hint: The URL of the item.
+          - widget: object
+            name: menu
+            label: Showcase Menus
+            required: false
+            hint: Which menus should this page show up in
+            fields:
+              - widget: object
+                name: main
+                label: Main menu item
+                required: false
+                hint: Main menu item for this page
+                fields:
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: false
+                    hint: The title of the menu item
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: false
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+              - widget: object
+                name: layouts
+                label: Layouts menu item
+                required: false
+                hint: Layouts menu item for this page
+                fields:
+                  - widget: string
+                    name: name
+                    label: Title
+                    required: false
+                    hint: The title of the menu item
+                  - widget: number
+                    name: weight
+                    label: Weight
+                    required: false
+                    hint: Position for sorting
+                    valueType: int
+                  - widget: string
+                    name: identifier
+                    label: Identifier
+                    required: false
+                    hint: >-
+                      The identifier of a menu item could be used as a parent
+                      menu of another menu item
+                  - widget: string
+                    name: parent
+                    label: Parent Menu Identifier
+                    required: false
+                    hint: >-
+                      The parent of an entry should be the identifier of another
+                      entry.
+          - widget: hidden
+            name: layout
+            label: Layout
+            required: true
+            default: showcase
+  - name: page
+    label: Pages
+    folder: content/
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    fields:
+      - widget: string
+        name: title
+        label: Title
+        required: true
+        hint: The title of the page.
+      - widget: string
+        name: subtitle
+        label: Subtitle
+        required: false
+        hint: The text shown just below the page title.
+      - widget: image
+        name: img_path
+        label: Image
+        required: false
+        hint: The image shown below the page title and subtitle.
+      - widget: object
+        name: menu
+        label: Page Menus
+        required: false
+        hint: Which menus should this page show up in
+        fields:
+          - widget: object
+            name: main
+            label: Main menu item
+            required: false
+            hint: Main menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+          - widget: object
+            name: layouts
+            label: Layouts menu item
+            required: false
+            hint: Layouts menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+      - widget: hidden
+        name: layout
+        label: Layout
+        required: true
+        default: page
+      - widget: markdown
+        name: body
+        label: Content
+        required: false
+        hint: Page content
+    filter:
+      field: layout
+      value: page
+  - name: post
+    label: Posts
+    folder: content/posts
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    preview_path: posts/{{slug}}
+    editor:
+      preview: true
+    fields:
+      - widget: string
+        name: title
+        label: Title
+        required: true
+        hint: The title of the post
+      - widget: string
+        name: subtitle
+        label: Subtitle
+        required: false
+        hint: The text shown just below the post title.
+      - widget: date
+        name: date
+        label: Date
+        required: true
+      - widget: image
+        name: thumb_img_path
+        label: Featured Image
+        required: false
+        hint: The image shown in the blog feed.
+      - widget: image
+        name: content_img_path
+        label: Alt Featured Image
+        required: false
+        hint: The image shown in the header background in the single post.
+      - widget: string
+        name: excerpt
+        label: Excerpt
+        required: false
+        hint: The excerpt of the post displayed in the blog feed.
+      - widget: object
+        name: menu
+        label: Post Menus
+        required: false
+        hint: Which menus should this page show up in
+        fields:
+          - widget: object
+            name: main
+            label: Main menu item
+            required: false
+            hint: Main menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+          - widget: object
+            name: layouts
+            label: Layouts menu item
+            required: false
+            hint: Layouts menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+      - widget: hidden
+        name: layout
+        label: Layout
+        required: true
+        default: post
+      - widget: markdown
+        name: body
+        label: Content
+        required: false
+        hint: Page content
+    filter:
+      field: layout
+      value: post
+  - name: articles-art
+    label: Articles Art
+    folder: content/articles/art
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    preview_path: articles/art/{{slug}}
+    editor:
+      preview: true
+    fields:
+      - widget: string
+        name: title
+        label: Title
+        required: true
+        hint: The title of the post
+      - widget: string
+        name: subtitle
+        label: Subtitle
+        required: false
+        hint: The text shown just below the post title.
+      - widget: date
+        name: date
+        label: Date
+        required: true
+      - widget: image
+        name: thumb_img_path
+        label: Featured Image
+        required: false
+        hint: The image shown in the blog feed.
+      - widget: image
+        name: content_img_path
+        label: Alt Featured Image
+        required: false
+        hint: The image shown in the header background in the single post.
+      - widget: string
+        name: excerpt
+        label: Excerpt
+        required: false
+        hint: The excerpt of the post displayed in the blog feed.
+      - widget: object
+        name: menu
+        label: Post Menus
+        required: false
+        hint: Which menus should this page show up in
+        fields:
+          - widget: object
+            name: main
+            label: Main menu item
+            required: false
+            hint: Main menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+          - widget: object
+            name: layouts
+            label: Layouts menu item
+            required: false
+            hint: Layouts menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+      - widget: hidden
+        name: layout
+        label: Layout
+        required: true
+        default: post
+      - widget: markdown
+        name: body
+        label: Content
+        required: false
+        hint: Page content
+    filter:
+      field: layout
+      value: post
+  - name: articles-books
+    label: Articles Books
+    folder: content/articles/books
+    create: true
+    extension: md
+    slug: "{{slug}}"
+    preview_path: articles/books{{slug}}
+    editor:
+      preview: false
+    fields:
+      - widget: string
+        name: title
+        label: Title
+        required: true
+        hint: The title of the post
+      - widget: string
+        name: subtitle
+        label: Subtitle
+        required: false
+        hint: The text shown just below the post title.
+      - widget: date
+        name: date
+        label: Date
+        required: true
+      - widget: image
+        name: thumb_img_path
+        label: Featured Image
+        required: false
+        hint: The image shown in the blog feed.
+      - widget: image
+        name: content_img_path
+        label: Alt Featured Image
+        required: false
+        hint: The image shown in the header background in the single post.
+      - widget: string
+        name: excerpt
+        label: Excerpt
+        required: false
+        hint: The excerpt of the post displayed in the blog feed.
+      - widget: object
+        name: menu
+        label: Post Menus
+        required: false
+        hint: Which menus should this page show up in
+        fields:
+          - widget: object
+            name: main
+            label: Main menu item
+            required: false
+            hint: Main menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+          - widget: object
+            name: layouts
+            label: Layouts menu item
+            required: false
+            hint: Layouts menu item for this page
+            fields:
+              - widget: string
+                name: name
+                label: Title
+                required: false
+                hint: The title of the menu item
+              - widget: number
+                name: weight
+                label: Weight
+                required: false
+                hint: Position for sorting
+                valueType: int
+              - widget: string
+                name: identifier
+                label: Identifier
+                required: false
+                hint: >-
+                  The identifier of a menu item could be used as a parent menu
+                  of another menu item
+              - widget: string
+                name: parent
+                label: Parent Menu Identifier
+                required: false
+                hint: >-
+                  The parent of an entry should be the identifier of another
+                  entry.
+      - widget: hidden
+        name: layout
+        label: Layout
+        required: true
+        default: post
+      - widget: markdown
+        name: body
+        label: Content
+        required: false
+        hint: Page content
+    filter:
+      field: layout
+      value: post

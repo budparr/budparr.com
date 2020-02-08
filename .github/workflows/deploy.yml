@@ -10,7 +10,7 @@ jobs:
     name: Deploy
     steps:
       - name: Action Hugo
-        uses: budparr/action-hugo
+        uses: budparr/action-hugo@v1.01
       - name: Publish
         uses: cloudflare/wrangler-action@1.1.0
         with:

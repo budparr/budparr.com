@@ -7,6 +7,7 @@ tags:
 hero: /images/life-must-be-lived.svg
 title: Some Early Articles on Static Site Generators 
 url: /2014/08/02/getting-started/
+layout: post
 ---
 
 Here are some of the blog posts that first got me excited about the potential for static site generators:

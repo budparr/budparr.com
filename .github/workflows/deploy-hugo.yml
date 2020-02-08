@@ -10,7 +10,7 @@ jobs:
     name: Deploy
     steps:
       - name: checkout source
-        uses: actions/checkout@v1        
+        uses: actions/checkout@v1
       - name: Build
         uses: budparr/action-hugo@master
       - name: Publish

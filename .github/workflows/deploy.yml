@@ -17,6 +17,8 @@ jobs:
         with:
           hugo-version: "0.62.2"
           extended: true
+      - name: Build
+        run: hugo --minify
       - name: Publish
         uses: cloudflare/wrangler-action@1.1.0
         with:

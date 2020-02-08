@@ -11,8 +11,13 @@ jobs:
     steps:
       - name: checkout source
         uses: actions/checkout@v1
-      - name: Generate Hugo
-        uses: budparr/action-hugo@master
+        # https://github.com/crazy-max/ghaction-hugo
+      - name: Run Hugo
+        uses: crazy-max/ghaction-hugo@v1
+        with:
+          version: latest
+          extended: true
+          args: --cleanDestinationDir --minify --verbose
       - name: Publish
         uses: cloudflare/wrangler-action@1.1.0
         with:

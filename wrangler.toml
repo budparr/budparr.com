@@ -4,7 +4,7 @@ account_id = "b63ef5a36fa35b18e6d3e1d9680fdaf2"
 workers_dev = true
 
 [site]
-bucket = "./dist"
+bucket = "./public"
 entry-point = "workers-site"
 
 

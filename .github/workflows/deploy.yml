@@ -1,26 +1,26 @@
-name: Deploy Hugo to Cloudflare
-on:
-  push:
-    branches:
-      - master
+# name: Deploy Hugo to Cloudflare
+# on:
+#   push:
+#     branches:
+#       - master
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
-      - name: checkout source
-        uses: actions/checkout@v1
-        # https://github.com/crazy-max/ghaction-hugo
-      - name: Hugo setup
-        uses: peaceiris/actions-hugo@v2.4.5
-        with:
-          hugo-version: "latest"
-          extended: true
-      - name: Build
-        run: hugo --minify
-      - name: Publish
-        uses: cloudflare/wrangler-action@1.1.0
-        with:
-          apiToken: ${{ secrets.CF_API_TOKEN }}
-          environment: "production"
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
+#     name: Deploy
+#     steps:
+#       - name: checkout source
+#         uses: actions/checkout@v1
+#         # https://github.com/crazy-max/ghaction-hugo
+#       - name: Hugo setup
+#         uses: peaceiris/actions-hugo@v2.4.5
+#         with:
+#           hugo-version: "latest"
+#           extended: true
+#       - name: Build
+#         run: hugo --minify
+#       - name: Publish
+#         uses: cloudflare/wrangler-action@1.1.0
+#         with:
+#           apiToken: ${{ secrets.CF_API_TOKEN }}
+#           environment: "production"

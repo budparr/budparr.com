@@ -14,4 +14,4 @@ I'm also interested in cooking and bread baking. A purist at heart, I roast my o
 
 I live in the Bronx with my wife and three sons.
 
-[twitter/@budparr](http://twitter.com/budparr)
+Find me on: [twitter/@budparr](http://twitter.com/budparr) or [Github](https://github.com/budparr)

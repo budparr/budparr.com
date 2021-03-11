@@ -14,7 +14,7 @@ jobs:
       uses: willstenzel/update-monday-status-action@v1.0 #./ # Uses an action in the root directory
       with:
         API_TOKEN: ${{ secrets.API_TOKEN }}
-        BOARD_ID: 1067034989
+        BOARD_ID: "1067034989"
         COLUMN_ID: "status"
         submitted-status: "PR Submitted"
         merged-status: "closed"

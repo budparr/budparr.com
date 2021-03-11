@@ -6,14 +6,12 @@ on:
     branches:
       - main
 jobs:
-  update_monday_job:
+  update_monday_status:
     runs-on: ubuntu-latest
     name: Update Monday Status
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Call Monday.com API
-      uses: ./ # Uses an action in the root directory
+    - name: Update Monday.com Status Action
+      uses: willstenzel/update-monday-status-action@v1.0 #./ # Uses an action in the root directory
       with:
         API_TOKEN: ${{ secrets.API_TOKEN }}
         BOARD_ID: 1067034989

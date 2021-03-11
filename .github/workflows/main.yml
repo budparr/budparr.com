@@ -16,7 +16,7 @@ jobs:
       uses: ./ # Uses an action in the root directory
       with:
         API_TOKEN: ${{ secrets.API_TOKEN }}
-        BOARD_ID: 524963988
+        BOARD_ID: 1067034989
         COLUMN_ID: "status"
         submitted-status: "PR Submitted"
         merged-status: "Done"

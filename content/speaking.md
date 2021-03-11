@@ -8,7 +8,7 @@ tags: ['speaking', 'events']
 **Past**
 
 "Go Go Hugo!"
-Oct 2018, San Francisco [JAMstack Conference](https://jamstackconf.com/)
+Oct 2018 [JAMstack Conference](https://jamstackconf.com/)
 
 "JAMstack & Performance"
 Sep 2018 [NY Web Performance Group](https://www.meetup.com/Web-Performance-NY/events/253781872/)

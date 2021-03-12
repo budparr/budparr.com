@@ -17,7 +17,7 @@ jobs:
         BOARD_ID: 1067034989
         COLUMN_ID: "status"
         submitted-status: "PR Submitted"
-        merged-status: "Done"
+        merged-status: "closed"
         pull-request-body: ${{ github.event.pull_request.body }}
         merged: ${{ github.event.pull_request.merged }}
       if: contains(github.event.pull_request.body, 'pulses')

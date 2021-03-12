@@ -10,14 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Update Monday Status
     steps:
-    - name: Update Monday.com Status Action
-      uses: willstenzel/update-monday-status-action@v1.0 #./ # Uses an action in the root directory
+    - name: Call Monday.com API
+      uses: willstenzel/update-monday-status-action@v1.0
       with:
         API_TOKEN: ${{ secrets.API_TOKEN }}
         BOARD_ID: 1067034989
         COLUMN_ID: "status"
         submitted-status: "PR Submitted"
-        merged-status: "closed"
+        merged-status: "Done"
         pull-request-body: ${{ github.event.pull_request.body }}
         merged: ${{ github.event.pull_request.merged }}
       if: contains(github.event.pull_request.body, 'pulses')

@@ -10,7 +10,7 @@ jobs:
     name: Update Monday Status
     steps:
       - name: Call Monday.com API
-        uses: budparr/update-monday-status-action@v1.0
+        uses: budparr/update-monday-status-action@v1.1
         with:
           API_TOKEN: ${{ secrets.API_TOKEN }}
           BOARD_ID: 1067034989

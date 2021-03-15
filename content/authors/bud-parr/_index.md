@@ -1,7 +1,6 @@
 ---
 title: Bud Parr 
-bio: |
-  creative technologist | JAMstack evangelist. 
+bio: creative technologist | JAMstack enthusiast. 
 avatar: /images/CDFX7337Print-sq-800.jpg
 featured: true
 social:

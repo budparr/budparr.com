@@ -4,7 +4,7 @@ draft: true
 menu: main
 ---
 
-I am an entrepeneur, web developer and designer, [JAMStack engineer](https://jamstack.org/), content strategist, and public speaker.
+I am an entrepeneur, web developer and designer, [JAMStacker](https://jamstack.org/), content strategist, and public speaker.
 
 I've worked for over 20 years at my own firm, The New Dynamic (formerly named Sonnet Media). I earned a Bachelor of Science and Master of Arts from New York University.
 

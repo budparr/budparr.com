@@ -5,7 +5,7 @@ menu: main
 tags: ['speaking', 'events']
 ---
 
-**Past**
+**Past Events**
 
 "Go Go Hugo!"
 Oct 2018, San Francisco [JAMstack Conference](https://jamstackconf.com/)

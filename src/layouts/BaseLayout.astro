@@ -8,21 +8,17 @@ const { title, description, publishDate, author, heroImage, permalink, alt } =
 ---
 
 <!DOCTYPE html>
-<html lang={content.lang || "en"}>
+<html lang={content.lang || "en"} class="no-js">
   <head>
     <BaseHead {title} {description} {permalink} />
   </head>
-  <body class="h-full relative bg-zinc-100" x-data="{ open: false }">
+  <body class="h-full relative dark:bg-slate-600 bg-zinc-100" x-data="{ open: false }">
   <Sidebar />
       <!-- BODY -->
-    <div class="flex">
-      <!-- <div x-transition x-cloak x-show="open" class="left-16 fixed lg:top-8 top-16">
-        <NavMENUONLY  />
-      </div> -->
-    <div class="transition ease-in-out duration-500 transform mt-8 min-h-screen bg-white text-gray-800 dark:text-gray-50 dark:bg-slate-900 w-full md:shadow-lg md:ml-16" :class="open ? 'translate-x-44 lg:translate-x-28 fixed' : ''">            
-      <!-- <NavNojs />    -->
+    <div class="flex">      
+      <div class="transition ease-in-out duration-500 transform mt-8 min-h-screen bg-white text-gray-800 dark:text-gray-50 dark:bg-slate-900 w-full md:shadow-lg md:ml-16" :class="open ? 'translate-x-44 lg:translate-x-28 fixed' : ''">            
       <div class="p-16">
-      <slot>
+        <slot>
       </div>
     </div>
   </div>

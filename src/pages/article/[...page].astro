@@ -1,0 +1,23 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Li from "../../components/Li.astro";
+
+export async function getStaticPaths({ paginate }) {
+  const allPosts = Astro.fetchContent("../article/*.md");
+  const sortedPosts = allPosts.sort(
+    (a, b) => new Date(b.date) - new Date(a.date)
+  );
+
+  return paginate(sortedPosts, { pageSize: 20 });
+}
+
+const { page } = Astro.props;
+---
+<BaseLayout content={{ page }}>
+<h1>Articles</h1>
+
+<h2 class="title">All Posts</h2>
+<small class="count">{page.start + 1}- {page.end + 1} of {page.total}</small>
+
+{page.data.map((post) => <Li item={post} />)}
+</BaseLayout>

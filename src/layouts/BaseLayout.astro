@@ -1,0 +1,32 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Sidebar from "../components/Sidebar.astro";
+
+const { content } = Astro.props;
+const { title, description, publishDate, author, heroImage, permalink, alt } =
+  content;
+---
+
+<!DOCTYPE html>
+<html lang={content.lang || "en"}>
+  <head>
+    <BaseHead {title} {description} {permalink} />
+  </head>
+  <body class="h-full relative bg-zinc-100" x-data="{ open: false }">
+  <Sidebar />
+      <!-- BODY -->
+    <div class="flex">
+      <!-- <div x-transition x-cloak x-show="open" class="left-16 fixed lg:top-8 top-16">
+        <NavMENUONLY  />
+      </div> -->
+    <div class="transition ease-in-out duration-500 transform mt-8 min-h-screen bg-white w-full md:shadow-lg md:ml-16" :class="open ? 'translate-x-44 lg:translate-x-28 fixed' : ''">            
+      <!-- <NavNojs />    -->
+      <div class="p-16">
+      <slot>
+      </div>
+    </div>
+  </div>
+    <!-- /BODY -->
+                
+  </body>
+</html>

@@ -1,0 +1,1 @@
+@tailwind base;@tailwind components;@tailwind utilities;h1{color:red;@apply bg-green-400;}body{@apply bg-green-400;}

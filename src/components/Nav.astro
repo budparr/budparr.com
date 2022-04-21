@@ -1,0 +1,41 @@
+<nav aria-labelledby="nav-heading"  :aria-expanded="open">
+  <div class="flex items-center">
+    <button
+      x-cloak
+      class="mx-auto hover:text-gray-400"
+      @click="open = !open"
+      :aria-expanded="open"
+      aria-controls="nav-list"
+    >
+      <svg
+        class="h-6 w-6 mx-auto"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M2 12h16M4 18h16 "></path>
+      </svg>
+    </button>
+  </div>
+
+  <ul
+    x-cloak
+    x-transition
+    x-show="open"
+    id="nav-list"
+    class="p-8 left-16 fixed lg:top-8 top-16"
+  >
+    <li>
+      <a href="/"> home </a>
+    </li>
+    <li>
+      <a href="/"> work </a>
+    </li>
+  </ul>
+</nav>

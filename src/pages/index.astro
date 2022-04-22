@@ -1,6 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import menu from "../data/menu.yaml";
+// import menu from "../data/menu.yaml";
+const menu = await Astro.glob<CustomDataFile>('../data/menu.json');
+interface CustomDataFile {
+  name: string;
+  link: string;
+}
+
+
 
 
 let title = "Title from the index page yo";
@@ -9,11 +16,11 @@ let description = "Description from Index";
 
 <BaseLayout content={{ title, description }}>
 
-
+{menu}
 
 <ul>
-  {menu.slice(0, 3).map((item) => (  
-    <li class="text-2xl">{item.link}</li> 
+  {menu.slice(0, 3).map((post) => (  
+    <li class="text-2xl">{post.link}</li> 
 ))}
 </ul>
 

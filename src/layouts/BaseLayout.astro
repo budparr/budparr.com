@@ -1,7 +1,6 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 import Sidebar from "../components/Sidebar.astro";
-
 const { content } = Astro.props;
 const { title, description, publishDate, author, heroImage, permalink, alt } =
   content;
@@ -17,7 +16,7 @@ const { title, description, publishDate, author, heroImage, permalink, alt } =
       <!-- BODY -->
     <div class="flex">      
       <div class="transition ease-in-out duration-500 transform mt-8 min-h-screen bg-white text-gray-800 dark:text-gray-50 dark:bg-slate-900 w-full md:shadow-lg md:ml-16" :class="open ? 'translate-x-44 lg:translate-x-28 fixed' : ''">            
-      <div class="p-16">
+      <div class="p-16">      
         <slot>
       </div>
     </div>

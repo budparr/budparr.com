@@ -4,7 +4,7 @@ tags:
 date: 2005-12-15T00:00:00Z
 title: My Life in CIA, by Harry Mathews 
 draft: false
-url: /2005/12/15/my-life-in-cia-by-harry-mathews/
+url: /article/2005-12-15-my-life-in-cia-by-harry-mathews/
 layout: "../../layouts/ArticleLayout.astro"
 ---
 Around his early 40s a man looks at his life, searches, and more often than not he finds his youth has gone missing. If he has the means he buys a sports car or a boat, or if he's Harry Mathews he becomes a spy for CIA.

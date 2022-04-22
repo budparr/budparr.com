@@ -1,3 +1,6 @@
+---
+import menu from "../data/menu.yaml";
+---
 <nav x-cloak aria-labelledby="nav-heading" :aria-expanded="open">
   <div class="flex items-center">
     <button
@@ -51,11 +54,13 @@
     id="nav-list"
     class="text-xl pt-12 font-serif pl-4 left-16 fixed lg:top-8 top-16 dark:text-gray-50"
   >
+
+<ul>
+  {menu.slice(0, 3).map((item) => (  
     <li class="mb-4">
-      <a href="/" class="hover:underline"> home </a>
+      <a href="{item.link}" class="hover:underline"> {item.name} </a>
     </li>
-    <li class="mb-4">
-      <a href="/article" class="hover:underline">Articles</a>
-    </li>
-  </ul>
+  ))}
+</ul>
+
 </nav>

@@ -6,7 +6,9 @@ const { title, description, publishDate, author, heroImage, permalink, alt } =
 ---
 
 <BaseLayout content={{ title, description }}>
-  <h1>{title}</h1>
-  <p>{description}</p>
-  <slot />
+  <div class="prose lg:prose-lg mx-auto">
+    <h1>{title}</h1>
+    <p>{description}</p>
+    <slot />
+  </div>
 </BaseLayout>

@@ -1,4 +1,8 @@
 ---
+export interface Props {
+  name: string;
+  link: string;  
+}  
 import menu from "../data/menu.yaml";
 const { name, link } = Astro.props;
 ---
@@ -58,9 +62,9 @@ const { name, link } = Astro.props;
 
 <ul>
   {menu.slice(0, 10).map((item) => (  
-    <li class="mb-4">
-      <a href={`/${item.link}/`} class="hover:underline">{item.name}</a>
-    </li>
+    <li class="mb-4">      
+      <a href={item.link ? `/${item.link}/` : `/`} class="hover:underline">{item.name}</a>      
+    </li>     
   ))}
 </ul>
 

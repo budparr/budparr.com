@@ -1,28 +1,29 @@
 ---
+import { Markdown } from 'astro/components';
 import BaseLayout from "../layouts/BaseLayout.astro";
-// import menu from "../data/menu.yaml";
-const menu = await Astro.glob<CustomDataFile>('../data/menu.json');
+import posts from "../data/quotes.json";
 interface CustomDataFile {
-  name: string;
-  link: string;
+  quote: string;
+  attribution: string;
 }
-
-
-
+//const posts = await Astro.glob<CustomDataFile>('../data/quotes.json');
+const { quote, attribution } = Astro.props;
 
 let title = "Title from the index page yo";
 let description = "Description from Index";
+
+// console.log('title: ', posts[0])
 ---
 
 <BaseLayout content={{ title, description }}>
 
-{menu}
+<!-- {quotes[0]} -->
 
-<ul>
-  {menu.slice(0, 3).map((post) => (  
-    <li class="text-2xl">{post.link}</li> 
+{posts.slice(0,1).map((post) => (    
+    <blockquote cite={post.attribution} class="font-serif text-2xl sm:text-3xl lg:text-6xl p-4 lg:p-32">
+      <Markdown content={post.quote ? `“${post.quote}”` : ``} />      
+      <Markdown content={post.attribution ? `<span class="font-sans bold text-sm">— ${post.attribution}</span>` : ``} />
+    </blockquote>    
 ))}
-</ul>
-
 
 </BaseLayout>

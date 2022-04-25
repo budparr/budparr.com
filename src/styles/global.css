@@ -5,12 +5,3 @@
 [x-cloak] {
   display: none !important;
 }
-.no-js .js-only {
-  display: none;
-}
-.js .no-js {
-  display: none;
-}
-.no-js .no-js {
-  display: block;
-}

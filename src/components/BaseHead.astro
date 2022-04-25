@@ -9,16 +9,17 @@ export interface Props {
 }
 
 import site from "../data/site.js";
-import "../styles/global.css";  
+import "../styles/global.css";
 
-const { title, description, permalink, publishDate, ogImageUrl, canonicalURL } = Astro.props;
-let fullTitle = title + ' | ' + site.title;
-let fullDesc = description + ' | ' + site.description;
+const { title, description, permalink, publishDate, ogImageUrl, canonicalURL } =
+  Astro.props;
+let fullTitle = title + " | " + site.title;
+let fullDesc = description + " | " + site.description;
 
-if ( title === '' ) {
+if (title === "") {
   fullTitle = site.title;
 }
-if ( description === '' ) {
+if (description === "") {
   fullDesc = site.description;
 }
 
@@ -27,7 +28,6 @@ if (import.meta.env.DEV == true) {
 } else {
   console.log("pro", import.meta.env.DEV);
 }
-
 ---
 
 <!-- Global Metadata -->
@@ -41,25 +41,44 @@ if (import.meta.env.DEV == true) {
 <meta name="description" content={fullDesc} />
 
 <!-- Canonical -->
-<link rel="canonical" href={canonicalURL}>
+<link rel="canonical" href={canonicalURL} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonicalURL || site.url} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={fullDesc} />
-<meta property="og:image" content={ogImageUrl ? `${site.url}${ogImageUrl}` : `${site.url}/assets/img/social.jpg`} />
+<meta
+  property="og:image"
+  content={ogImageUrl
+    ? `${site.url}${ogImageUrl}`
+    : `${site.url}/assets/img/social.jpg`}
+/>
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={canonicalURL || site.url} />
 <meta property="twitter:title" content={fullTitle} />
 <meta property="twitter:description" content={fullDesc} />
-<meta property="twitter:image" content={ogImageUrl ? `${site.url}${ogImageUrl}` : `${site.url}/assets/img/social.jpg`} />
+<meta
+  property="twitter:image"
+  content={ogImageUrl
+    ? `${site.url}${ogImageUrl}`
+    : `${site.url}/assets/img/social.jpg`}
+/>
 
+<!-- <script type="module" src="/src/scripts/index.js"></script> -->
 
-<script type="module" src="/src/scripts/index.js"></script>
+<script>
+  import Alpine from "alpinejs";
+  window.Alpine = Alpine;
+  Alpine.start();
+</script>
 
 <!-- RSS -->
-<link rel="alternate" type="application/rss+xml" title={`${site.name} Blog`} href={`${site.url}/feed/blog.xml`}/>
-
+<link
+  rel="alternate"
+  type="application/rss+xml"
+  title={`${site.name} Blog`}
+  href={`${site.url}/feed/blog.xml`}
+/>

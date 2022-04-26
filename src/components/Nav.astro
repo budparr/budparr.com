@@ -1,4 +1,6 @@
 ---
+import Mode from "./Mode.astro";
+import NavButton from "./NavButton.astro";
 export interface Props {
   name: string;
   link: string;  
@@ -6,52 +8,11 @@ export interface Props {
 import menu from "../data/menu.yaml";
 const { name, link } = Astro.props;
 ---
-<nav x-cloak aria-labelledby="nav-heading" :aria-expanded="open">
-  <div class="flex items-center">
-    <button
-      class="mx-auto text-gray-800 dark:text-gray-200 hover:text-gray-400"
-      @click="open = !open"
-      :aria-expanded="open"
-      aria-controls="nav-list"
-    >
-      <svg
-        x-cloak        
-        x-show="! open"
-        class="h-6 w-6 mx-auto "
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        aria-hidden="true"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M2 12h16M4 18h16 "></path>
-      </svg>
-
-      <svg
-        x-cloak        
-        x-transition:enter="transition ease-out duration-700"
-        x-transition:enter-start="opacity-0"
-        x-transition:enter-end="opacity-100"        
-        class="h-6 w-6 mx-auto"
-        x-show="open"
-        xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        version="1.1"
-        x="0px"
-        y="0px"
-        viewBox="0 0 96 96"
-        enable-background="new 0 0 96 96"
-        xml:space="preserve"
-        ><polygon
-          points="88,13.127 82.874,8.001 48,42.874 13.125,8.001 8,13.127 42.875,48 8,82.873 13.125,87.999 48,53.126   82.874,87.999 88,82.873 53.127,48 "
-        ></polygon></svg
-      >
-    </button>
-  </div>
+<nav x-cloak aria-labelledby="nav-heading" :aria-expanded="open" class="flex flex-col items-center">
+  
+    <NavButton />
+    <Mode />
+  
 
   <ul
     x-transition
@@ -59,8 +20,6 @@ const { name, link } = Astro.props;
     id="nav-list"
     class="text-xl pt-12 font-serif pl-4 left-16 fixed lg:top-8 top-16 dark:text-gray-50"
   >
-
-<ul>
   {menu.slice(0, 10).map((item) => (  
     <li class="mb-4">      
       <a href={item.link ? `/${item.link}/` : `/`} class="hover:underline">{item.name}</a>      

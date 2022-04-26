@@ -1,6 +1,6 @@
 module.exports = {
   mode: "JIT",
-  darkmode: "class",
+  darkMode: "class",
   // purge: {
   //   content: ["./public/**/*.html", "./src/**/*.{astro,js,ts}"],
   //   safelist: ["dark"],

@@ -1,7 +1,7 @@
 <label class="sr-only">Theme</label>
 <button
 	id="button_mode"
-  class="mt-6 hover:bg-blue-100 rounded-full"
+  class="mt-6 hover:bg-blue-100 rounded-full relative ml-1 p-1"
   type="button"
   aria-haspopup="true"
   aria-expanded="false"
@@ -34,10 +34,7 @@
       <path
         d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
         class="stroke-slate-400 dark:stroke-slate-500"></path>
-    </svg>
-			<span class="label_mode text-xs text-center ml-2 text-gray-700 dark:text-gray-100;">
-				light
-				</span>
+    </svg>		
   </span>
 
   <span class="hidden dark:inline">
@@ -55,14 +52,11 @@
         clip-rule="evenodd"
         d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
         class="fill-slate-400 dark:fill-slate-500"></path>
-    </svg>
-	<span class="label_mode text-xs text-center ml-2 text-gray-700 dark:text-gray-100;">
-				dark
-				</span>
+    </svg>	
   </span>	
 </button>
 
-<button id="button_mode_system" alt="set system" class="transition-opacity pt-3 mx-auto"
+<button id="button_mode_system" alt="set system" class="transition-opacity pt-3 relative ml-1 after:content-['system'] after:text-xs after:text-blue-500 after:absolute after:-left-2"
 
 x-data="{
                     toggle: () => {
@@ -89,8 +83,5 @@ x-data="{
           stroke-linecap="round"
           stroke-linejoin="round"
           class="stroke-sky-500"
-        ></path></svg>
-				<span class="text-xs text-center ml-2 text-gray-700 dark:text-gray-100;">
-				system
-				</span>
+        ></path></svg>			
 </button>

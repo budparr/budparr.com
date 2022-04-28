@@ -4,24 +4,25 @@ import Sidebar from "../components/Sidebar.astro";
 const { content } = Astro.props;
 const { title, description, publishDate, author, heroImage, permalink, alt } =
   content;
+
 ---
 
 <!DOCTYPE html>
-<html lang={content.lang || "en"}>
+<html lang={content.lang || "en"}  x-data="{ darkMode: localStorage.getItem('darkMode') || 'false' }"
+    x-init="$watch('darkMode', (val) => localStorage.setItem('darkMode', val))" :class="{ 'dark': darkMode === 'true' }" x-cloak>
   <head>
     <BaseHead {title} {description} {permalink} />
   </head>
   <body class="h-full relative dark:bg-slate-600 bg-zinc-100" x-data="{ open: false }">
-  <Sidebar />
-      <!-- BODY -->
+    <Sidebar />
+    <!-- BODY -->
     <div class="flex">      
-      <div class="transition ease-in-out duration-500 transform mt-8 min-h-screen bg-white text-gray-800 dark:text-gray-50 dark:bg-slate-900 w-full md:shadow-lg md:ml-16" :class="open ? 'translate-x-44 lg:translate-x-32 fixed' : ''">            
-      <div class="pl-12 pr-10 py-16">      
-        <slot>
+      <div id="content" class="transition bg-white ease-in-out duration-500 transform mt-8 min-h-screen text-gray-800 dark:text-gray-50 dark:bg-slate-900 w-full md:shadow-lg md:ml-16" :class="open ? 'translate-x-44 lg:translate-x-32 fixed' : ''">            
+        <div class="pl-12 pr-10 py-16">      
+          <slot>
+        </div>
       </div>
     </div>
-  </div>
-    <!-- /BODY -->
-                
+    <!-- /BODY -->                
   </body>
 </html>

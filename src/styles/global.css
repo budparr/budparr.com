@@ -6,23 +6,19 @@
   display: none !important;
 }
 
-
+/* Style system icon for darkTheme switcher */
 #button_mode_system {
   opacity: 0;
 }
-
 #button_mode_system:hover {
   opacity: 100;
 }
 #button_mode:hover ~ #button_mode_system {
   opacity: 100;
 }
-
-
 .label_mode {
   opacity: 0;
 }
-
 #button_mode:hover .label_mode {
   opacity: 100;
 }

@@ -8,12 +8,9 @@ export interface Props {
 import menu from "../data/menu.yaml";
 const { name, link } = Astro.props;
 ---
-<nav x-cloak aria-labelledby="nav-heading" :aria-expanded="open" class="flex flex-col items-center">
-  
+<nav x-cloak aria-labelledby="nav-heading" :aria-expanded="open" class="flex flex-col items-center">  
     <NavButton />
     <Mode />
-  
-
   <ul
     x-transition
     x-show="open"

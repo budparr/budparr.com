@@ -1,22 +1,13 @@
 <label class="sr-only">Theme</label>
+
 <button
 	id="button_mode"
   class="mt-6 hover:bg-blue-100 rounded-full relative ml-1 p-1"
   type="button"
   aria-haspopup="true"
   aria-expanded="false"
- x-data="{
-                    toggle: () => {
-                        if (localStorage.theme === 'dark') {
-                            localStorage.theme = 'light';
-                            document.documentElement.classList.remove('dark');
-                        } else {
-                            localStorage.theme = 'dark';
-                            document.documentElement.classList.add('dark');
-                        }
-                    },
-                }"
-  @click="toggle"
+ 
+	@click="darkMode = (darkMode === 'true' ? 'false' : 'true')"
 >
   
 	<span class="dark:hidden">
@@ -56,32 +47,37 @@
   </span>	
 </button>
 
-<button id="button_mode_system" alt="set system" class="transition-opacity pt-3 relative ml-1 after:content-['system'] after:text-xs after:text-blue-500 after:absolute after:-left-2"
+<button id="button_mode_system" type="button" alt="set system" class="transition-opacity pt-3 relative ml-1 after:content-['system'] after:text-xs after:text-blue-500 after:dark-text-blue-100 after:absolute after:-left-2"
+
 
 x-data="{
-                    toggle: () => {
-                        if  
-												(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  document.documentElement.classList.add('dark')
-} else {
-  document.documentElement.classList.remove('dark')
+	toggle: () => {
+		if  
+			(window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      darkMode = 'true'
+			document.documentElement.classList.add('dark')
+		} else {
+      darkMode = 'false'
+		document.documentElement.classList.remove('dark')
 }
-                    },
-                }"
+      },
+        }"
   @click="toggle"
+
+
 >
 <svg viewBox="0 0 24 24" fill="none" class="w-6 h-6">
-        <path
-          d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Z"
-          stroke-width="2"
-          stroke-linejoin="round"
-          class="stroke-sky-500 fill-sky-400/20"
-        ></path>
-        <path
-          d="M14 15c0 3 2 5 2 5H8s2-2 2-5"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="stroke-sky-500"
-        ></path></svg>			
+	<path
+		d="M4 6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Z"
+		stroke-width="2"
+		stroke-linejoin="round"
+		class="stroke-gray-400 fill-sky-200"
+	></path>
+	<path
+		d="M14 15c0 3 2 5 2 5H8s2-2 2-5"
+		stroke-width="2"
+		stroke-linecap="round"
+		stroke-linejoin="round"
+		class="stroke-sky-500"
+	></path></svg>			
 </button>

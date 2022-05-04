@@ -3,6 +3,7 @@ tags:
 - Book Review
 date: 2005-12-15T00:00:00Z
 title: My Life in CIA, by Harry Mathews 
+description: tantric, ski slopes, real life is like the movies but slightly more boring
 draft: false
 url: /article/2005-12-15-my-life-in-cia-by-harry-mathews/
 layout: "../../layouts/ArticleLayout.astro"

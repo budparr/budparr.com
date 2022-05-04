@@ -6,9 +6,11 @@ const { title, description, publishDate, author, heroImage, permalink, alt } =
 ---
 
 <BaseLayout content={{ title, description }}>
-  <div class="prose lg:prose-lg mx-auto text-gray-800 dark:text-gray-400">
-    <h1 class="text-gray-900 dark:text-gray-300">{title}</h1>
-    <p class="">{description}</p>
+  <div class="lg:prose-lg mx-auto text-gray-800 dark:text-gray-400 prose dark:prose-invert" >
+    <h1 class="text-gray-900 dark:text-gray-300 mb-1">{title}</h1>
+    <p class="italic font-serif pb-12 text-sm">{description}</p>
+    <div class="font-serif">
     <slot />
+    </div>
   </div>
 </BaseLayout>

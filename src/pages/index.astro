@@ -1,21 +1,14 @@
 ---
-import { Markdown } from 'astro/components';
+import { Markdown } from "astro/components";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import posts from "../data/quotes.json";
+import HomeGrid from "../components/HomeGrid.astro";
 
 let title = "Title from the index page yo";
 let description = "Description from Index";
 
-
-
-// console.log('title: ', posts[0])
+// console.log('title: ', posts[0]) -ml-4 lg:-ml-10
 ---
 
 <BaseLayout content={{ title, description }}>
-	{posts.slice(0,1).map((post) => (    
-			<blockquote cite={post.attribution} class="font-serif text-2xl sm:text-3xl lg:text-6xl p-4 lg:p-32">
-				<Markdown content={post.quote ? `<span class="-ml-4 lg:-ml-10">“</span>${post.quote}”` : ``} />      
-				<Markdown content={post.attribution ? `<span class="block font-sans mt-8 font-bold text-sm">— ${post.attribution}</span>` : ``} />
-			</blockquote>    
-	))}
+    <HomeGrid />
 </BaseLayout>

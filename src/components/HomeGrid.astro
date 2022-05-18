@@ -1,0 +1,104 @@
+---
+import { Markdown } from "astro/components";
+import posts from "../data/quotes.json";
+---
+
+<div
+  class="boxes md:grid grid-rows-2 grid-cols-2 lg:grid-rows-4 lg:grid-cols-4 gap-0"
+>
+  <!-- border rules:
+  - border-r: ODD boxes only
+  - border-b: 1-12 all screens, 13-16 small screens only
+  - border-l: 3, 7 11, 15, only
+   -->
+  <div
+    class="relative after:content-[''] md:after:bg-white after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r border-b flex items-center justify-center border-gray-300 p-4"
+  >
+   
+  </div>
+  <div
+    class="relative after:content-[''] lg:after:bg-white after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] md:after:bg-white after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-l border-b lg:border-r flex items-center justify-center border-gray-300 p-4"
+  >
+   
+  </div>
+  <div
+    class="relative after:content-[''] border-b flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] md:after:bg-white after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r border-b flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] lg:after:bg-white after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  {posts.slice(0,1).map((post) => (    
+			<blockquote cite={post.attribution} class="font-serif text-2xl ml-2">
+				<Markdown content={post.quote ? `<span class="-ml-4">“</span>${post.quote}”` : ``} />      
+				<Markdown content={post.attribution ? `<span class="block text-gray-300 font-sans mt-8 font-bold text-sm">— ${post.attribution}</span>` : ``} />
+			</blockquote>    
+	))}
+
+
+
+
+  </div>
+  <div
+    class="relative after:content-[''] md:after:bg-white after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-r lg:border-l flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] border-b flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] md:after:bg-white after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-r flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] lg:after:bg-white after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] md:after:bg-white after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-l lg:border-r flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] border-b flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] md:after:bg-white lg:after:bg-transparent after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r border-b lg:border-b-0 flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] border-b lg:border-b-0 flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-[''] md:after:bg-white lg:after:bg-transparent after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r lg:border-l border-b md:border-b-0 lg:border-b-0 flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+  <div
+    class="relative after:content-['']  flex items-center justify-center border-gray-300 p-4"
+  >
+    
+  </div>
+</div>

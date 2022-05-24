@@ -1,104 +1,158 @@
 ---
-import { Markdown } from "astro/components";
-import posts from "../data/quotes.json";
+  import { Markdown } from "astro/components";
+  import posts from "../data/quotes.json";
+  // import "../styles/sass.scss";
+  const quote = posts
+    .slice(0)
+    .reverse()
+    .map(element => {
+      return element;
+    });
 ---
 
-<div
-  class="boxes md:grid grid-rows-2 grid-cols-2 lg:grid-rows-4 lg:grid-cols-4 gap-0"
->
+<style lang="scss">
+  @mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {
+    $angle-per-char: $angle-span / $num-letters;
+
+    @for $i from 1 through $num-letters {
+      .char-#{$i} {
+        transform: (rotate($angle-offset + $angle-per-char * $i));
+      }
+    }
+  }
+
+  @include rotated-text(27, 180, 0deg);
+
+  .badge {
+    transform: rotate(-93deg);
+
+    // position: relative;
+    // width: 600px;
+    // border-radius: 50%;
+    
+
+  }
+
+  h3 span {
+    // background-color: red;
+    font: 22px Monaco, MonoSpace;
+    height: 140px;
+    position: absolute;
+    width: 12px;
+    left: 0;
+    top: 0;
+    transform-origin: bottom center;
+  }
+
+
+</style>
+
+
+<div class="boxes md:grid grid-rows-2 grid-cols-2 lg:grid-rows-4 lg:grid-cols-4 gap-0 dark:text-slate-400">
   <!-- border rules:
   - border-r: ODD boxes only
   - border-b: 1-12 all screens, 13-16 small screens only
   - border-l: 3, 7 11, 15, only
    -->
   <div
-    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-900 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-   
-  </div>
-  <div
-    class="relative after:content-[''] lg:after:bg-white dark:lg:after:bg-slate-900 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
-  </div>
-  <div
-    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-900 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-l border-b lg:border-r flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-   
-  </div>
-  <div
-    class="relative after:content-[''] border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
-  </div>
-  <div
-    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-900 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
-  </div>
-  <div
-    class="relative after:content-[''] lg:after:bg-white dark:lg:after:bg-slate-900 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
-  {posts.slice(0,1).map((post) => (    
-			<blockquote cite={post.attribution} class="font-serif text-2xl ml-2">
-				<Markdown content={post.quote ? `<span class="-ml-4">“</span>${post.quote}”` : ``} />      
-				<Markdown content={post.attribution ? `<span class="block text-gray-300 font-sans mt-8 font-bold text-sm">— ${post.attribution}</span>` : ``} />
-			</blockquote>    
-	))}
-
-
-
+    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
 
   </div>
   <div
-    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-900 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-r lg:border-l flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
+    class="relative after:content-[''] lg:after:bg-white dark:lg:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
+  </div>
+  <a href="/bud"
+    class="hover:text-red-500 transition-all relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-l border-b lg:border-r flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+      <div class="badge">
+        <h3>
+          <span class="char-1">W</span>
+          <span class="char-2">h</span>
+          <span class="char-3">a</span>
+          <span class="char-4">t</span>
+          <span class="char-5">&nbsp;</span>
+          <span class="char-6">i</span>
+          <span class="char-7">s</span>
+          <span class="char-8">&nbsp;</span>
+          <span class="char-9">a</span>
+          <span class="char-10">&nbsp;</span>
+          <span class="char-11">C</span>
+          <span class="char-12">o</span>
+          <span class="char-13">m</span>
+          <span class="char-14">m</span>
+          <span class="char-15">o</span>
+          <span class="char-16">n</span>
+          <span class="char-17">p</span>
+          <span class="char-18">l</span>
+          <span class="char-19">a</span>
+          <span class="char-20">c</span>
+          <span class="char-21">e</span>
+          <span class="char-22">&nbsp;</span>
+          <span class="char-23">B</span>
+          <span class="char-24">o</span>
+          <span class="char-25">o</span>
+          <span class="char-26">k</span>
+          <span class="char-27">?</span>
+        </h3>
+      </div>
     
+  </a>
+
+  <div
+    class="relative after:content-[''] border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
   </div>
   <div
-    class="relative after:content-[''] border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
+    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
+  </div>
+  <a href="/quotes"
+    class="hover:bg-slate-100 dark:hover:bg-slate-700 transition relative after:content-[''] lg:after:bg-white dark:lg:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+    <blockquote cite={quote[0].attribution} class="font-serif text-2xl ml-2 dark:text-slate-400 text-gray-600">
+      <Markdown content={quote[0].quote ? `<span class="-ml-4">“</span>${quote[0].quote}”` : ``} />
+        <Markdown content={quote[0].attribution ? `<span
+          class="block text-gray-500 dark:text-slate-500 font-sans mt-8 font-bold text-sm">—
+          ${quote[0].attribution}</span>` : ``} />
+    </blockquote>
+  </a>
+  <div
+    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-r lg:border-l flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
   </div>
   <div
-    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-900 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-r flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
+    class="relative after:content-[''] border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
+  </div>
+  <a href="/about/"
+    class="hover:bg-slate-100 dark:hover:bg-slate-700 transition relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-r flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
+  </a>
+  <div
+    class="relative after:content-[''] lg:after:bg-white dark:lg:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
   </div>
   <div
-    class="relative after:content-[''] lg:after:bg-white dark:lg:after:bg-slate-900 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
+    class="relative  after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-l lg:border-r flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+    <div class="w-full h-full flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity"> ME</div>
   </div>
   <div
-    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-900 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-l lg:border-r flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
+    class="relative after:content-[''] border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
   </div>
   <div
-    class="relative after:content-[''] border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
+    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 lg:after:bg-transparent after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r border-b lg:border-b-0 flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+    <p class="">I run The New Dynamic. We build better faster websites and contribute to OSS and run a community for
+      Jamstack folks. </p>
   </div>
   <div
-    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-900 lg:after:bg-transparent after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r border-b lg:border-b-0 flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
+    class="relative after:content-[''] border-b lg:border-b-0 flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
   </div>
   <div
-    class="relative after:content-[''] border-b lg:border-b-0 flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
+    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 lg:after:bg-transparent after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r lg:border-l border-b md:border-b-0 lg:border-b-0 flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
   </div>
-  <div
-    class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-900 lg:after:bg-transparent after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-r lg:border-l border-b md:border-b-0 lg:border-b-0 flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
-  </div>
-  <div
-    class="relative after:content-['']  flex items-center justify-center border-gray-300 dark:border-slate-700 p-4"
-  >
-    
+  <div class="relative after:content-['']  flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
+
   </div>
 </div>

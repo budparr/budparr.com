@@ -5,3 +5,5 @@
   name: Articles
 - link: "about"
   name: About
+- link: "quotes"
+  name: Quotes

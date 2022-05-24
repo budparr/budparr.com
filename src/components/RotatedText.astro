@@ -1,0 +1,52 @@
+---
+export interface Props {
+  letteringText: string;  
+}
+const { letteringText } = Astro.props as Props;	
+const letteredText = letteringText.split('').map((letter, i) => {		
+	return "<span class=\"char-" + `${i}` + "\">" + `${letter}` + "</span>";			
+}).join('').toString();
+
+---
+<style lang="scss" is:global>
+@mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {
+
+    $angle-per-char: calc($angle-span / $num-letters);
+  
+    @for $i from 0 through $num-letters {
+      .char-#{$i} {
+        transform: (rotate($angle-offset + $angle-per-char * $i));
+      }
+    }
+  }
+  
+  @include rotated-text(27);
+  
+  .rotated-text {
+    transform: rotate(-87deg);
+    // position: relative;
+    // width: 600px;
+    // border-radius: 50%;
+    margin-left: -300px;
+    margin-bottom: -160px;
+  }
+  
+  .rotated-text span {
+    // background-color: red;
+    font: 22px Monaco, MonoSpace;
+    height: 140px;
+    position: absolute;
+    width: 12px;
+    left: 0;
+    top: 0;
+    transform-origin: bottom center;
+  }
+</style>
+
+	
+<div class="rotated-text" set:html={letteredText}>
+</div>
+
+
+
+

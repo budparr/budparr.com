@@ -1,5 +1,6 @@
 ---
   import { Markdown } from "astro/components";
+  import RotatedText from "../components/RotatedText.astro";
   import posts from "../data/quotes.json";
   // import "../styles/sass.scss";
   const quote = posts
@@ -8,46 +9,11 @@
     .map(element => {
       return element;
     });
-
-
+const letteringText = "What is a Commonplace Book?"
 ---
 
-<style lang="scss">
-  @mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {    
-      
-      $angle-per-char: calc($angle-span / $num-letters);
-
-    @for $i from 1 through $num-letters {
-      .char-#{$i} {
-        transform: (rotate($angle-offset + $angle-per-char * $i));
-      }
-    }
-  }
-
-  @include rotated-text(27);
-
-  .rotated-text {
-    transform: rotate(-93deg);
-    // position: relative;
-    // width: 600px;
-    // border-radius: 50%;
-    margin-left: -300px;
-    margin-bottom: -160px;
-  }
-
-  .rotated-text span {
-    // background-color: red;
-    font: 22px Monaco, MonoSpace;
-    height: 140px;
-    position: absolute;
-    width: 12px;
-    left: 0;
-    top: 0;
-    transform-origin: bottom center;
-  }
 
 
-</style>
 
 
 <div class="boxes md:grid grid-rows-2 grid-cols-2 lg:grid-rows-4 lg:grid-cols-4 gap-0 dark:text-slate-400">
@@ -66,39 +32,7 @@
   </div>
   <a href="/bud"
     class="hover:text-red-500 transition-all relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-l border-b lg:border-r flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
-      <div class="rotated-text">
-
-          
-
-          <span class="char-1">W</span>
-          <span class="char-2">h</span>
-          <span class="char-3">a</span>
-          <span class="char-4">t</span>
-          <span class="char-5">&nbsp;</span>
-          <span class="char-6">i</span>
-          <span class="char-7">s</span>
-          <span class="char-8">&nbsp;</span>
-          <span class="char-9">a</span>
-          <span class="char-10">&nbsp;</span>
-          <span class="char-11">C</span>
-          <span class="char-12">o</span>
-          <span class="char-13">m</span>
-          <span class="char-14">m</span>
-          <span class="char-15">o</span>
-          <span class="char-16">n</span>
-          <span class="char-17">p</span>
-          <span class="char-18">l</span>
-          <span class="char-19">a</span>
-          <span class="char-20">c</span>
-          <span class="char-21">e</span>
-          <span class="char-22">&nbsp;</span>
-          <span class="char-23">B</span>
-          <span class="char-24">o</span>
-          <span class="char-25">o</span>
-          <span class="char-26">k</span>
-          <span class="char-27">?</span>        
-      </div>
-    
+    <RotatedText letteringText={letteringText} />
   </a>
 
   <div

@@ -19,7 +19,7 @@ const { name, link } = Astro.props;
   >
   {menu.slice(0, 10).map((item) => (  
     <li class="mb-4">      
-      <a href={item.link ? `/${item.link}/` : `/`} class="hover:underline">{item.name}</a>      
+      <a href={item.link ? `/${item.link}/` : `/`} class="hover:underline p-2 rounded hover:bg-red-300">{item.name}</a>      
     </li>     
   ))}
 </ul>

@@ -21,19 +21,18 @@
     }
   }
 
-  @include rotated-text(27, 180, 0deg);
+  @include rotated-text(27);
 
-  .badge {
+  .rotated-text {
     transform: rotate(-93deg);
-
     // position: relative;
     // width: 600px;
     // border-radius: 50%;
-    
-
+    margin-left: -300px;
+    margin-bottom: -160px;
   }
 
-  h3 span {
+  .rotated-text span {
     // background-color: red;
     font: 22px Monaco, MonoSpace;
     height: 140px;
@@ -64,8 +63,7 @@
   </div>
   <a href="/bud"
     class="hover:text-red-500 transition-all relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-l border-b lg:border-r flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
-      <div class="badge">
-        <h3>
+      <div class="rotated-text">        
           <span class="char-1">W</span>
           <span class="char-2">h</span>
           <span class="char-3">a</span>
@@ -92,8 +90,7 @@
           <span class="char-24">o</span>
           <span class="char-25">o</span>
           <span class="char-26">k</span>
-          <span class="char-27">?</span>
-        </h3>
+          <span class="char-27">?</span>        
       </div>
     
   </a>

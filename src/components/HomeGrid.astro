@@ -8,11 +8,14 @@
     .map(element => {
       return element;
     });
+
+
 ---
 
 <style lang="scss">
-  @mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {
-    $angle-per-char: $angle-span / $num-letters;
+  @mixin rotated-text($num-letters: 100, $angle-span: 180deg, $angle-offset: 0deg) {    
+      
+      $angle-per-char: calc($angle-span / $num-letters);
 
     @for $i from 1 through $num-letters {
       .char-#{$i} {
@@ -63,7 +66,10 @@
   </div>
   <a href="/bud"
     class="hover:text-red-500 transition-all relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 lg:border-l border-b lg:border-r flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
-      <div class="rotated-text">        
+      <div class="rotated-text">
+
+          
+
           <span class="char-1">W</span>
           <span class="char-2">h</span>
           <span class="char-3">a</span>

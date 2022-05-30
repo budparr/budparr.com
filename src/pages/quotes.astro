@@ -36,7 +36,7 @@ let description = "Saving Quotes like baseball cards";
 			</section>
 		))}
 
-		<div class="md:w-96 md:fixed md:right-0 md:top-0 md:h-full bg-slate-100 dark:bg-slate-600 p-8">
+		<div class="md:w-96 md:fixed md:right-0 md:top-0 md:h-full bg-zinc-100 dark:bg-slate-600 p-8">
 			<h3 class="mb-4 dark:text-gray-400 text-gray-600">More Quotes by...</h3>
 			<ul x-ref="tablist" @keydown.right.prevent.stop="$focus.wrap().next()" @keydown.home.prevent.stop="$focus.first()"
 				@keydown.page-up.prevent.stop="$focus.first()" @keydown.left.prevent.stop="$focus.wrap().prev()"

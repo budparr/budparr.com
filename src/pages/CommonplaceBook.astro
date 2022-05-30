@@ -1,0 +1,12 @@
+---
+const response = await fetch('https://randomuser.me/api/');
+const data = await response.json();
+const randomUser = data.results[0]
+---
+<!-- Data fetched at build can be rendered in HTML -->
+<h1>Commonplace Book</h1>
+<!-- <h2>{randomUser.name.first} {randomUser.name.last}</h2> -->
+
+<!-- Data fetched at build can be passed to components as props -->
+<!-- <Contact client:load email={randomUser.email} />
+<Location city={randomUser.location.city} /> -->

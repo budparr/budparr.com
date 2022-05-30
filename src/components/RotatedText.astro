@@ -1,8 +1,10 @@
 ---
 export interface Props {
-  letteringText: string;  
+  letteringText?: string;  
 }
-const { letteringText } = Astro.props as Props;	
+const { letteringText = "howdy partner" } = Astro.props as Props;	
+
+
 const letteredText = letteringText.split('').map((letter, i) => {		
 	return "<span class=\"char-" + `${i}` + "\">" + `${letter}` + "</span>";			
 }).join('').toString();

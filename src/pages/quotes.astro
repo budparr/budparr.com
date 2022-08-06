@@ -30,6 +30,9 @@ let description = "Saving Quotes like baseball cards";
 			<section x-show="isSelected($id('tab', whichChild($el, $el.parentElement)))"
 			:aria-labelledby="$id('tab', whichChild($el, $el.parentElement))" role="tabpanel" class="p-8">
 				<blockquote cite={post.attribution} class="font-serif text-2xl sm:text-3xl lg:text-5xl xl:text-6xl p-8 lg:p-24">
+					{post.heading &&
+						<p class="text-3xl mb-12 block">{post.heading}</p>
+					}
 					<Markdown content={post.quote ? `<span class="-ml-4 lg:-ml-10">“</span>${post.quote}”` : ``} />
 						<Markdown content={post.attribution ? `<span class="block font-sans mt-8 font-bold text-sm">— ${post.attribution}</span>` : ``} />
 				</blockquote>

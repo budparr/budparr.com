@@ -1,5 +1,5 @@
 ---
-  import { Markdown } from "astro/components";
+  import { marked } from 'marked';
   import RotatedText from "../components/RotatedText.astro";
   import posts from "../data/quotes.json";
   // import "../styles/sass.scss";
@@ -44,13 +44,17 @@
 
   </div>
   <a href="/quotes"
-    class="hover:bg-slate-100 dark:hover:bg-slate-700 transition relative after:content-[''] lg:after:bg-white dark:lg:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">
-    <blockquote cite={quote[0].attribution} class="font-serif text-2xl ml-2 dark:text-slate-400 text-gray-600">
-      <Markdown content={quote[0].quote ? `<span class="-ml-4">“</span>${quote[0].quote}”` : ``} />
-        <Markdown content={quote[0].attribution ? `<span
-          class="block text-gray-500 dark:text-slate-500 font-sans mt-8 font-bold text-sm">—
-          ${quote[0].attribution}</span>` : ``} />
-    </blockquote>
+    class="hover:bg-slate-100 dark:hover:bg-slate-700 transition relative after:content-[''] lg:after:bg-white dark:lg:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b  justify-center border-gray-300 dark:border-slate-700 p-4">
+    
+      
+      
+      {quote[0].quote && 
+        <blockquote class="w-fullblock font-serif text-2xl ml-2 dark:text-slate-400 text-gray-600" set:html={`<span class="inline-block -ml-3 -mt-6">“</span>` + marked.parseInline(quote[0].quote) + `”`} />
+        }			
+      {quote[0].attribution && 
+        <cite class="block text-gray-500 dark:text-slate-500 font-sans mt-8 font-bold text-sm" set:html={`— ` + marked.parseInline(quote[0].attribution)} />
+      }
+        
   </a>
   <div
     class="relative after:content-[''] md:after:bg-white dark:md:after:bg-slate-800 after:rounded-full after:h-8 after:w-8 after:absolute after:-right-4 after:-bottom-4 after:z-50 border-b lg:border-r lg:border-l hidden lg:flex items-center justify-center border-gray-300 dark:border-slate-700 p-4">

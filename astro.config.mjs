@@ -8,6 +8,7 @@ export default defineConfig({
     markdown: {
         // Example: Include all drafts in your final build
         drafts: true,
+        extendDefaultPlugins: true
     },
     vite: {
         plugins: [yaml()]

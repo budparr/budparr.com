@@ -23,21 +23,27 @@ const letteredText = letteringText.split('').map((letter, i) => {
   }
   
   @include rotated-text(27);
+
+
+  .rotated-text span {    
+    font: 22px Monaco, MonoSpace;
+  }
+  @media screen and (min-width: 1536px) {
   
+
   .rotated-text {    
     transform: rotate(-87deg);
     // margin-left: -300px;
     // margin-bottom: -160px;
     // Don't think we need these
      position: absolute;
-     bottom:10%;
+     bottom:20%;
      left: 12%;
     // width: 600px;
     // border-radius: 50%;
   }
   
-  .rotated-text span {    
-    font: 22px Monaco, MonoSpace;
+  .rotated-text span {        
     height: 140px;
     position: absolute;
     width: 12px;
@@ -45,6 +51,7 @@ const letteredText = letteringText.split('').map((letter, i) => {
     top: 0;
     transform-origin: bottom center;
   }
+}
 </style>
 
 	

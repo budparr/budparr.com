@@ -4,7 +4,7 @@ draft: false
 url: /about/
 layout: "../layouts/ArticleLayout.astro"
 ---
-I am an entrepeneur, web developer and designer, [JAMStack engineer](https://jamstack.org/), content strategist, and public speaker.
+I am a web developer and designer, [JAMStack engineer](https://jamstack.org/), content strategist, and public speaker.
 
 I've worked for nearly 15 years at my own firm, Sonnet Media, and am launching a new firm called [The New Dynamic](https://www.thenewdynamic.com/).  I've worked with The American Bar Association, The Royal Kingdom of the Netherlands, HarperCollins Publishers, New York University and numerous publishers, journals, and many authors.
 

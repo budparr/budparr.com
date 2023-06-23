@@ -8,7 +8,7 @@ layout: "../layouts/ArticleLayout.astro"
 
 I am a web developer, designer, content strategist, and commmunity organizer. Heavily involved in the genesis of the Jamstack web development paradigm, I created the [JAMStack Meetup group](http://www.meetup.com/the-new-dynamic/) in New York City back in 2014, helping other web professionals with front-end web technologies. My most recent talk: ["Measure and Impact Your Site's Carbon Footprint"](https://www.youtube.com/watch?v=UawsSCL2sVE&feature=youtu.be) felt just as important on my earliest talks on Jamstack.
 
-Professionally, my interests are in web performance, carbon footprint and user experience. I'm a CMS nerd and love content strategy.
+Professionally, my interests are in web performance, carbon footprint, typography, and user experience. I'm a CMS nerd and love content strategy.
 
 I run a subscription-based web services firm called [The New Dynamic](https://www.thenewdynamic.com/). We've worked with The American Bar Association, The Royal Kingdom of the Netherlands, HarperCollins Publishers, New York University, Retro Report, New Directions Publishing, and numerous other publishers, journals, and many authors, including James Ellroy, David Grann, and Min Jin Lee.
 
